@@ -13,8 +13,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Header></Header>
-      <body className="relative h-full w-full bg-[#151415fc] bg-opacity-[100%] backdrop-blur-[10px]">
-        <div className="bg-newy h-full absolute z-0 w-full brightness-[30%] contrast-[140%] sepia-[100%] saturate-[20%] hue-rotate-180"></div>
+      <body className="relative h-full w-full bg-[#151415fc] bg-opacity-[100%]">
+        <div className="bg-newy h-full absolute z-0 w-full brightness-[-550%] contrast-[890%] hue-rotate-60 saturate-[20%]"></div>
         <div className="z-10 h-full">{children}</div>
       </body>
     </html>

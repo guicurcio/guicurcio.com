@@ -21,18 +21,18 @@ export function Header() {
   return (
     <div
       className={twMerge(
-        "fixed bottom-[10px] left-0 right-0 z-50  mx-auto w-[1100px]  max-w-[1100px] items-center justify-center bg-black bg-opacity-5 "
+        "fixed bottom-[10px] left-0 right-0 z-50  mx-auto w-[1400px]  max-w-[1400px] items-center justify-center bg-black bg-opacity-5 "
       )}
     >
       <div
         className={twMerge(
-          " mx-auto w-[1100px] max-w-[1100px] rounded-[4px] bg-black bg-opacity-[25%] py-[1px]  backdrop-blur-[4px]",
+          "  rounded-[4px] bg-black bg-opacity-[25%] py-[1px]  backdrop-blur-[4px]",
           "items-center border border-sharp border-opacity-10"
         )}
       >
         <div
           className={twMerge(
-            "mx-auto flex  w-[1100px] max-w-[1100px]  flex-row place-content-between items-center self-center px-[20px] align-middle"
+            "mx-auto flex   flex-row place-content-between items-center self-center px-[20px] align-middle"
           )}
         >
           <div className="relative flex flex-row">
@@ -42,58 +42,7 @@ export function Header() {
               <NavigationMenu></NavigationMenu>
             </div>
           </div>
-          {/* <div className="flex flex-row">
-            <ul className="flex flex-row space-x-12 pl-[80px] font-moderat font-normal">
-              <li className="relative top-[4px]">
-                <Link href="/">
-                  <motion.a
-                    whileTap={{
-                      scale: 0.95,
-                    }}
-                    className="block py-1 font-medium text-white text-opacity-75 transition-colors duration-300 cursor-pointer top-1 font-visuelt hover:text-goldg"
-                  >
-                    Product
-                  </motion.a>
-                </Link>
-              </li>
-              <li className="relative top-[4px]">
-                <Link href="/">
-                  <motion.a
-                    whileTap={{
-                      scale: 0.95,
-                    }}
-                    className="block py-1 font-medium transition-colors duration-300 cursor-pointer top-1 font-visuelt text-sharp hover:text-goldg"
-                  >
-                    Blog
-                  </motion.a>
-                </Link>
-              </li>
-              <li className="relative top-[4px]">
-                <Link href="/">
-                  <motion.a
-                    whileTap={{
-                      scale: 0.95,
-                    }}
-                    className="block py-1 font-medium transition-colors duration-300 cursor-pointer top-1 font-visuelt text-sharp hover:text-goldg"
-                  >
-                    Pricing
-                  </motion.a>
-                </Link>
-              </li>
-              <li className="relative top-[4px]">
-                <Link href="/">
-                  <motion.a
-                    whileTap={{
-                      scale: 0.95,
-                    }}
-                    className="block py-1 font-medium transition-colors duration-300 cursor-pointer top-1 font-visuelt text-sharp hover:text-goldg"
-                  >
-                    Docs
-                  </motion.a>
-                </Link>
-              </li>
-            </ul>
-          </div> */}
+
           <AToLogin></AToLogin>
         </div>
       </div>
