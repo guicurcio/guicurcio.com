@@ -1,13 +1,22 @@
+import Link from "next/link";
 import "styles/globals.css";
+import "styles/fonts.css";
+import { twMerge } from "tailwind-merge";
+import { Soundy } from "components/SoundGrad";
+import { Header } from "components/Header";
 
-interface RootLayoutProps {
+export default function RootLayout({
+  children,
+}: {
   children: React.ReactNode;
-}
-
-export default function RootLayout({ children }: RootLayoutProps) {
+}) {
   return (
-    <html>
-      <body className="min-h-screen bg-black">{children}</body>
+    <html lang="en">
+      <Header></Header>
+      <body className="relative h-full w-full bg-[#151415fc] bg-opacity-[100%] backdrop-blur-[10px]">
+        <div className="bg-newy h-full absolute z-0 w-full brightness-[30%] contrast-[140%] sepia-[100%] saturate-[20%] hue-rotate-180"></div>
+        <div className="z-10 h-full">{children}</div>
+      </body>
     </html>
   );
 }
