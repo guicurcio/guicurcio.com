@@ -18,7 +18,7 @@ const NavigationMenu = (props: Props) => {
             )}
           >
             <div
-              className="relative h-7 w-7 rounded-lg border border-[#302f2f] bg-[#1a1a1a]"
+              className="relative h-7 w-7 rounded-lg border border-[#302f2f] bg-editor"
               style={{ boxShadow: "0px 6px 20px 0 rgba(0,0,0,0.08)" }}
             >
               <div className="h-7 w-7">
@@ -43,17 +43,8 @@ const NavigationMenu = (props: Props) => {
               "radix-motion-to-end:animate-exit-to-right"
             )}
           >
-            <div className=" p-3 lg:w-[4800px]">
-              <div className="grid grid-cols-6 gap-4">
-                <div className="w-full col-span-2 p-4 bg-gray-100 rounded-md dark:bg-gray-900"></div>
-
-                <div className="flex flex-col w-full col-span-4 p-4 space-y-3 bg-gray-100 rounded-md dark:bg-gray-900">
-                  <div className="w-full h-12 bg-white rounded-md dark:bg-gray-700"></div>
-                  <div className="w-full h-12 bg-white rounded-md dark:bg-gray-700"></div>
-                  <div className="w-full h-12 bg-white rounded-md dark:bg-gray-700"></div>
-                  <div className="w-full h-12 bg-white rounded-md dark:bg-gray-700"></div>
-                </div>
-              </div>
+            <div className="p-3 lg:w-[800px]">
+              <div className="grid grid-cols-6 gap-4"></div>
             </div>
           </NavigationMenuPrimitive.Content>
         </NavigationMenuPrimitive.Item>
@@ -68,7 +59,7 @@ const NavigationMenu = (props: Props) => {
             )}
           >
             <div
-              className="relative h-7 w-7 rounded-lg border border-[#302f2f] bg-[#1a1a1a]"
+              className="relative h-7 w-7 rounded-lg border border-[#302f2f] bg-editor"
               style={{ boxShadow: "0px 6px 20px 0 rgba(0,0,0,0.08)" }}
             >
               <div className="absolute w-4 h-4 left-2 top-2">
@@ -84,7 +75,7 @@ const NavigationMenu = (props: Props) => {
 
           <NavigationMenuPrimitive.Content
             className={twMerge(
-              "absolute bottom-0 right-0 w-auto rounded-lg",
+              "absolute top-0 right-0 w-auto rounded-lg",
               "radix-motion-from-start:animate-enter-from-left",
               "radix-motion-from-end:animate-enter-from-right",
               "radix-motion-to-start:animate-exit-to-left",
@@ -104,7 +95,7 @@ const NavigationMenu = (props: Props) => {
             )}
           >
             <div
-              className="relative h-7 w-7 rounded-lg border border-[#302f2f] bg-[#1a1a1a]"
+              className="relative h-7 w-7 rounded-lg border border-[#302f2f] bg-editor"
               style={{ boxShadow: "0px 6px 20px 0 rgba(0,0,0,0.08)" }}
             >
               <div className="absolute w-4 h-4 left-2 top-2">
@@ -120,7 +111,7 @@ const NavigationMenu = (props: Props) => {
 
           <NavigationMenuPrimitive.Content
             className={twMerge(
-              "absolute bottom-0 right-0 w-auto rounded-lg",
+              "absolute top-0 right-0 w-auto rounded-lg",
               "radix-motion-from-start:animate-enter-from-left",
               "radix-motion-from-end:animate-enter-from-right",
               "radix-motion-to-start:animate-exit-to-left",
@@ -140,7 +131,7 @@ const NavigationMenu = (props: Props) => {
             )}
           >
             <div
-              className="relative h-7 w-7 rounded-lg border border-[#302f2f] bg-[#1a1a1a]"
+              className="relative h-7 w-7 rounded-lg border border-[#302f2f] bg-editor"
               style={{ boxShadow: "0px 6px 20px 0 rgba(0,0,0,0.08)" }}
             >
               <div className="absolute w-4 h-4 left-2 top-2">
@@ -156,7 +147,7 @@ const NavigationMenu = (props: Props) => {
 
           <NavigationMenuPrimitive.Content
             className={twMerge(
-              "absolute bottom-0 right-0 w-auto rounded-lg",
+              "absolute top-0 right-0 w-auto rounded-lg",
               "radix-motion-from-start:animate-enter-from-left",
               "radix-motion-from-end:animate-enter-from-right",
               "radix-motion-to-start:animate-exit-to-left",
@@ -170,20 +161,20 @@ const NavigationMenu = (props: Props) => {
         <NavigationMenuPrimitive.Indicator
           className={twMerge(
             "z-10",
-            "bottom-[100%] flex h-2 items-end justify-center overflow-hidden",
+            "top-[100%] flex h-2 items-end justify-center overflow-hidden",
             "radix-state-visible:animate-fade-in",
             "radix-state-hidden:animate-fade-out",
             "transition-[width_transform] duration-[250ms] ease-[ease]"
           )}
         >
-          <div className="relative w-2 h-2 rotate-45 bg-white bg-opacity-50 top-1 dark:bg-gray-800" />
+          <div className="relative w-2 h-2 rotate-45 bg-white bg-opacity-50 top-1 dark:bg-editor" />
         </NavigationMenuPrimitive.Indicator>
       </NavigationMenuPrimitive.List>
 
       <div
         className={twMerge(
           "absolute flex justify-center",
-          "left-[-20%] bottom-[70px] w-[180%]"
+          "left-[-20%] top-[70px] w-[180%]"
         )}
         style={{
           perspective: "2000px",
@@ -191,7 +182,7 @@ const NavigationMenu = (props: Props) => {
       >
         <NavigationMenuPrimitive.Viewport
           className={twMerge(
-            "relative mt-2 overflow-hidden rounded-md bg-white shadow-lg dark:bg-gray-800",
+            "relative mt-2 overflow-hidden rounded-md bg-white shadow-lg dark:bg-editor",
             "w-radix-navigation-menu-viewport",
             "h-radix-navigation-menu-viewport",
             "radix-state-open:animate-scale-in-content",

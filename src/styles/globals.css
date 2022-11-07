@@ -553,8 +553,15 @@ input[type="text"]:focus {
 .bg-grid {
   animation: 3s ease-out appear;
   background-size: 20px 20px;
-  background-image: linear-gradient(to right, #ffffff08 0.1px, transparent 1px),
-    linear-gradient(to bottom, #ffffff08 0.1px, transparent 1px);
+  background-image: linear-gradient(to right, #ffffff08 0.2px, transparent 1px),
+    linear-gradient(to bottom, #ffffff08 0.2px, transparent 1px);
+}
+
+.bg-grid2 {
+  animation: 3s ease-out appear;
+  background-size: 50px 50px;
+  background-image: linear-gradient(to right, #ffffff12 0.2px, transparent 1px),
+    linear-gradient(to bottom, #ffffff12 0.2px, transparent 1px);
 }
 
 .bg-grid-black {

@@ -8,9 +8,9 @@ import NavigationMenu from "./NavigationMenu";
 export function Logo() {
   return (
     <Link href="/">
-      <h5 className="stroky cursor-pointer font-SpaceGrotesk text-[26px] lowercase opacity-100">
-        <span className="font-normal  tracking-[-4px] text-sharper shadow-3xl">
-          obtuso
+      <h5 className="stroky cursor-pointer text-center font-SpaceGrotesk text-[22px] lowercase opacity-100 relative">
+        <span className="font-normal  tracking-[-2.5px] text-white  text-opacity-[85%] stroky shadow-3xl absolute top-[4px]">
+          websitesdealer.com
         </span>
       </h5>
     </Link>
@@ -21,29 +21,24 @@ export function Header() {
   return (
     <div
       className={twMerge(
-        "fixed bottom-[10px] left-0 right-0 z-50  mx-auto w-[1400px]  max-w-[1400px] items-center justify-center bg-black bg-opacity-5 "
+        "fixed top-[25px] left-0 right-0 z-50  mx-auto w-[600px]  max-w-[600px] items-center justify-center bg-black bg-opacity-10"
       )}
     >
       <div
         className={twMerge(
-          "  rounded-[4px] bg-black bg-opacity-[25%] py-[1px]  backdrop-blur-[4px]",
-          "items-center border border-sharp border-opacity-10"
+          "h-[49px]  rounded-[4px] bg-black bg-opacity-[15%] py-[1px]  backdrop-blur-[4px]",
+          "items-center border border-sharper border-opacity-10"
         )}
       >
-        <div
-          className={twMerge(
-            "mx-auto flex   flex-row place-content-between items-center self-center px-[20px] align-middle"
-          )}
-        >
-          <div className="relative flex flex-row">
-            <Logo></Logo>
-            <div className="absolute top-[14px] left-[72px] ml-4 h-[15px] w-[1px] bg-sharper bg-opacity-50" />
-            <div className=" ml-10 flex flex-row space-x-[16px]">
-              <NavigationMenu></NavigationMenu>
-            </div>
+        <div className={twMerge("mx-auto px-[10px] align-middle")}>
+          <div className="relative flex flex-row mx-auto place-content-between">
+            {/* <div className="text-center ">
+              <Logo></Logo>
+            </div> */}
+            <NavigationMenu></NavigationMenu>
           </div>
 
-          <AToLogin></AToLogin>
+          {/* <AToLogin></AToLogin> */}
         </div>
       </div>
     </div>

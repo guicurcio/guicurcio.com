@@ -298,6 +298,7 @@ module.exports = {
         gradOrange: "rgb(245, 56, 27)",
         gradOrange2: "rgb(255, 83, 53)",
         gradPurple: "rgb(105, 30, 255)",
+        fondy: "#16171c",
       },
       fontSize: {
         xxs: "0.65rem",
