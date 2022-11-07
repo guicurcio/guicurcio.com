@@ -16,7 +16,7 @@ export default function RootLayout({
       {/* <body className="relative h-full w-full bg-[#151415fc] bg-opacity-[100%]"> */}
       <body className="relative h-full w-full bg-[#151415] bg-opacity-[100%]">
         <div className="bg-newy h-full absolute z-0 w-full brightness-[0%] contrast-[90%] hue-rotate-60 saturate-[0%]"></div>
-        <div className="relative z-0 h-full">{children}</div>
+        <div className="relative z-0 h-full overflow-x-hidden">{children}</div>
       </body>
     </html>
   );
