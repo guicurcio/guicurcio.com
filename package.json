@@ -5,7 +5,8 @@
     "type-check": "tsc",
     "dev": "next dev",
     "turbo dev": "concurrently \"next dev --turbo\" \"tailwindcss --input input.css --output output.css --watch\"",
-    "build": "tailwindcss input.css --output output.css && next build"
+    "build":  "next build --no-lint",
+    "build2": "tailwindcss input.css --output output.css && next build"
   },
   "dependencies": {
     "@radix-ui/react-navigation-menu": "^1.1.1",
