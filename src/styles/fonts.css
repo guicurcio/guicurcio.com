@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'Inter var';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url('/fonts/Inter-roman-latin.var.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Inter var';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: italic;
+    font-named-instance: 'Italic';
+    src: url('/fonts/Inter-italic-latin.var.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/SourceSansPro-Regular.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu Mono';
+    font-weight: 700;
+    font-style: normal;
+    src: url('/fonts/Ubuntu-Mono-bold.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Flow';
+    font-weight: 400;
+    font-style: normal;
+    src: url('/fonts/flow-circular.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'BasierSquare';
+    font-weight: 400;
+    font-style: normal;
+    src: url('/fonts/BasierSquare-Regular.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'BasierSquare';
+    font-weight: 700;
+    font-style: normal;
+    src: url('/fonts/BasierSquare-Bold.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'BasierSquare';
+    font-weight: 500;
+    font-style: normal;
+    src: url('/fonts/BasierSquare-Medium.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'BasierSquare';
+    font-weight: 600;
+    font-style: normal;
+    src: url('/fonts/BasierSquare-SemiBold.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Moderat';
+    font-weight: 400;
+    font-style: normal;
+    src: url('/fonts/Moderat-Regular.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Moderat';
+    font-weight: 600;
+    src: url('/fonts/Moderat-Bold.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Calibre';
+    font-weight: 400;
+    src: url('/fonts/Calibre_Regular.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Calibre';
+    font-weight: 600;
+    src: url('/fonts/Calibre_Semibold.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Calibre';
+    font-weight: 700;
+    src: url('/fonts/Calibre_Bold.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Founders';
+    font-weight: 700;
+    src: url('/fonts/FoundersGrotesk-Bold.otf') format('otf');
+  }
+  
+  @font-face {
+    font-family: 'Lausanne';
+    font-weight: 300;
+    src: url('/fonts/lausane-300.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Lausanne';
+    font-weight: 400;
+    src: url('/fonts/lausane-400.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Visuelt';
+    font-weight: 300;
+    src: url('/fonts/VisueltPro-Light.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Visuelt';
+    font-weight: 400;
+    src: url('/fonts/VisueltPro-Regular.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Visuelt';
+    font-weight: 500;
+    src: url('/fonts/VisueltPro-Medium.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Visuelt';
+    font-weight: 600;
+    src: url('/fonts/VisueltPro-Bold.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'SpaceGrotesk';
+    font-weight: 400;
+    src: url('/fonts/SpaceGrotesk[wght].woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'SpaceGrotesk';
+    font-weight: 500;
+    src: url('/fonts/SpaceGrotesk[wght].woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'SpaceGrotesk';
+    font-weight: 600;
+    src: url('/fonts/SpaceGrotesk[wght].woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'SpaceGrotesk';
+    font-weight: 700;
+    src: url('/fonts/SpaceGrotesk-Bold.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'FiraCode';
+    font-weight: 400;
+    src: url('/fonts/firacode.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'UntitledSans';
+    font-weight: 700;
+    src: url('/fonts/Untitled-Sans/woff2/Untitled_Sans_Bold.woff2')
+      format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Domaine';
+    font-weight: 700;
+    src: url('/fonts/Domaine/Sans Display/Untitled_Sans_Bold.woff2')
+      format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Apercu';
+    font-weight: bold;
+    src: url('/fonts/apercu-bold-pro.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Reader';
+    font-weight: 600;
+    src: url('/fonts/reader-bold-pro.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Bossa2';
+    font-weight: 600;
+    src: url('/fonts/Bossa-ExpandedBold.otf');
+  }
+  
+  @font-face {
+    font-family: 'Bossa';
+    font-weight: 600;
+    src: url('/fonts/Bossa-Bold.otf');
+  }
+  
+  @font-face {
+    font-family: 'Athletics';
+    font-weight: 600;
+    src: url('/fonts/Athletics-Bold.otf');
+  }
+  
+  @font-face {
+    font-family: 'Brand';
+    font-weight: 600;
+    src: url('/fonts/MonumentGrotesk-Bold.otf');
+  }
+  
