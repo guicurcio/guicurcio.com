@@ -10,7 +10,7 @@ export function Logo() {
     <Link href="/">
       <h5 className="stroky cursor-pointer text-center font-SpaceGrotesk text-[22px] lowercase opacity-100 relative">
         <span className="font-normal  tracking-[-2.5px] text-white  text-opacity-[85%] stroky shadow-3xl absolute top-[4px]">
-          websitesdealer.com
+          websitesdealer
         </span>
       </h5>
     </Link>
@@ -21,20 +21,18 @@ export function Header() {
   return (
     <div
       className={twMerge(
-        "fixed top-[25px] left-0 right-0 z-50  mx-auto w-[600px]  max-w-[600px] items-center justify-center bg-black bg-opacity-10"
+        "fixed backdrop-blur-[2px] backdrop-contrast-[95%] top-[25px] left-[655px] right-0 z-50  mx-auto w-[450px]  max-w-[450px] items-center justify-center bg-transparent bg-opacity-10"
       )}
     >
       <div
         className={twMerge(
-          "h-[49px]  rounded-[4px] bg-black bg-opacity-[15%] py-[1px]  backdrop-blur-[4px]",
+          "h-[49px]  rounded-[4px] py-[1px]",
           "items-center border border-sharper border-opacity-10"
         )}
       >
         <div className={twMerge("mx-auto px-[10px] align-middle")}>
           <div className="relative flex flex-row mx-auto place-content-between">
-            {/* <div className="text-center ">
-              <Logo></Logo>
-            </div> */}
+            <Logo></Logo>
             <NavigationMenu></NavigationMenu>
           </div>
 

@@ -1,33 +1,14 @@
-import { Soundy } from "components/SoundGrad";
+import { Footer } from "components/Footer";
+import { Hero } from "components/Hero";
 import { VideoWebsite } from "components/VideoWebsite";
-import Link from "next/link";
-import { twMerge } from "tailwind-merge";
 
 export default function Page() {
   return (
     <div className="mx-auto overflow-hidden">
       <div className="mx-auto">
-        <div className=" h-[1200px] max-w-[1200px] mx-auto w-[1200px] overflow-hidden bg-grid2 rounded-[5px] border border-sharper border-opacity-5 bg-black2 bg-opacity-[100%] backdrop-blur-[0.1px] shadow-3xl ">
-          <div className="w-[1000px] pt-[100px] mx-auto ">
-            {/* <h5 className="pt-[20px] text-left cursor-pointer font-SpaceGrotesk text-[22px] lowercase opacity-100">
-            <span className="font-normal tracking-[-3px] text-sharper text-opacity-[90%] ">
-            websitesdealer.com
-            </span>
-          </h5> */}
-            <div className="tracking-[-3.5px] mt-[15px] leading-[70px] font-visuelt z-50 text-white">
-              <p className="text-[65px] font-light text-left  text-opacity-[75%]">
-                <span className="">Website templates built</span>
-                <br></br>
-                <span className="ml-[3px]"> by powerful AI models</span>
-              </p>
-            </div>
-            <div className="w-[400px] tracking-[-1.5px] text-[21px] text-sharper text-opacity-[100%] leading-[25px] text-left pt-[10px] font-calibre font-normal">
-              <p className="ml-[5px]">
-                Cloned & optimized websites them with AI models, polish them
-                with SEO features, enhances it some more text here.
-              </p>
-            </div>
-          </div>
+        <div className=" h-[1000px] max-w-[1200px] mx-auto w-[1200px] overflow-hidden bg-grid2 rounded-[5px] border border-sharper border-opacity-5 bg-fondy bg-opacity-[100%] backdrop-blur-[0.1px] shadow-3xl ">
+          <Hero></Hero>
+          <Footer></Footer>
         </div>
       </div>
       <div className="absolute top-[450px] left-[250px] z-50 space-x-[50px] grid grid-flow-col">

@@ -14,12 +14,43 @@
   );
 }
 
+.tv-static {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  background-image: repeating-conic-gradient(white, black 0.00085%);
+  /* animation: back 100004s linear infinite; */
+  background-size: 2%;
+}
+
+@keyframes back {
+  from {
+    background-size: 10% 10%;
+  }
+  to {
+    background-size: 50% 50%;
+  }
+}
+
 .bg-newy2 {
   background: repeating-linear-gradient(-45deg, transparent, #838282 11.5px);
 }
 
 .bg-newy3 {
   background: repeating-linear-gradient(45deg, transparent, #838282 11.5px);
+}
+
+.bg-newy5 {
+  background: repeating-linear-gradient(115deg, transparent, #838282 11.5px);
+}
+
+.bg-newy4 {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgb(10 10 10),
+    rgb(27 36 37) 7%,
+    rgb(64 30 30) 10%
+  );
 }
 
 .glow {
@@ -72,14 +103,14 @@
 
 .stroky {
   stroke: black;
-  -webkit-text-stroke-color: rgba(0, 0, 0, 0.8);
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.9);
   -webkit-text-stroke-width: 0.09px;
 }
 
 .stroky2 {
   stroke: black;
   -webkit-text-stroke-color: rgba(0, 0, 0, 0.8);
-  -webkit-text-stroke-width: 1.09px;
+  -webkit-text-stroke-width: 1px;
 }
 
 .hero-grad2 {

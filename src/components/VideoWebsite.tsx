@@ -19,9 +19,9 @@ export function VideoWebsite({
   return (
     <div
       className={twMerge(
-        "w-[310px] h-[220px] rounded-3xl text-white hover:bg-opacity-10",
-        "border-sharper border border-opacity-25 shadow-3xl",
-        "backdrop-blur-[4px] border border-sharper border-opacity-10",
+        "w-[310px] h-[252px] rounded-3xl text-white hover:bg-opacity-10",
+        "border-sharper border border-opacity-20 shadow-3xl",
+        "backdrop-blur-[4px] border border-sharper border-opacity-25",
         "relative items-center justify-center group/vid"
       )}
     >
