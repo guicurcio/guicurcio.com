@@ -9,7 +9,7 @@ export function Logo() {
   return (
     <Link href="/">
       <h5 className="stroky cursor-pointer text-center font-SpaceGrotesk text-[22px] lowercase opacity-100 relative">
-        <span className="font-normal  tracking-[-2.5px] text-white  text-opacity-[85%] stroky shadow-3xl absolute top-[4px]">
+        <span className="font-normal  tracking-[-2.5px] text-white  text-opacity-[85%] stroky absolute top-[4px]">
           websitesdealer
         </span>
       </h5>
@@ -21,7 +21,7 @@ export function Header() {
   return (
     <div
       className={twMerge(
-        "fixed backdrop-blur-[2px] backdrop-contrast-[95%] top-[25px] left-[655px] right-0 z-50  mx-auto w-[450px]  max-w-[450px] items-center justify-center bg-transparent bg-opacity-10"
+        "fixed backdrop-blur-[2px] backdrop-contrast-[95%] top-[25px] left-[655px] right-0 z-50  mx-auto w-[420px]  max-w-[420px] items-center justify-center "
       )}
     >
       <div
@@ -46,13 +46,13 @@ export function Header() {
 export function AToLogin() {
   return (
     <li className="relative top-[-7px]">
-      <div className="flex ">
+      <div className="flex">
         <motion.button
           className={twMerge(
             // " bg-black bg-opacity-40 backdrop-blur-[8px] rounded-md text-[16px] font-visuelt",
             // "bg-black bg-opacity-20 backdrop-blur-[1px] rounded-md text-[16px] font-visuelt",
             "mx-6 font-visuelt text-[16px]",
-            "hover:white-shadow tracking-[0.03rem] text-sharper  text-opacity-60  hover:text-opacity-100"
+            "hover:white-shadow tracking-[0.03rem] text-sharper text-opacity-60  hover:text-opacity-100"
             // "hover:text-opacity-100 text-opacity-70 transition-all duration-500 hover:white-shadow border-[#fafafa08] border-[0.001px] text-sharp"
           )}
         >
