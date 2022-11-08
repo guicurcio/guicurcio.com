@@ -8,8 +8,8 @@ export const Hero = () => {
           <span className="ml-[3px] stroky2"> powerful AI models</span>
         </p>
       </div>
-      <div className="w-[400px] tracking-[-1.5px] text-[21px] text-sharper text-opacity-[100%] leading-[25px] text-left pt-[10px] font-calibre font-normal">
-        <p className="ml-[5px]">
+      <div className="w-[500px] tracking-[-1.2px] text-[18px] text-sharper text-opacity-[100%] leading-[25px] text-left pt-[20px] font-moderat font-normal">
+        <p className="ml-[10px]">
           Cloned & optimized websites them with AI models, polish them with SEO
           features, enhances it some more text here.
         </p>
