@@ -1,9 +1,6 @@
-import Link from "next/link";
-import "styles/globals.css";
-import "styles/fonts.css";
-import { twMerge } from "tailwind-merge";
-import { Soundy } from "components/SoundGrad";
 import { Header } from "components/Header";
+import "styles/fonts.css";
+import "styles/globals.css";
 
 export default function RootLayout({
   children,
