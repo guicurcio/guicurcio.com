@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 
 export default function Page() {
   return (
-    <div className="pt-[50px] max-w-[1300px] mx-auto">
+    <div className="pt-[50px] max-w-[1300px] mx-auto cursor-default select-none">
       <div className="relative h-[800px] overflow-hidden rounded-[5px] border border-sharper border-opacity-10  bg-black bg-opacity-[95%] backdrop-blur-[10px] font-visuelt shadow-3xl shadow-[#6d432452] ">
         <Soundy
           pathOpacity="0.4"
@@ -24,7 +24,7 @@ export default function Page() {
           )}
         ></Soundy>{" "}
         <div className="relative h-[700px] font-visuelt ">
-          <h5 className="pt-[20px] text-center stroky cursor-pointer font-SpaceGrotesk text-[24px] lowercase opacity-100">
+          <h5 className="pt-[20px] text-center stroky font-SpaceGrotesk text-[24px] lowercase opacity-100">
             <span className="font-normal  tracking-[-3px] text-sharper text-opacity-[95%] shadow-2xl">
               obtuso.com
             </span>
