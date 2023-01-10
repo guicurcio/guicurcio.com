@@ -1,19 +1,19 @@
 export default function Head() {
   return (
     <>
-      <title>Boiler Room</title>
+      <title>obtuso.com - serverless API infrastructure for the web</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width" />
       <meta
         name="description"
-        content="An open source application built using the new router, server components and everything new in Next.js 13."
+        content="Serverless API infrastructure for the web."
       />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://www.asd.com" />
-      <meta property="og:image" content="https://www.asd.com/og.jpg" />
+      <meta property="og:url" content="https://www.obtuso.com" />
+      <meta property="og:image" content="https://www.obtuso.com/og.jpg" />
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://www.asd.com" />
-      <meta property="twitter:image" content="https://www.asd.com/og.jpg" />
+      <meta property="twitter:url" content="https://www.obtuso.com" />
+      <meta property="twitter:image" content="https://www.obtuso.com/og.jpg" />
     </>
   );
 }

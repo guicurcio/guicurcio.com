@@ -10,9 +10,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* <body className="relative h-full w-full bg-[#151415fc] bg-opacity-[100%]"> */}
-      <body className="relative h-full w-full bg-[#020d16] bg-opacity-[100%]">
+      <body className="relative h-full w-full bg-[#020305] bg-opacity-[100%]">
         <div className="bg-newy h-screen absolute z-0 w-full brightness-[30%]"></div>
-        <div className="relative z-0 h-full overflow-x-hidden">{children}</div>
+        <div className="relative z-0 h-screen overflow-x-hidden items-center items justify-items-center">
+          {children}
+        </div>
       </body>
     </html>
   );

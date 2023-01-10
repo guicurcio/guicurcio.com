@@ -10,7 +10,7 @@
   background: repeating-radial-gradient(
     circle at center,
     transparent,
-    #605d5b 4.5px
+    #141212 7.5px
   );
 }
 
@@ -810,6 +810,19 @@ input[type="text"]:focus {
 
 .settings-content {
   border-top-left-radius: 0;
+}
+
+.holder {
+  background: rgba(0, 0, 0, 0.95);
+  border: 1px solid rgba(196, 199, 202, 0.1);
+  box-shadow: 0px 5px 60px -34px rgba(244, 42, 139, 0.33);
+  border-radius: 9px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 @tailwind utilities;

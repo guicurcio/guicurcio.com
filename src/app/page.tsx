@@ -3,8 +3,8 @@ import { twMerge } from "tailwind-merge";
 
 export default function Page() {
   return (
-    <div className="pt-[50px] max-w-[1300px] mx-auto cursor-default select-none">
-      <div className="relative h-[800px] overflow-hidden rounded-[5px] border border-sharper border-opacity-10  bg-black bg-opacity-[95%] backdrop-blur-[10px] font-visuelt shadow-3xl shadow-[#6d432452] ">
+    <div className="max-w-[1300px] mx-auto cursor-default select-none align-middle self-center my-[100px]">
+      <div className="relative h-[800px] overflow-hidden rounded-[5px] border border-sharper holder border-opacity-10  bg-black bg-opacity-[95%] backdrop-blur-[10px] font-visuelt shadow-3xl ">
         <Soundy
           pathOpacity="0.4"
           strokeWidth={0.5}
@@ -23,24 +23,14 @@ export default function Page() {
             "scale-x-[-1] fill-none opacity-[100%] blur-[0px] brightness-[58%] contrast-[110%] hue-rotate-[-310deg] saturate-[110%] sepia-[20%]"
           )}
         ></Soundy>{" "}
-        <div className="relative h-[700px] font-visuelt ">
+        <div className="relative h-[700px] ">
           <h5 className="pt-[20px] text-center stroky font-SpaceGrotesk text-[24px] lowercase opacity-100">
-            <span className="font-normal  tracking-[-3px] text-sharper text-opacity-[95%] shadow-2xl">
+            <span className="font-normal tracking-[-3px] text-sharper text-opacity-[95%] shadow-2xl">
               obtuso.com
             </span>
           </h5>
-          <div className="tracking-[-4px] mt-[35px] leading-[80px] font-visuelt z-50 text-white   stroky hero-grad2">
-            <p className="text-[80px] font-[400] text-center text-shadow z-50 hero-grad text-opacity-[105%] ">
-              <span className="">Serverless API infrastructure</span>
-              <br></br>
-              <span className="">for the web</span>
-            </p>
-          </div>
-          <div className="tracking-[-1px] text-[18px] text-sharper text-opacity-[100%] leading-[20px] w-[420px] text-center mx-auto pt-[20px] font-calibre">
-            <p className="text-center ">
-              A platform that gives you deployment to the edge, code-generation,
-              one-off pages and websites, tracking, events, crons, and more.
-            </p>
+          <div className="mt-[20px] mx-auto w-[906px]">
+            <img src="/HERO3.svg"></img>
           </div>
         </div>
       </div>
