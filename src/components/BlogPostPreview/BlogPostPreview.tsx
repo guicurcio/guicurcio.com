@@ -16,7 +16,7 @@ export interface BlogPostPreviewProps {
 export default function BlogPostPreview({ className }: BlogPostPreviewProps) {
   return (
     <div className={twMerge("", className)}>
-      <div className="w-[574px] h-[150px] mx-auto blog-card p-[20px]">
+      <div className="w-[574px] h-[150px] mx-auto bg-[#060606] bg-opacity-[80%] rounded-[5px] shadow-sm border-sharper border-opacity-[55%] p-[20px]">
         <div className="grid grid-flow-row gap-2 items-start justify-start">
           <div className="grid grid-flow-row gap-1">
             <h3 className="font-moderat text-[#868F9766] text-opacity-[40%] text-[10px] uppercase">
@@ -32,6 +32,12 @@ export default function BlogPostPreview({ className }: BlogPostPreviewProps) {
               </h2>
             </div>
           </div>
+          <p className="font-moderat text-[#868F97] text-[12px] leading-[16px] tracking-[-2%]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget
+            ex et eros sagittis tempus. Phasellus iaculis laoreet augue nec
+            egestas. Praesent sit amet mattis diam. Donec sit amet nulla quis
+            orci rutrum...
+          </p>
           <p className="font-moderat text-[#868F97] text-[12px] leading-[16px] tracking-[-2%]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget
             ex et eros sagittis tempus. Phasellus iaculis laoreet augue nec

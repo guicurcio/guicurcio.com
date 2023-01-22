@@ -316,6 +316,20 @@ module.exports = {
       width: {
         accessModal: "420px",
       },
+      animation: {
+        marquee: "marquee 100s linear infinite",
+        marqueey: "marqueey 100s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marqueey: {
+          "0%": { transform: "translateY(0%)" },
+          "100%": { transform: "translateY(-100%)" },
+        },
+      },
       fontFamily: {
         basier: ["BasierSquare", ...defaultTheme.fontFamily.sans],
         moderat: ["Moderat", ...defaultTheme.fontFamily.sans],

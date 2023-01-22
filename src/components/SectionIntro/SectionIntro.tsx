@@ -37,7 +37,7 @@ export default function SectionIntro({
       <p className="text-[19px] font-lausanne font-bold text-left text-white/[0.49] leading-[18px] tracking-[-2%] ">
         {title}
       </p>
-      <p className="text-[11px] text-left text-white/[0.21] w-[277px]">
+      <p className="text-[11px] text-left text-white/[0.21] w-[300px]">
         {description}
       </p>
     </div>
