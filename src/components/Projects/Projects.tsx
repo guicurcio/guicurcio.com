@@ -18,10 +18,15 @@ export default function Projects({ className }: ProjectsProps) {
   return (
     <div className={twMerge("", className)}>
       <div
-        className="h-[536px] w-[1172px] overflow-hidden rounded-[5px] border
-       border-sharper  border-opacity-10 py-[25px]  px-[20px]  bg-black bg-opacity-[95%] relative backdrop-blur-[10px] font-visuelt shadow-3xl "
+        className="h-[600px] w-[1172px] overflow-hidden rounded-[5px] border
+       border-sharper  border-opacity-10 py-[25px]
+        px-[20px]  bg-black bg-opacity-[95%] relative backdrop-blur-[10px]
+        font-visuelt shadow-3xl "
       >
-        <div className="grid grid-flow-col gap-2 px-[14px] py-[35px] w-full h-full  animate-marquee">
+        <div
+          className="grid grid-flow-col gap-2 px-[14px]
+         py-[35px] w-full h-full animate-marquee"
+        >
           <div
             className="
            cursor-pointer flex justify-center items-center z-50  h-[314px] my-[5px]"

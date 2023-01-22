@@ -38,8 +38,8 @@ export default function Page() {
           </div>
         </div>
         <div className="grid grid-flow-col gap-5">
-          <BlogComponent></BlogComponent>
           <Projects></Projects>
+          <BlogComponent></BlogComponent>
         </div>
       </div>
     </div>
