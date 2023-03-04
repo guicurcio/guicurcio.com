@@ -1,3 +1,4 @@
+import ImagePreview from "components/BlogComponent copy/ImagePreview";
 import SectionIntro from "components/SectionIntro";
 import { twMerge } from "tailwind-merge";
 
@@ -20,31 +21,26 @@ export default function Projects({ className }: ProjectsProps) {
       <div
         className="h-[600px] w-[1172px] overflow-hidden rounded-[5px] border
        border-sharper  border-opacity-10 py-[25px]
-        px-[20px]  bg-black bg-opacity-[95%] relative backdrop-blur-[10px]
-        font-visuelt shadow-3xl "
+        px-[20px]  bg-black bg-opacity-[100%] relative backdrop-blur-[150px]
+        font-visuelt shadow-3xl backdrop-brigthness-[150%]"
       >
         <div
           className="grid grid-flow-col gap-2 px-[14px]
          py-[35px] w-full h-full animate-marquee"
         >
+          <ImagePreview></ImagePreview>
           <div
             className="
-           cursor-pointer flex justify-center items-center z-50  h-[314px] my-[5px]"
+            cursor-pointer flex justify-center items-center ease-in-out z-50  h-[314px] transition-transform duration-[5000ms]"
           >
-            <img
-              src="podsfy-selection.png"
-              className="   hover:scale-[102%]  transition-all  duration-500 ease-in-out  hover:brightness-[125%]"
-            ></img>
-          </div>
-          <div
-            className="
-            cursor-pointer  flex justify-center items-center z-50  h-[314px]"
-          >
+            
             <img
               src="subjeto-selection.png"
-              className=" hover:scale-[102%]  transition-all duration-500 ease-in-out brightness-[55%]   hover:brightness-[75%]"
+              className=" hover:scale-[102%] duration-[5000ms] transition-all  brightness-[55%]   hover:brightness-[75%]"
+              draggable="false"
             ></img>
           </div>
+          {/* <ImagePreview></ImagePreview> */}
         </div>
         <SectionIntro
           title="Selected Projects"
@@ -53,7 +49,7 @@ export default function Projects({ className }: ProjectsProps) {
         ></SectionIntro>
         <img
           src="0anim.svg"
-          className="h-[567px] top-[-50px] absolute right-[28px] w-[600px]  z-0 animate-pulse2 transform scale-[110%] brightness-[150%]"
+          className="h-[567px] z-0 top-[-20px] absolute right-[28px] w-[600px] animate-pulse2 transform scale-[110%] brightness-[150%]"
           draggable="false"
         ></img>
       </div>

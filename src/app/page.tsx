@@ -26,12 +26,15 @@ export default function Page() {
                 <h1 className="font-moderat text-white text-[22px]">
                   Guido Curcio
                 </h1>
-                <p className="font-moderat text-white text-[14px] leading-[17.5px] tracking-[-12%] text-opacity-[60%] w-[400px]">
-                  I'm an engineer; rarely a writer, but always a reader.{" "}
+                <p className="font-moderat text-white text-[14px] leading-[17.5px] tracking-[-12%] text-opacity-[60%] w-[290px]">
+                  I'm an engineer.<br></br>
+                  Rarely a writer, but always a reader -- more of a listener than a
+                  talker. <br></br>
+                  CEO and founder of subjeto.com
                   <br></br>
-                  Here, you will encounter the most recent projects I’ve worked
+                  {/* Here, you will encounter the most recent projects I’ve worked
                   in. In the blog, most often, I write about inventing on
-                  principle.
+                  principle. */}
                 </p>
               </div>
             </div>
