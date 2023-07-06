@@ -31,9 +31,18 @@ export default function Projects({ className }: ProjectsProps) {
           <ImagePreview></ImagePreview>
           <div
             className="
-            cursor-pointer flex justify-center items-center ease-in-out z-50  h-[314px] transition-transform duration-[5000ms]"
+            cursor-pointer  justify-center items-center ease-in-out z-50   transition-transform duration-[5000ms]"
           >
-            
+            <img
+              src="subjeto-selection.png"
+              className=" hover:scale-[102%] duration-[5000ms] transition-all  brightness-[55%]   hover:brightness-[75%]"
+              draggable="false"
+            ></img>
+          </div>
+          <div
+            className="
+            cursor-pointer  justify-center items-center ease-in-out z-50   transition-transform duration-[5000ms]"
+          >
             <img
               src="subjeto-selection.png"
               className=" hover:scale-[102%] duration-[5000ms] transition-all  brightness-[55%]   hover:brightness-[75%]"
@@ -43,9 +52,9 @@ export default function Projects({ className }: ProjectsProps) {
           {/* <ImagePreview></ImagePreview> */}
         </div>
         <SectionIntro
-          title="Selected Projects"
-          description="You are not obligated to complete the work, but neither are you free to
-        desist from it (2:21).”"
+          title="selected projects and essays"
+          description="You are not obliged to complete the work, but neither are you free to
+        desist from it."
         ></SectionIntro>
         <img
           src="0anim.svg"

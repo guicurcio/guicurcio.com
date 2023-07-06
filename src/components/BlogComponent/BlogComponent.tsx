@@ -1,5 +1,6 @@
 import BlogPostPreview from "components/BlogPostPreview";
 import SectionIntro from "components/SectionIntro";
+import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 
 /**
@@ -10,12 +11,16 @@ export interface BlogComponentProps {
    * Custom class names passed to the root element.
    */
   className?: string;
+  children?: ReactNode | ReactNode[];
 }
 
 /**
  * BlogComponent Component
  */
-export default function BlogComponent({ className }: BlogComponentProps) {
+export default function BlogComponent({
+  className,
+  children,
+}: BlogComponentProps) {
   return (
     <div className={twMerge("", className)}>
       <div
@@ -25,12 +30,10 @@ export default function BlogComponent({ className }: BlogComponentProps) {
         px-[20px]  bg-black bg-opacity-[95%]
         backdrop-blur-[10px] font-visuelt shadow-3xl relative"
       >
-        <div className="grid grid-flow-row gap-6">
-          <BlogPostPreview></BlogPostPreview>
-        </div>
+        <div className="grid grid-flow-row gap-6">{children}</div>
         <SectionIntro
           title="blog & behind the scenes"
-          description="Jeremy Bentham often wrote prose that, like Jorge Luis Borges, had to be solved rather than just read.”"
+          description="Jeremy Bentham often wrote prose that, like Jorge Luis Borges, had to be solved rather than just read."
         ></SectionIntro>
       </div>
     </div>
