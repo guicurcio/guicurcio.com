@@ -26,29 +26,28 @@ export default function Projects({ className }: ProjectsProps) {
       >
         <div
           className="grid grid-flow-col gap-2 px-[14px]
-         py-[35px] w-full h-full animate-marquee"
+         py-[35px] w-full h-full"
         >
+          {/* py-[35px] w-full h-full animate-marquee" */}
+
           <ImagePreview></ImagePreview>
-          <div
+          <ImagePreview
+            srcImage="subjeto-selection.png"
+            className="scale-y-[115%]"
+          ></ImagePreview>
+          <ImagePreview></ImagePreview>
+          <ImagePreview></ImagePreview>
+
+          {/* <div
             className="
             cursor-pointer  justify-center items-center ease-in-out z-50   transition-transform duration-[5000ms]"
           >
             <img
               src="subjeto-selection.png"
-              className=" hover:scale-[102%] duration-[5000ms] transition-all  brightness-[55%]   hover:brightness-[75%]"
+              className=" hover:scale-[122%] duration-[5000ms] transition-all  brightness-[55%]   hover:brightness-[75%]"
               draggable="false"
             ></img>
-          </div>
-          <div
-            className="
-            cursor-pointer  justify-center items-center ease-in-out z-50   transition-transform duration-[5000ms]"
-          >
-            <img
-              src="subjeto-selection.png"
-              className=" hover:scale-[102%] duration-[5000ms] transition-all  brightness-[55%]   hover:brightness-[75%]"
-              draggable="false"
-            ></img>
-          </div>
+          </div> */}
           {/* <ImagePreview></ImagePreview> */}
         </div>
         <SectionIntro
