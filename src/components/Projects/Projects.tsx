@@ -22,19 +22,25 @@ export default function Projects({ className }: ProjectsProps) {
         className="h-[600px] w-[1172px] overflow-hidden rounded-[5px] border
        border-sharper  border-opacity-10 py-[25px]
         px-[20px]  bg-black bg-opacity-[100%] relative backdrop-blur-[150px]
-        font-visuelt shadow-3xl backdrop-brigthness-[150%]"
+        font-visuelt shadow-3xl backdrop-brigthness-[250%]"
       >
+        <img
+          src="0anim.svg"
+          className=" z-0 top-[20px] absolute right-[28px] scale-y-[120%] animate-pulse2 transform scale-[110%] brightness-[150%]"
+          draggable="false"
+        ></img>
         <div
-          className="grid grid-flow-col gap-2 px-[14px]
-         py-[35px] w-full h-full"
+          className="grid grid-flow-col columns-4 grid-rows-2 grid-cols-4 gap-[32px]  bg-black
+        w-full h-full"
         >
           {/* py-[35px] w-full h-full animate-marquee" */}
 
           <ImagePreview></ImagePreview>
           <ImagePreview
             srcImage="subjeto-selection.png"
-            className="scale-y-[115%]"
+            imgClassName="scale-y-[115%] scale-x-[110%]"
           ></ImagePreview>
+          <ImagePreview srcImage="subidos-selection.png"></ImagePreview>
           <ImagePreview></ImagePreview>
           <ImagePreview></ImagePreview>
 
@@ -55,11 +61,6 @@ export default function Projects({ className }: ProjectsProps) {
           description="You are not obliged to complete the work, but neither are you free to
         desist from it."
         ></SectionIntro>
-        <img
-          src="0anim.svg"
-          className="h-[567px] z-0 top-[-20px] absolute right-[28px] w-[600px] animate-pulse2 transform scale-[110%] brightness-[150%]"
-          draggable="false"
-        ></img>
       </div>
     </div>
   );

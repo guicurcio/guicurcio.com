@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
 /**
@@ -8,6 +9,7 @@ export interface ImagePreviewProps {
    * Custom class names passed to the root element.
    */
   className?: string;
+  imgClassName?: string;
   srcImage?: string;
 }
 
@@ -17,19 +19,24 @@ export interface ImagePreviewProps {
 export default function ImagePreview({
   className,
   srcImage,
+  imgClassName,
 }: ImagePreviewProps) {
   return (
-    <div
+    <Link
+      href="/podsfy"
       className={twMerge(
-        "cursor-pointer flex justify-center items-center z-50  h-[314px] my-[5px]",
+        "cursor-pointer col-span-1 justify-center items-center z-50 h-full w-full",
         className
       )}
     >
       <img
         src={srcImage || "podsfy-selection.png"}
-        className="hover:scale-[102%] z-50  transition-all  duration-500 ease-in-out  hover:brightness-[125%]"
+        className={twMerge(
+          "z-[100] h-[160px] w-[260px] rounded-md transition-all  duration-500 ease-in-out  hover:brightness-[125%]",
+          imgClassName
+        )}
         draggable="false"
       ></img>
-    </div>
+    </Link>
   );
 }
