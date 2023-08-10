@@ -15,11 +15,13 @@ export interface ProjectsProps {
 /**
  * Projects Component
  */
-export default function Projects({ className }: ProjectsProps) {
+export default function Projects({
+  className,
+}: ProjectsProps) {
   return (
     <div className={twMerge("", className)}>
       <div
-        className="h-[600px] w-[1172px] overflow-hidden rounded-[5px] border
+        className="h-screen overflow-y-hidden w-[600px] overflow-hidden rounded-l-[5px] border-r
        border-sharper  border-opacity-10 py-[25px]
         px-[20px]  bg-black bg-opacity-[100%] relative backdrop-blur-[150px]
         font-visuelt shadow-3xl backdrop-brigthness-[250%]"
@@ -30,7 +32,7 @@ export default function Projects({ className }: ProjectsProps) {
           draggable="false"
         ></img>
         <div
-          className="grid grid-flow-col columns-4 grid-rows-2 grid-cols-4 gap-[32px]  bg-black
+          className="grid grid-flow-row grid-rows-2  bg-black
         w-full h-full"
         >
           {/* py-[35px] w-full h-full animate-marquee" */}
@@ -41,8 +43,8 @@ export default function Projects({ className }: ProjectsProps) {
             imgClassName="scale-y-[115%] scale-x-[110%]"
           ></ImagePreview>
           <ImagePreview srcImage="subidos-selection.png"></ImagePreview>
-          <ImagePreview></ImagePreview>
-          <ImagePreview></ImagePreview>
+          {/* <ImagePreview></ImagePreview> */}
+          {/* <ImagePreview></ImagePreview> */}
 
           {/* <div
             className="
