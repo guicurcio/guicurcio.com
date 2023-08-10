@@ -4,7 +4,7 @@ import Projects from "components/Projects";
 
 export default function Page() {
   return (
-    <div className="mx-auto cursor-default relative select-none align-middle self-center">
+    <div className="cursor-default relative select-none align-middle self-center">
       <div className="grid grid-flow-row">
         <div
           className="h-[201px] overflow-hidden rounded-[5px] 
@@ -15,7 +15,7 @@ export default function Page() {
             className="h-[267px] top-[-20px] absolute right-[58px] w-[1300px] z-50 animate-pulse2 transform scale-[110%] brightness-[150%]"
             draggable="false"
           ></img>
-          <div className="w-[500px] h-[114px] my-[50px] ">
+          <div className="w-[500px] h-[114px]">
             <div className="grid grid-flow-col gap-4 items-center justify-center">
               <div className="">
                 <img

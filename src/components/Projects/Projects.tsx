@@ -1,4 +1,5 @@
 import ImagePreview from "components/BlogComponent copy/ImagePreview";
+import Post from "components/Post/Post";
 import SectionIntro from "components/SectionIntro";
 import { twMerge } from "tailwind-merge";
 
@@ -36,7 +37,7 @@ export default function Projects({
         w-full h-full"
         >
           {/* py-[35px] w-full h-full animate-marquee" */}
-
+          <Post></Post>
           {/* <ImagePreview></ImagePreview>
           <ImagePreview
             srcImage="subjeto-selection.png"

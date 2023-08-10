@@ -1,6 +1,6 @@
-import SectionIntro from "components/SectionIntro";
+import Avatar from "components/Avatar/Avatar";
 import Link from "next/link";
-import { twMerge } from "tailwind-merge";
+import mergeClasses from "utils/mergeClasses";
 
 /**
  * Represents a blog post, including details like title, date, content, and optional attributes such as picture and status.
@@ -9,7 +9,7 @@ export interface PostProps {
   /**
    * The publication date of the post, typically in ISO 8601 format (e.g., "2023-08-10").
    */
-  date: string;
+  date?: string;
   /**
    * Class names passed to the root element.
    */
@@ -17,17 +17,17 @@ export interface PostProps {
   /**
    * The title of the post.
    */
-  title: string;
+  title?: string;
 
   /**
    * The URL-friendly version of the title, often used to create unique links (e.g., "my-blog-post").
    */
-  slug: string;
+  slug?: string;
 
   /**
    * A brief summary or preview of the post's content.
    */
-  excerpt: string;
+  excerpt?: string;
 
   /**
    * The URL of the main image for the post (optional).
@@ -56,31 +56,6 @@ export interface PostProps {
    * An array of tags associated with the post (optional).
    */
   tags?: string[];
-
-  /**
-   * An array of comments for the post (optional).
-   */
-  comments?: Comment[];
-}
-
-/**
- * Represents a comment on a blog post, including details like author, content, and date.
- */
-export interface Comment {
-  /**
-   * Author's name or username.
-   */
-  author: string;
-
-  /**
-   * Content of the comment.
-   */
-  content: string;
-
-  /**
-   * Comment's date, typically in ISO 8601 format.
-   */
-  date: string;
 }
 
 /**
@@ -97,7 +72,7 @@ export default function Post({
   status,
 }: PostProps) {
   return (
-    <div className={twMerge("", className)}>
+    <div className={mergeClasses("", className)}>
       <Link
         href={
           status === "draft"
@@ -106,13 +81,21 @@ export default function Post({
         }
       >
         <div
-          className={twMerge(
+          className={mergeClasses(
             "rounded-x-md border-1 flex h-[140px] cursor-pointer flex-col gap-y-1.5 rounded-b-md rounded-br-md rounded-bl-md border-t-2 border-gray-800 bg-codeTitles bg-opacity-90 px-3.5 pt-3 shadow-sm backdrop-blur-3xl transition duration-700 ease-in hover:border-t-2  hover:border-x-gray-800  hover:border-t-colorLink",
             status === "draft" &&
               "cursor-not-allowed opacity-40 blur-[0.6px] "
           )}
         >
           {/* <DateFormatter dateString={date} /> */}
+          <div className="flex flex-row space-x-1.5">
+            <Avatar
+              // picture={properties.picture}
+            />
+            <a className="top-1 self-center py-0.5 font-moderat text-[17px] font-normal lowercase tracking-[-0.070em] text-[#c9c9c9e0] text-opacity-75 antialiased shadow-none">
+            the epistemic trinity
+            </a>
+          </div>
           {/* <Title title={title} slug={slug} picture={picture} /> */}
           {/* <Description excerpt={excerpt} /> */}
           {/* <ReadMore slug={slug}></ReadMore> */}
