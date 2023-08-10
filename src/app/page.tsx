@@ -7,15 +7,15 @@ export default function Page() {
     <div className="mx-auto cursor-default relative select-none align-middle self-center">
       <div className="grid grid-flow-row">
         <div
-          className="h-[201px] overflow-hidden rounded-[5px] border
-        border-sharper  border-opacity-10  bg-black bg-opacity-[95%] backdrop-blur-[10px] font-visuelt shadow-3xl "
+          className="h-[201px] overflow-hidden rounded-[5px] 
+        border-sharper  border-opacity-10  bg-[#101012] bg-opacity-[95%] backdrop-blur-[10px] font-visuelt shadow-3xl "
         >
           <img
             src="waves.svg"
             className="h-[267px] top-[-20px] absolute right-[58px] w-[1300px] z-50 animate-pulse2 transform scale-[110%] brightness-[150%]"
             draggable="false"
           ></img>
-          <div className="w-[500px] h-[114px] my-[50px] mx-[50px]">
+          <div className="w-[500px] h-[114px] my-[50px] ">
             <div className="grid grid-flow-col gap-4 items-center justify-center">
               <div className="">
                 <img

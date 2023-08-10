@@ -23,26 +23,26 @@ export default function Projects({
       <div
         className="h-screen overflow-y-hidden w-[600px] overflow-hidden rounded-l-[5px] border-r
        border-sharper  border-opacity-10 py-[25px]
-        px-[20px]  bg-black bg-opacity-[100%] relative backdrop-blur-[150px]
-        font-visuelt shadow-3xl backdrop-brigthness-[250%]"
+        px-[20px]   bg-[#101012] bg-opacity-[100%] relative backdrop-blur-[150px]
+        font-visuelt shadow-3xl backdrop-brigthness-[50%]"
       >
         <img
           src="0anim.svg"
-          className=" z-0 top-[20px] absolute right-[28px] scale-y-[120%] animate-pulse2 transform scale-[110%] brightness-[150%]"
+          className=" z-0 bottom-[0px] absolute left-[-10px] rotate-[10%] scale-y-[140%] scale-x-[180%]  animate-pulse2 transform scale-[110%] brightness-[150%]"
           draggable="false"
         ></img>
         <div
-          className="grid grid-flow-row grid-rows-2  bg-black
+          className="grid grid-flow-row grid-rows-2
         w-full h-full"
         >
           {/* py-[35px] w-full h-full animate-marquee" */}
 
-          <ImagePreview></ImagePreview>
+          {/* <ImagePreview></ImagePreview>
           <ImagePreview
             srcImage="subjeto-selection.png"
             imgClassName="scale-y-[115%] scale-x-[110%]"
           ></ImagePreview>
-          <ImagePreview srcImage="subidos-selection.png"></ImagePreview>
+          <ImagePreview srcImage="subidos-selection.png"></ImagePreview> */}
           {/* <ImagePreview></ImagePreview> */}
           {/* <ImagePreview></ImagePreview> */}
 

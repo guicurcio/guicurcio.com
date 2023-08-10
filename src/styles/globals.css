@@ -8,9 +8,9 @@
 
 .bg-newy {
   background: repeating-radial-gradient(
-    circle at center,
+    circle at right,
     transparent,
-    #141212 7.5px
+    #020202 8.5px
   );
 }
 
