@@ -1,4 +1,3 @@
-import { twMerge } from "tailwind-merge";
 
 /**
  * BlogPostPreview Props description
@@ -36,8 +35,6 @@ export default function BlogPostPreview({
   date,
 }: BlogPostPreviewProps) {
   return (
-    <div className={twMerge("", className)}>
-      <div className="w-[574px] h-[150px] mx-auto  rounded-[5px] shadow-sm border-sharper border-opacity-[55%] p-[20px]">
         <div className="grid grid-flow-row gap-3 items-start justify-start">
           <div className="grid grid-flow-row gap-1">
             <h3 className="font-moderat text-[#868F9766] text-opacity-[40%] text-[10px] uppercase">
@@ -55,7 +52,5 @@ export default function BlogPostPreview({
           </div>
           {children}
         </div>
-      </div>
-    </div>
   );
 }

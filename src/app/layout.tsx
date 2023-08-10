@@ -8,9 +8,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative h-full w-full overflow-hidden bg-[#202125] bg-opacity-[100%]">
-        <div className="bg-newy h-screen absolute overflow-hidden z-0 w-full brightness-[10%]"></div>
-        <div className="relative z-0 h-screen overflow-hidden">
+      <body className=" h-full w-full overflow-hidden bg-[#101012] bg-opacity-[100%] relative">
+       
+        <img
+            src="waves.svg"
+            className="h-[467px] top-[0px] rotate-[0deg] absolute right-[10px] w-[2300px]   animate-pulse2 transform scale-[110%] brightness-[150%]"
+            draggable="false"
+          ></img>
+           <div className="relative z-20 h-screen overflow-hidden">
           {children}
         </div>
       </body>

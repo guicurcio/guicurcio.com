@@ -1,7 +1,5 @@
-import ImagePreview from "components/BlogComponent copy/ImagePreview";
 import Post from "components/Post/Post";
 import SectionIntro from "components/SectionIntro";
-import { twMerge } from "tailwind-merge";
 
 /**
  * Projects Props description
@@ -20,13 +18,39 @@ export default function Projects({
   className,
 }: ProjectsProps) {
   return (
-    <div className={twMerge("", className)}>
       <div
-        className="h-screen overflow-y-hidden w-[600px] overflow-hidden rounded-l-[5px] border-r
-       border-sharper  border-opacity-10 py-[25px]
-        px-[20px]   bg-[#101012] bg-opacity-[100%] relative backdrop-blur-[150px]
+        // className="h-screen w-[600px]  border-r grid grid-flow-row gap-6
+        className="h-screen w-[600px]  border-r grid grid-flow-row gap-6
+       border-sharper  border-opacity-0 py-[25px]
+        px-[20px]    relative backdrop-blur-[150px]
         font-visuelt shadow-3xl backdrop-brigthness-[50%]"
       >
+              <div className="w-[500px] h-[114px] p-[50px]">
+            <div className="grid grid-flow-col gap-4 items-center justify-center">
+              <div className="">
+                <img
+                  src="https://guicurcio.com/assets/github-avatar.png"
+                  className="rounded-full w-[80px] h-[80px]"
+                ></img>
+              </div>
+              <div className="grid grid-flow-row gap-1 ">
+                <h1 className="font-moderat text-white text-[22px]">
+                  Guido Curcio
+                </h1>
+                <p className="font-moderat text-white text-[14px] leading-[17.5px] tracking-[-12%] text-opacity-[60%] w-[290px]">
+                  I'm an engineer.<br></br>
+                  Rarely a writer, but always a
+                  reader -- more of a listener
+                  than a talker. <br></br>
+                  {/* CEO and founder of subjeto.com */}
+                  <br></br>
+                  {/* Here, you will encounter the most recent projects I’ve worked
+                  in. In the blog, most often, I write about inventing on
+                  principle. */}
+                </p>
+              </div>
+            </div>
+          </div>
         <img
           src="0anim.svg"
           className=" z-0 bottom-[0px] absolute left-[-10px] rotate-[10%] scale-y-[140%] scale-x-[180%]  animate-pulse2 transform scale-[110%] brightness-[150%]"
@@ -65,6 +89,5 @@ export default function Projects({
         desist from it."
         ></SectionIntro>
       </div>
-    </div>
   );
 }
