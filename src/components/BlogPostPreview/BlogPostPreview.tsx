@@ -40,12 +40,12 @@ export default function BlogPostPreview({
             <h3 className="font-moderat text-[#868F9766] text-opacity-[40%] text-[10px] uppercase">
               {date}
             </h3>
-            <div className="grid grid-flow-col gap-2 justify-start items-start">
-              <img
+            <div className="grid grid-flow-col gap-2 ">
+              {/* <img
                 src="podsfy-selection.png"
                 className="w-[28px] h-[28px] rounded-[6px] blog-image-shadow"
-              ></img>
-              <h2 className="font-moderat self-center text-[#C9C9C9E0] text-opacity-[88%] text-[18px] leading-[22px] tracking[-3%] lowercase">
+              ></img> */}
+              <h2 className="font-moderat text-center self-center mx-auto text-[#C9C9C9E0] text-opacity-[88%] text-[22px] leading-[22px] tracking[-3%] lowercase">
                 {title}
               </h2>
             </div>

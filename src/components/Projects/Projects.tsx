@@ -20,8 +20,8 @@ export default function Projects({
   return (
       <div
         // className="h-screen w-[600px]  border-r grid grid-flow-row gap-6
-        className="h-screen w-[600px]  border-r grid grid-flow-row gap-6
-       border-sharper  border-opacity-0 py-[25px]
+        className="h-screen w-[500px]  border-r grid grid-flow-row gap-6
+       border-sharper  border-opacity-100 py-[25px]
         px-[20px]    relative backdrop-blur-[150px]
         font-visuelt shadow-3xl backdrop-brigthness-[50%]"
       >
@@ -57,10 +57,12 @@ export default function Projects({
           draggable="false"
         ></img>
         <div
-          className="grid grid-flow-row grid-rows-2
+          className="grid grid-flow-row 
         w-full h-full"
         >
           {/* py-[35px] w-full h-full animate-marquee" */}
+          <Post></Post>
+          <Post></Post>
           <Post></Post>
           {/* <ImagePreview></ImagePreview>
           <ImagePreview

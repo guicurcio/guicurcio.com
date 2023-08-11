@@ -82,8 +82,7 @@ export default function Post({
       >
         <div
           className={mergeClasses(
-            "rounded-x-md border-1 grid grid-flow-row items-start w-[400px] h-[120px] cursor-pointer flex-col gap-y-1.5", 
-            "rounded-b-md rounded-br-md rounded-bl-md border-t-2 border-gray-800 bg-codeTitles bg-opacity-90 px-3.5 pt-3 shadow-sm backdrop-blur-3xl transition duration-700 ease-in hover:border-t-2  hover:border-x-gray-800  hover:border-t-colorLink",
+            "rounded-x-md border-1 flex h-[140px] cursor-pointer flex-col gap-y-1.5 rounded-b-md rounded-br-md rounded-bl-md border-t-2 border-gray-800 bg-codeTitles bg-opacity-90 px-3.5 pt-3 shadow-sm backdrop-blur-3xl transition duration-700 ease-in hover:border-t-2  hover:border-x-gray-800  hover:border-t-colorLink",
             status === "draft" &&
               "cursor-not-allowed opacity-40 blur-[0.6px] "
           )}
