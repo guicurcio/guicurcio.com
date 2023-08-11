@@ -1,13 +1,9 @@
-import Avatar from "components/Avatar/Avatar";
-import Link from "next/link";
-import mergeClasses from "utils/mergeClasses";
-
 /**
- * Represents a blog post, including details like title, date, content, and optional attributes such as picture and status.
+ * Represents a blog Header, including details like title, date, content, and optional attributes such as picture and status.
  */
-export interface PostProps {
+export interface HeaderProps {
   /**
-   * The publication date of the post, typically in ISO 8601 format (e.g., "2023-08-10").
+   * The publication date of the Header, typically in ISO 8601 format (e.g., "2023-08-10").
    */
   date?: string;
   /**
@@ -15,32 +11,32 @@ export interface PostProps {
    */
   className?: string;
   /**
-   * The title of the post.
+   * The title of the Header.
    */
   title?: string;
 
   /**
-   * The URL-friendly version of the title, often used to create unique links (e.g., "my-blog-post").
+   * The URL-friendly version of the title, often used to create unique links (e.g., "my-blog-Header").
    */
   slug?: string;
 
   /**
-   * A brief summary or preview of the post's content.
+   * A brief summary or preview of the Header's content.
    */
   excerpt?: string;
 
   /**
-   * The URL of the main image for the post (optional).
+   * The URL of the main image for the Header (optional).
    */
   picture?: string;
 
   /**
-   * The full content of the post, usually in HTML or Markdown (optional).
+   * The full content of the Header, usually in HTML or Markdown (optional).
    */
   content?: string;
 
   /**
-   * The publication status of the post, such as "draft", "published", "archived", etc. (optional).
+   * The publication status of the Header, such as "draft", "published", "archived", etc. (optional).
    */
   status?: string;
 
@@ -53,15 +49,15 @@ export interface PostProps {
   };
 
   /**
-   * An array of tags associated with the post (optional).
+   * An array of tags associated with the Header (optional).
    */
   tags?: string[];
 }
 
 /**
- * Post Component
+ * Header Component
  */
-export default function Post({
+export default function Header({
   className,
   date,
   title,
@@ -70,37 +66,21 @@ export default function Post({
   picture,
   content,
   status,
-}: PostProps) {
+}: HeaderProps) {
   return (
-    <div className={mergeClasses("", className)}>
-      <Link
-        href={
-          status === "draft"
-            ? "/"
-            : `blog/${slug}`
-        }
-      >
-        <div
-          className={mergeClasses(
-            "rounded-x-md border-1 flex h-[140px] cursor-pointer flex-col gap-y-1.5 rounded-b-md rounded-br-md rounded-bl-md border-t-2 border-gray-800 bg-codeTitles bg-opacity-90 px-3.5 pt-3 shadow-sm backdrop-blur-3xl transition duration-700 ease-in hover:border-t-2  hover:border-x-gray-800  hover:border-t-colorLink",
-            status === "draft" &&
-              "cursor-not-allowed opacity-40 blur-[0.6px] "
-          )}
-        >
-          {/* <DateFormatter dateString={date} /> */}
-          <div className="flex flex-row space-x-1.5">
-            <Avatar
-              // picture="podsfy-selection.png
-            />
-            <a className="top-1 self-center py-0.5 font-moderat text-[17px] font-normal lowercase tracking-[-0.070em] text-[#c9c9c9e0] text-opacity-75 antialiased shadow-none">
-            the epistemic trinity
-            </a>
-          </div>
-          {/* <Title title={title} slug={slug} picture={picture} /> */}
-          {/* <Description excerpt={excerpt} /> */}
-          {/* <ReadMore slug={slug}></ReadMore> */}
-        </div>
-      </Link>
+    <div className="grid grid-flow-col gap-4 items-center justify-center pb-2">
+      <img
+        src="https://guicurcio.com/assets/github-avatar.png"
+        className="rounded-full w-[80px] h-[80px]"
+      ></img>
+      <div className="grid grid-flow-row">
+        <h1 className="font-moderat text-white text-[22px]">Guido Curcio</h1>
+        <p className="font-moderat text-white text-[14px] leading-[17.5px] tracking-[-12%] text-opacity-[60%] w-[290px]">
+          I'm an engineer.<br></br>
+          Rarely a writer, but always a reader -- more of a listener than a
+          talker. <br></br>
+        </p>
+      </div>
     </div>
   );
 }
