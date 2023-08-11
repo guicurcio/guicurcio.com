@@ -72,7 +72,7 @@ export default function Post({
   status,
 }: PostProps) {
   return (
-    <Link
+    <div
       className={mergeClasses(
         "grid grid-flow-row items-start cursor-pointer gap-y-1",
         "rounded-x-md rounded-b-md rounded-br-md rounded-bl-md",
@@ -82,16 +82,19 @@ export default function Post({
         "h-fit w-full",
         status === "draft" && "cursor-not-allowed opacity-40 blur-[0.6px]"
       )}
-      href={status === "draft" ? "/" : `/${slug}`}
     >
       <p className="text-white font-calibre text-opacity-40 text-[12px] mt-[-6px]">
         {date}
       </p>
       <div className="grid grid-flow-col gap-x-2  place-content-start h-fit ">
         <Avatar picture={picture || "/avatars/1.jpg"} />
-        <a className="text-left self-start justify-start justifese font-moderat text-[17px] font-normal lowercase tracking-[-0.070em] text-[#c9c9c9e0] text-opacity-75 antialiased shadow-none">
+        <Link
+          href={status === "draft" ? "/" : `/${slug}`}
+          scroll={false}
+          className="text-left self-start justify-start justifese font-moderat text-[17px] font-normal lowercase tracking-[-0.070em] text-[#c9c9c9e0] text-opacity-75 antialiased shadow-none"
+        >
           {title}
-        </a>
+        </Link>
       </div>
       <p className="grid h-fit  font-moderat text-xs text-sharp pr-[10px] mt-[-2px]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fugit
@@ -100,6 +103,6 @@ export default function Post({
         enim?
       </p>
       {/* <ReadMore slug={slug}></ReadMore> */}
-    </Link>
+    </div>
   );
 }
