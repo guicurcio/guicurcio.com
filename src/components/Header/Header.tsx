@@ -1,3 +1,6 @@
+import Link from "next/link";
+import mergeClasses from "utils/mergeClasses";
+
 /**
  * Represents a blog Header, including details like title, date, content, and optional attributes such as picture and status.
  */
@@ -68,7 +71,17 @@ export default function Header({
   status,
 }: HeaderProps) {
   return (
-    <div className="grid grid-flow-col gap-4 items-center pb-2">
+    <Link
+      className={mergeClasses(
+        "grid grid-flow-col gap-4 items-center pb-2",
+        "hover:backdrop-brightness-[110%] hover:backdrop-contrast-[320%] hover:bg-uber hover:cursor-pointer",
+        "rounded-md",
+        "pl-[10px] pr-[20px] pt-[10px] pb-[10px]",
+        "hover:bg-codeTitles hover:bg-opacity-50",
+        "shadow-sm backdrop-blur-3xl transition duration-150 ease-in-out"
+      )}
+      href={"/"}
+    >
       <img
         src="https://guicurcio.com/assets/github-avatar.png"
         className="rounded-full w-[80px] h-[80px]"
@@ -81,6 +94,6 @@ export default function Header({
           talker. <br></br>
         </p>
       </div>
-    </div>
+    </Link>
   );
 }

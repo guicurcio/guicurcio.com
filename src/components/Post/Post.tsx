@@ -1,5 +1,4 @@
 import Avatar from "components/Avatar/Avatar";
-import DateFormatter from "components/DateFormatter/DateFormatter";
 import Link from "next/link";
 import mergeClasses from "utils/mergeClasses";
 
