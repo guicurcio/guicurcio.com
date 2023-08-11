@@ -12,6 +12,11 @@ export interface BlogComponentProps {
    */
   className?: string;
   children?: ReactNode | ReactNode[];
+  /**
+   * Pass a custom title to the component.
+   * @default ""
+   */
+  title?: string;
 }
 
 /**
@@ -20,6 +25,7 @@ export interface BlogComponentProps {
 export default function BlogComponent({
   className,
   children,
+  title = "",
 }: BlogComponentProps) {
   return (
     <div
@@ -31,8 +37,8 @@ export default function BlogComponent({
         "overflow-y-scroll  scrollbar-thumb-fondy scrollbar-track-read scrollbar-thin"
       )}
     >
-      <BlogPostPreview title="the epistemic trinity"></BlogPostPreview>
-      {/* <SectionIntro title="blog & behind the scenes"></SectionIntro> */}
+      <BlogPostPreview title={title}></BlogPostPreview>
+      <SectionIntro title={title}></SectionIntro>
     </div>
   );
 }

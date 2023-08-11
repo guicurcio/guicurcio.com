@@ -37,13 +37,13 @@ export default function BlogPostPreview({
     <div className="grid grid-flow-row gap-8  h-full w-full place-content-start mx-auto pl-[30px] pr-[40px]">
       <div className="grid grid-flow-row gap-5">
         <div className="grid grid-flow-col gap-2 ">
-          {/* <img
-                src="podsfy-selection.png"
-                className="w-[28px] h-[28px] rounded-[6px] blog-image-shadow"
-              ></img> */}
-          <h1 className="font-moderat text-center self-center mx-auto text-[#C9C9C9E0] text-opacity-[88%] text-[32px] leading-[22px] tracking[-3%] lowercase">
+          <img
+            src="podsfy-selection.png"
+            className="w-[350px] h-[250px] rounded-[6px] mx-auto"
+          ></img>
+          {/* <h1 className="font-moderat text-center self-center mx-auto text-[#C9C9C9E0] text-opacity-[88%] text-[32px] leading-[22px] tracking[-3%] lowercase">
             {title}
-          </h1>
+          </h1> */}
         </div>
       </div>
       <div
@@ -51,28 +51,17 @@ export default function BlogPostPreview({
 "
       >
         <Text>
-          Welcome to this professional intersection of software engineering,
-          product strategy, and design. As an experienced software engineer with
-          a focus on product development and user-centric design, this blog
-          serves as an academic and professional resource, offering insights
-          serves as an academic and professional resource, offering insights
-          serves as an academic and professional resource, offering insights
-          serves as an academic and professional resource, offering insights
-          serves as an academic and professional resource, offering insights
-          that stem from years of practical and theoretical involvement in the
-          field.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nobis
+          quam sint pariatur ducimus quisquam? Excepturi beatae distinctio iste
+          quam ipsam eveniet obcaecati voluptate, nostrum tenetur error ratione.
+          Reiciendis, optio.
         </Text>
         <Text>
-          Welcome to this professional intersection of software engineering,
-          product strategy, and design. As an experienced software engineer with
-          a focus on product development and user-centric design, this blog
-          serves as an academic and professional resource, offering insights
-          serves as an academic and professional resource, offering insights
-          serves as an academic and professional resource, offering insights
-          serves as an academic and professional resource, offering insights
-          serves as an academic and professional resource, offering insights
-          that stem from years of practical and theoretical involvement in the
-          field.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nobis
+          quam sint pariatur ducimus quisquam? Excepturi beatae distinctio iste
+          quam ipsam eveniet obcaecati voluptate, nostrum tenetur error ratione.
+          Reiciendis, optio. Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Natus nobis
         </Text>
       </div>
     </div>

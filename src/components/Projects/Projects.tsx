@@ -39,59 +39,25 @@ export default function Projects({ className }: ProjectsProps) {
       >
         {/* 'overflow-y-scroll scrollbar scrollbar-thumb-darkerBrand scrollbar-track-brand scrollbar-thin', */}
         <Post
-          slug="epistemic"
-          title="inventing on principle"
+          slug="podsfy"
+          title="podsfy.com"
           date="2021-03-29"
-          picture="/avatars/1.jpg"
+          picture="/avatars/d.png"
         ></Post>
         <Post
-          slug="epistemic"
-          title="books as guided thinking"
+          slug="inventingonprinciple"
+          title="inventingonprinciple.com"
           date="2021-03-29"
           picture="/avatars/2.jpg"
         ></Post>
         <Post
-          slug="epistemic"
-          title="the epistemic trinity"
+          slug="guicurcio"
+          title="guicurcio.com"
           date="2021-03-29"
           picture="/avatars/3.jpg"
         ></Post>
-        <Post
-          slug="epistemic"
-          title="integration as a service"
-          date="2021-03-29"
-          picture="/avatars/4.jpg"
-        ></Post>
-        <Post
-          slug="epistemic"
-          title="yawning at the apocalypse"
-          date="2021-03-29"
-          picture="/avatars/5.jpg"
-        ></Post>
-        <Post
-          slug="epistemic"
-          title="yawning at the apocalypse"
-          date="2021-03-29"
-          picture="/avatars/5.jpg"
-        ></Post>
-        <Post
-          slug="epistemic"
-          title="yawning at the apocalypse"
-          date="2021-03-29"
-          picture="/avatars/5.jpg"
-        ></Post>{" "}
-        <Post
-          slug="epistemic"
-          title="yawning at the apocalypse"
-          date="2021-03-29"
-          picture="/avatars/5.jpg"
-        ></Post>
       </div>
-      <SectionIntro
-        title="selected projects and essays"
-        description="You are not obliged to complete the work, but neither are you free to
-        desist from it."
-      ></SectionIntro>
+      <SectionIntro title="selected projects and essays"></SectionIntro>
     </div>
   );
 }
