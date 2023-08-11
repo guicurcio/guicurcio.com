@@ -19,7 +19,7 @@ export default function RootLayout({
           )}
           draggable="false"
         ></img>
-        <div className="grid grid-flow-col gap-0 items-start h-screen w-screen place-items-start">
+        <div className="grid grid-flow-col gap-0 place-content-start h-screen">
           <Projects></Projects>
           {children}
         </div>

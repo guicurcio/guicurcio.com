@@ -28,15 +28,7 @@ export default function BlogComponent({
   title = "",
 }: BlogComponentProps) {
   return (
-    <div
-      className={mergeClasses(
-        "h-full w-[800px] grid grid-flow-row gap-6",
-        "border-sharper  border-opacity-10 py-[25px]",
-        "pl-[20px]  bg-black bg-opacity-[95%]",
-        "backdrop-blur-[3px] font-visuelt shadow-3xl relative  backdrop-brightness-[75%] backdrop-contrast-[112%]",
-        "overflow-y-scroll  scrollbar-thumb-fondy scrollbar-track-read scrollbar-thin"
-      )}
-    >
+    <div className="">
       <BlogPostPreview title={title}></BlogPostPreview>
       <SectionIntro title={title}></SectionIntro>
     </div>

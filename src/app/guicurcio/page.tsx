@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 import BlogComponent from "components/BlogComponent";
 
 export default function Page() {

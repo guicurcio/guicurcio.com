@@ -19,11 +19,10 @@ export interface ProjectsProps {
 export default function Projects({ className }: ProjectsProps) {
   return (
     <div
-      className="w-[480px] h-full  border-r grid grid-flow-row gap-16 place-content-start
+      className="w-[480px] border-r grid grid-flow-row gap-16 place-content-start
        border-sharper  border-opacity-[15%] py-[25px]
         pl-[35px]  backdrop-blur-[4px] overflow-hidden
-        font-visuelt shadow-3xl  place-items-start items-start justify-self-start
-        
+        font-visuelt shadow-3xl  place-items-start items-start justify-self-start h-screen
         backdrop-brightness-[80%] backdrop-contrast-[110%]"
     >
       <Header></Header>
