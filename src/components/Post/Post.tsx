@@ -75,7 +75,7 @@ export default function Post({
   return (
     <Link
       className={mergeClasses(
-        "grid grid-flow-row items-start cursor-pointer gap-y-0",
+        "grid grid-flow-row items-start cursor-pointer gap-y-1",
         "rounded-x-md rounded-b-md rounded-br-md rounded-bl-md",
         "pl-[10px] pt-[10px] pb-[20px]",
         "border-1  border-t-2 border-gray-800 bg-codeTitles bg-opacity-90",
@@ -89,12 +89,12 @@ export default function Post({
         {date}
       </p>
       <div className="grid grid-flow-col gap-x-2  place-content-start h-fit ">
-        <Avatar picture="/avatars/1.jpg" />
+        <Avatar picture={picture || "/avatars/1.jpg"} />
         <a className="text-left self-start justify-start justifese font-moderat text-[17px] font-normal lowercase tracking-[-0.070em] text-[#c9c9c9e0] text-opacity-75 antialiased shadow-none">
-          the epistemic trinity
+          {title}
         </a>
       </div>
-      <p className="grid h-fit  font-moderat text-xs text-sharp">
+      <p className="grid h-fit  font-moderat text-xs text-sharp pr-[10px]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fugit
         harum nisi recusandae aspernatur, quae nam, iste corporis error porro
         aliquid nulla accusantium maiores pariatur illum, at expedita quaerat

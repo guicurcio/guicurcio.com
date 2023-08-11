@@ -30,9 +30,36 @@ export default function Projects({ className }: ProjectsProps) {
         draggable="false"
       ></img> */}
       <div className="grid grid-flow-row gap-y-6 justify-self-start h-full w-full">
-        <Post slug="epistemic" date="2021-03-29"></Post>
-        <Post slug="epistemic" date="2021-03-29"></Post>
-        <Post slug="epistemic" date="2021-03-29"></Post>
+        <Post
+          slug="epistemic"
+          title="inventing on principle"
+          date="2021-03-29"
+          picture="/avatars/1.jpg"
+        ></Post>
+        <Post
+          slug="epistemic"
+          title="books as guided thinking"
+          date="2021-03-29"
+          picture="/avatars/2.jpg"
+        ></Post>
+        <Post
+          slug="epistemic"
+          title="the epistemic trinity"
+          date="2021-03-29"
+          picture="/avatars/3.jpg"
+        ></Post>
+        <Post
+          slug="epistemic"
+          title="integration as a service"
+          date="2021-03-29"
+          picture="/avatars/4.jpg"
+        ></Post>
+        <Post
+          slug="epistemic"
+          title="yawning at the apocalypse"
+          date="2021-03-29"
+          picture="/avatars/5.jpg"
+        ></Post>
       </div>
       <SectionIntro
         title="selected projects and essays"

@@ -30,14 +30,15 @@ export default function SectionIntro({
   return (
     <div
       className={twMerge(
-        "grid grid-flow-row gap-2 absolute bottom-[20px] left-[20px] mx-[16px] z-50",
+        "grid w-full grid-flow-row gap-2 absolute bottom-[20px] left-[0px] pt-[30px] ",
+        "z-50 backdrop-blur-[15px] pl-[22px] backdrop-brightness-[50%] rounded-t-md",
         className
       )}
     >
       <p className="text-[20px] font-lausanne font-bold text-left text-white/[0.55] leading-[18px] tracking-[-1%] ">
         {title}
       </p>
-      <p className="text-[12px] text-left text-white/[0.21] w-[300px] leading-[14px]">
+      <p className="text-[12px] text-left text-white/[0.51] w-[300px] leading-[14px]">
         {description}
       </p>
     </div>
