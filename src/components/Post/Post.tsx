@@ -73,28 +73,21 @@ export default function Post({
 }: PostProps) {
   return (
     <div className={mergeClasses("", className)}>
-      <Link
-        href={
-          status === "draft"
-            ? "/"
-            : `blog/${slug}`
-        }
-      >
+      <Link href={status === "draft" ? "/" : `/${slug}`}>
         <div
           className={mergeClasses(
-            "rounded-x-md border-1 grid grid-flow-row items-start w-[400px] h-[120px] cursor-pointer flex-col gap-y-1.5", 
+            "rounded-x-md border-1 grid grid-flow-row items-start w-[400px] h-[120px] cursor-pointer flex-col gap-y-1.5",
             "rounded-b-md rounded-br-md rounded-bl-md border-t-2 border-gray-800 bg-codeTitles bg-opacity-90 px-3.5 pt-3 shadow-sm backdrop-blur-3xl transition duration-700 ease-in hover:border-t-2  hover:border-x-gray-800  hover:border-t-colorLink",
-            status === "draft" &&
-              "cursor-not-allowed opacity-40 blur-[0.6px] "
+            status === "draft" && "cursor-not-allowed opacity-40 blur-[0.6px] "
           )}
         >
           {/* <DateFormatter dateString={date} /> */}
           <div className="flex flex-row space-x-1.5">
             <Avatar
-              // picture="podsfy-selection.png
+            // picture="podsfy-selection.png
             />
             <a className="top-1 self-center py-0.5 font-moderat text-[17px] font-normal lowercase tracking-[-0.070em] text-[#c9c9c9e0] text-opacity-75 antialiased shadow-none">
-            the epistemic trinity
+              the epistemic trinity
             </a>
           </div>
           {/* <Title title={title} slug={slug} picture={picture} /> */}

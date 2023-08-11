@@ -6,12 +6,35 @@
   color: white;
 }
 
+
+body {
+  @apply block h-screen overflow-hidden overflow-y-hidden antialiased;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
+
 .bg-newy {
   background: repeating-radial-gradient(
     circle at right,
     transparent,
     #1f1f23 .1px
   );
+}
+
+.top-full {
+  top: 100%;
+}
+
+.divide {
+  padding-top: 20px;
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #c8caca;
+}
+
+.listy {
+  list-style: disc;
 }
 
 .tv-static {

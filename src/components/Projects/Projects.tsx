@@ -18,10 +18,10 @@ export interface ProjectsProps {
 export default function Projects({ className }: ProjectsProps) {
   return (
     <div
-      className="h-screen w-[450px]  border-r grid grid-flow-row gap-2 items-start justify-items-center
+      className="h-screen w-[480px]  border-r grid grid-flow-row gap-16
        border-sharper  border-opacity-[25%] py-[25px]
-        px-[10px]    relative backdrop-blur-[150px]
-        font-visuelt shadow-3xl backdrop-brigthness-[50%]"
+        pl-[35px]   relative backdrop-blur-[150px] overflow-hidden
+        font-visuelt shadow-3xl backdrop-brigthness-[50%] place-items-start items-start"
     >
       <Header></Header>
       <img
@@ -29,8 +29,11 @@ export default function Projects({ className }: ProjectsProps) {
         className=" z-0 bottom-[0px] absolute left-[-10px] rotate-[10%] scale-y-[140%] scale-x-[180%]  animate-pulse2 transform scale-[110%] brightness-[150%]"
         draggable="false"
       ></img>
-      <div className="grid grid-flow-row items-start justify-start justify-items-start gap-2">
+      <div className="grid grid-flow-row gap-y-6 place-self-start justify-start">
         {/* py-[35px] w-full h-full animate-marquee" */}
+        <Post slug="epistemic"></Post>
+        <Post></Post>
+        <Post></Post>
         <Post></Post>
         <Post></Post>
         <Post></Post>

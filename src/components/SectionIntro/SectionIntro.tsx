@@ -30,7 +30,7 @@ export default function SectionIntro({
   return (
     <div
       className={twMerge(
-        "grid grid-flow-row gap-2 absolute bottom-[20px] left-[20px] mx-[16px]",
+        "grid grid-flow-row gap-2 absolute bottom-[20px] left-[20px] mx-[16px] z-50",
         className
       )}
     >
