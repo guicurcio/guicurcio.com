@@ -77,7 +77,7 @@ export default function Post({
       className={mergeClasses(
         "grid grid-flow-row items-start cursor-pointer gap-y-1",
         "rounded-x-md rounded-b-md rounded-br-md rounded-bl-md",
-        "pl-[10px] pt-[10px] pb-[20px]",
+        "pl-[10px] pt-[10px] pb-[10px]",
         "border-1  border-t-2 border-gray-800 bg-codeTitles bg-opacity-90",
         "shadow-sm backdrop-blur-3xl transition duration-700 ease-in hover:border-t-2  hover:border-x-gray-800  hover:border-t-colorLink",
         "h-fit w-full",
@@ -85,7 +85,7 @@ export default function Post({
       )}
       href={status === "draft" ? "/" : `/${slug}`}
     >
-      <p className="text-white font-calibre text-opacity-40 text-[13px] h-fit">
+      <p className="text-white font-calibre text-opacity-40 text-[12px] mt-[-6px]">
         {date}
       </p>
       <div className="grid grid-flow-col gap-x-2  place-content-start h-fit ">
@@ -94,7 +94,7 @@ export default function Post({
           {title}
         </a>
       </div>
-      <p className="grid h-fit  font-moderat text-xs text-sharp pr-[10px]">
+      <p className="grid h-fit  font-moderat text-xs text-sharp pr-[10px] mt-[-2px]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fugit
         harum nisi recusandae aspernatur, quae nam, iste corporis error porro
         aliquid nulla accusantium maiores pariatur illum, at expedita quaerat
