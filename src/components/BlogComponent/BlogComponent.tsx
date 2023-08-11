@@ -27,7 +27,7 @@ export default function BlogComponent({
         overflow-hidden rounded-r-[5px] border-r
        border-sharper  border-opacity-10 py-[25px]
         px-[20px]   bg-opacity-[95%]
-        backdrop-blur-[12px] font-visuelt shadow-3xl relative justify-start items-start"
+        backdrop-blur-[3px] font-visuelt shadow-3xl relative justify-start items-start"
     >
       <BlogPostPreview title="guicurcio.com">
         <p className="font-moderat text-[#868F97] text-[14px] leading-[18px] tracking-[-2%]">
