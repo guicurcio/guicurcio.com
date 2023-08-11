@@ -13,21 +13,12 @@ export interface SectionIntroProps {
    * Title of the section
    */
   title: string;
-  /**
-   * Description of the section
-   * @default "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-   */
-  description: string;
 }
 
 /**
  * SectionIntro Component
  */
-export default function SectionIntro({
-  className,
-  title,
-  description,
-}: SectionIntroProps) {
+export default function SectionIntro({ className, title }: SectionIntroProps) {
   return (
     <div
       className={mergeClasses(

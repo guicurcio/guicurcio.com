@@ -1,6 +1,7 @@
 import BlogPostPreview from "components/BlogPostPreview";
 import SectionIntro from "components/SectionIntro";
 import { ReactNode } from "react";
+import mergeClasses from "utils/mergeClasses";
 
 /**
  * BlogComponent Props description
@@ -22,17 +23,16 @@ export default function BlogComponent({
 }: BlogComponentProps) {
   return (
     <div
-      className="h-full w-[700px] grid grid-flow-row gap-6
-        overflow-hidden rounded-r-[5px] border-r
-       border-sharper  border-opacity-10 py-[25px]
-        px-[20px]   bg-opacity-[95%]
-        backdrop-blur-[3px] font-visuelt shadow-3xl relative justify-start items-start"
+      className={mergeClasses(
+        "h-full w-[700px] grid grid-flow-row gap-6",
+        "border-sharper  border-opacity-10 py-[25px]",
+        "pl-[20px]   bg-opacity-[95%]",
+        "backdrop-blur-[3px] font-visuelt shadow-3xl relative ",
+        "overflow-y-scroll  scrollbar-thumb-fondy scrollbar-track-read scrollbar-thin"
+      )}
     >
-      <BlogPostPreview title="guicurcio.com"></BlogPostPreview>
-      <SectionIntro
-        title="blog & behind the scenes"
-        description="Jeremy Bentham often wrote prose that, like Jorge Luis Borges, had to be solved rather than just read."
-      ></SectionIntro>
+      <BlogPostPreview title="the epistemic trinity"></BlogPostPreview>
+      {/* <SectionIntro title="blog & behind the scenes"></SectionIntro> */}
     </div>
   );
 }
