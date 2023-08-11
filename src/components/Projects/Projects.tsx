@@ -18,10 +18,10 @@ export interface ProjectsProps {
 export default function Projects({ className }: ProjectsProps) {
   return (
     <div
-      className="h-screen w-[480px]  border-r grid grid-flow-row gap-16
+      className="w-[480px] h-full  border-r grid grid-flow-row gap-16 place-content-start
        border-sharper  border-opacity-[25%] py-[25px]
-        pl-[35px]   relative backdrop-blur-[150px] overflow-hidden
-        font-visuelt shadow-3xl backdrop-brigthness-[50%] place-items-start items-start"
+        pl-[35px] backdrop-blur-[5px] overflow-hidden
+        font-visuelt shadow-3xl backdrop-brigthness-[150%] place-items-start items-start justify-self-start"
     >
       <Header></Header>
       <img
@@ -29,34 +29,10 @@ export default function Projects({ className }: ProjectsProps) {
         className=" z-0 bottom-[0px] absolute left-[-10px] rotate-[10%] scale-y-[140%] scale-x-[180%]  animate-pulse2 transform scale-[110%] brightness-[150%]"
         draggable="false"
       ></img>
-      <div className="grid grid-flow-row gap-y-6 place-self-start justify-start">
-        {/* py-[35px] w-full h-full animate-marquee" */}
-        <Post slug="epistemic"></Post>
-        <Post></Post>
-        <Post></Post>
-        <Post></Post>
-        <Post></Post>
-        <Post></Post>
-        {/* <ImagePreview></ImagePreview>
-          <ImagePreview
-            srcImage="subjeto-selection.png"
-            imgClassName="scale-y-[115%] scale-x-[110%]"
-          ></ImagePreview>
-          <ImagePreview srcImage="subidos-selection.png"></ImagePreview> */}
-        {/* <ImagePreview></ImagePreview> */}
-        {/* <ImagePreview></ImagePreview> */}
-
-        {/* <div
-            className="
-            cursor-pointer  justify-center items-center ease-in-out z-50   transition-transform duration-[5000ms]"
-          >
-            <img
-              src="subjeto-selection.png"
-              className=" hover:scale-[122%] duration-[5000ms] transition-all  brightness-[55%]   hover:brightness-[75%]"
-              draggable="false"
-            ></img>
-          </div> */}
-        {/* <ImagePreview></ImagePreview> */}
+      <div className="grid grid-flow-row gap-y-6 justify-self-start h-full w-full">
+        <Post slug="epistemic" date="2021-03-29"></Post>
+        <Post slug="epistemic" date="2021-03-29"></Post>
+        <Post slug="epistemic" date="2021-03-29"></Post>
       </div>
       <SectionIntro
         title="selected projects and essays"

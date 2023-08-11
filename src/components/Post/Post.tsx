@@ -1,4 +1,5 @@
 import Avatar from "components/Avatar/Avatar";
+import DateFormatter from "components/DateFormatter/DateFormatter";
 import Link from "next/link";
 import mergeClasses from "utils/mergeClasses";
 
@@ -72,29 +73,34 @@ export default function Post({
   status,
 }: PostProps) {
   return (
-    <div className={mergeClasses("", className)}>
-      <Link href={status === "draft" ? "/" : `/${slug}`}>
-        <div
-          className={mergeClasses(
-            "rounded-x-md border-1 grid grid-flow-row items-start w-[400px] h-[120px] cursor-pointer flex-col gap-y-1.5",
-            "rounded-b-md rounded-br-md rounded-bl-md border-t-2 border-gray-800 bg-codeTitles bg-opacity-90 px-3.5 pt-3 shadow-sm backdrop-blur-3xl transition duration-700 ease-in hover:border-t-2  hover:border-x-gray-800  hover:border-t-colorLink",
-            status === "draft" && "cursor-not-allowed opacity-40 blur-[0.6px] "
-          )}
-        >
-          {/* <DateFormatter dateString={date} /> */}
-          <div className="flex flex-row space-x-1.5">
-            <Avatar
-            // picture="podsfy-selection.png
-            />
-            <a className="top-1 self-center py-0.5 font-moderat text-[17px] font-normal lowercase tracking-[-0.070em] text-[#c9c9c9e0] text-opacity-75 antialiased shadow-none">
-              the epistemic trinity
-            </a>
-          </div>
-          {/* <Title title={title} slug={slug} picture={picture} /> */}
-          {/* <Description excerpt={excerpt} /> */}
-          {/* <ReadMore slug={slug}></ReadMore> */}
-        </div>
-      </Link>
-    </div>
+    <Link
+      className={mergeClasses(
+        "grid grid-flow-row items-start cursor-pointer gap-y-0",
+        "rounded-x-md rounded-b-md rounded-br-md rounded-bl-md",
+        "pl-[10px] pt-[10px] pb-[20px]",
+        "border-1  border-t-2 border-gray-800 bg-codeTitles bg-opacity-90",
+        "shadow-sm backdrop-blur-3xl transition duration-700 ease-in hover:border-t-2  hover:border-x-gray-800  hover:border-t-colorLink",
+        "h-fit w-full",
+        status === "draft" && "cursor-not-allowed opacity-40 blur-[0.6px]"
+      )}
+      href={status === "draft" ? "/" : `/${slug}`}
+    >
+      <p className="text-white font-calibre text-opacity-40 text-[13px] h-fit">
+        {date}
+      </p>
+      <div className="grid grid-flow-col gap-x-2  place-content-start h-fit ">
+        <Avatar picture="/avatars/1.jpg" />
+        <a className="text-left self-start justify-start justifese font-moderat text-[17px] font-normal lowercase tracking-[-0.070em] text-[#c9c9c9e0] text-opacity-75 antialiased shadow-none">
+          the epistemic trinity
+        </a>
+      </div>
+      <p className="grid h-fit  font-moderat text-xs text-sharp">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fugit
+        harum nisi recusandae aspernatur, quae nam, iste corporis error porro
+        aliquid nulla accusantium maiores pariatur illum, at expedita quaerat
+        enim?
+      </p>
+      {/* <ReadMore slug={slug}></ReadMore> */}
+    </Link>
   );
 }

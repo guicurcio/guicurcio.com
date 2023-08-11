@@ -68,7 +68,7 @@ export default function Header({
   status,
 }: HeaderProps) {
   return (
-    <div className="grid grid-flow-col gap-4 items-center justify-center pb-2">
+    <div className="grid grid-flow-col gap-4 items-center pb-2">
       <img
         src="https://guicurcio.com/assets/github-avatar.png"
         className="rounded-full w-[80px] h-[80px]"

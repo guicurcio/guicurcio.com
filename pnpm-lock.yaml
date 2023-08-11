@@ -20,6 +20,9 @@ dependencies:
   concurrently:
     specifier: ^8.2.0
     version: 8.2.0
+  date-fns:
+    specifier: ^2.30.0
+    version: 2.30.0
   eslint-config-next:
     specifier: ^13.4.9
     version: 13.4.9(eslint@8.46.0)(typescript@5.1.6)
