@@ -1,3 +1,5 @@
+import Text from "components/Text/Text";
+
 /**
  * BlogPostPreview Props description
  */
@@ -32,7 +34,7 @@ export default function BlogPostPreview({
   date,
 }: BlogPostPreviewProps) {
   return (
-    <div className="grid grid-flow-row gap-8  h-full w-full ">
+    <div className="grid grid-flow-row gap-8  h-full w-full place-content-start mx-auto pl-[30px] pr-[40px]">
       <div className="grid grid-flow-row gap-5">
         <div className="grid grid-flow-col gap-2 ">
           {/* <img
@@ -45,10 +47,10 @@ export default function BlogPostPreview({
         </div>
       </div>
       <div
-        className=" grid grid-flow-row gap-5  
+        className=" grid grid-flow-row gap-5 items-start place-content-start  
 "
       >
-        <p className="font-basier text-[#868F97] text-[16px] leading-[20px] tracking-[-2%]">
+        <Text>
           Welcome to this professional intersection of software engineering,
           product strategy, and design. As an experienced software engineer with
           a focus on product development and user-centric design, this blog
@@ -59,72 +61,19 @@ export default function BlogPostPreview({
           serves as an academic and professional resource, offering insights
           that stem from years of practical and theoretical involvement in the
           field.
-        </p>
-        <p className="font-basier text-[#868F97] text-[16px] leading-[20px] tracking-[-2%]">
+        </Text>
+        <Text>
           Welcome to this professional intersection of software engineering,
           product strategy, and design. As an experienced software engineer with
           a focus on product development and user-centric design, this blog
           serves as an academic and professional resource, offering insights
-          that stem from years of practical and theoretical involvement in the
-          field.
-        </p>
-        <p className="font-basier text-[#868F97] text-[16px] leading-[20px] tracking-[-2%]">
-          Welcome to this professional intersection of software engineering,
-          product strategy, and design. As an experienced software engineer with
-          a focus on product development and user-centric design, this blog
+          serves as an academic and professional resource, offering insights
+          serves as an academic and professional resource, offering insights
+          serves as an academic and professional resource, offering insights
           serves as an academic and professional resource, offering insights
           that stem from years of practical and theoretical involvement in the
           field.
-        </p>
-        <p className="font-basier text-[#868F97] text-[16px] leading-[20px] tracking-[-2%]">
-          Welcome to this professional intersection of software engineering,
-          product strategy, and design. As an experienced software engineer with
-          a focus on product development and user-centric design, this blog
-          serves as an academic and professional resource, offering insights
-          that stem from years of practical and theoretical involvement in the
-          field.
-        </p>{" "}
-        <p className="font-basier text-[#868F97] text-[16px] leading-[20px] tracking-[-2%]">
-          Welcome to this professional intersection of software engineering,
-          product strategy, and design. As an experienced software engineer with
-          a focus on product development and user-centric design, this blog
-          serves as an academic and professional resource, offering insights
-          that stem from years of practical and theoretical involvement in the
-          field.
-        </p>{" "}
-        <p className="font-basier text-[#868F97] text-[16px] leading-[20px] tracking-[-2%]">
-          Welcome to this professional intersection of software engineering,
-          product strategy, and design. As an experienced software engineer with
-          a focus on product development and user-centric design, this blog a
-          focus on product development and user-centric design, this blog a
-          focus on product development and user-centric design, this blog a
-          focus on product development and user-centric design, this blog a
-          focus on product development and user-centric design, this blog a
-          focus on product development and user-centric design, this blog a
-          focus on product development and user-centric design, this blog serves
-          as an academic and professional resource, offering insights serves as
-          an academic and professional resource, offering insights serves as an
-          academic and professional resource, offering insights serves as an
-          academic and professional resource, offering insights serves as an
-          academic and professional resource, offering insights that stem from
-          years of practical and theoretical involvement in the field.
-        </p>{" "}
-        <p className="font-basier text-[#868F97] text-[16px] leading-[20px] tracking-[-2%]">
-          Welcome to this professional intersection of software engineering,
-          product strategy, and design. As an experienced software engineer with
-          a focus on product development and user-centric design, this blog
-          serves as an academic and professional resource, offering insights
-          that stem from years of practical and theoretical involvement in the
-          field.
-        </p>{" "}
-        <p className="font-basier text-[#868F97] text-[16px] leading-[20px] tracking-[-2%]">
-          Welcome to this professional intersection of software engineering,
-          product strategy, and design. As an experienced software engineer with
-          a focus on product development and user-centric design, this blog
-          serves as an academic and professional resource, offering insights
-          that stem from years of practical and theoretical involvement in the
-          field.
-        </p>
+        </Text>
       </div>
     </div>
   );
