@@ -6,7 +6,6 @@
   color: white;
 }
 
-
 body {
   @apply block h-screen overflow-hidden overflow-y-hidden antialiased;
   overflow: scroll;
@@ -18,29 +17,9 @@ body {
   background: repeating-radial-gradient(
     circle at right,
     transparent,
-    #1f1f23 .1px
+    #1f1f23 0.1px
   );
 }
-
-body::-webkit-scrollbar {
-  width: 11px;
-}
-
-body {
-  scrollbar-width: thin;
-  scrollbar-color: red;
-}
-
-body::-webkit-scrollbar-track {
-  background: red;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: red;
-  border-radius: 6px;
-  border: 3px solid red;
-}
-
 
 .top-full {
   top: 100%;

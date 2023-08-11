@@ -358,5 +358,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("tailwindcss-radix")()],
+  plugins: [require("tailwind-scrollbar"), require("tailwindcss-radix")()],
 };

@@ -1,4 +1,5 @@
 import { twMerge } from "tailwind-merge";
+import mergeClasses from "utils/mergeClasses";
 
 /**
  * SectionIntro Props description
@@ -29,18 +30,19 @@ export default function SectionIntro({
 }: SectionIntroProps) {
   return (
     <div
-      className={twMerge(
-        "grid w-full grid-flow-row gap-2 absolute bottom-[20px] left-[0px] pt-[30px] ",
-        "z-50 backdrop-blur-[15px] pl-[22px] backdrop-brightness-[50%] rounded-t-md",
+      className={mergeClasses(
+        "grid w-full grid-flow-row gap-2 absolute bottom-[15px] left-[-10px] pt-[30px] ",
+        "z-50 backdrop-blur-[15px] pl-[32px] backdrop-brightness-[80%] rounded-lg",
+        "bg-opacity-5 bg-black shadow-3xl",
         className
       )}
     >
       <p className="text-[20px] font-lausanne font-bold text-left text-white/[0.55] leading-[18px] tracking-[-1%] ">
         {title}
       </p>
-      <p className="text-[12px] text-left text-white/[0.51] w-[300px] leading-[14px]">
+      {/* <p className="text-[12px] text-left text-white/[0.51] w-[300px] leading-[14px]">
         {description}
-      </p>
+      </p> */}
     </div>
   );
 }

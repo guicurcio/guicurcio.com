@@ -1,6 +1,7 @@
 import Header from "components/Header/Header";
 import Post from "components/Post/Post";
 import SectionIntro from "components/SectionIntro";
+import mergeClasses from "utils/mergeClasses";
 
 /**
  * Projects Props description
@@ -19,8 +20,8 @@ export default function Projects({ className }: ProjectsProps) {
   return (
     <div
       className="w-[480px] h-full  border-r grid grid-flow-row gap-16 place-content-start
-       border-sharper  border-opacity-[25%] py-[25px]
-        pl-[35px] pr-[20px] backdrop-blur-[4px] overflow-hidden
+       border-sharper  border-opacity-[15%] py-[25px]
+        pl-[35px]  backdrop-blur-[4px] overflow-hidden
         font-visuelt shadow-3xl  place-items-start items-start justify-self-start"
     >
       <Header></Header>
@@ -29,7 +30,14 @@ export default function Projects({ className }: ProjectsProps) {
         className=" z-0 bottom-[0px] absolute left-[-10px] rotate-[10%] scale-y-[140%] scale-x-[180%]  animate-pulse2 transform scale-[110%] brightness-[150%]"
         draggable="false"
       ></img> */}
-      <div className="grid grid-flow-row gap-y-6 justify-self-start h-full w-full">
+      <div
+        className={mergeClasses(
+          "grid grid-flow-row gap-y-6 justify-self-start pr-[20px]",
+          "w-full h-full ",
+          " overflow-y-scroll  scrollbar-thumb-fondy scrollbar-track-read scrollbar-thin"
+        )}
+      >
+        {/* 'overflow-y-scroll scrollbar scrollbar-thumb-darkerBrand scrollbar-track-brand scrollbar-thin', */}
         <Post
           slug="epistemic"
           title="inventing on principle"
@@ -54,6 +62,24 @@ export default function Projects({ className }: ProjectsProps) {
           date="2021-03-29"
           picture="/avatars/4.jpg"
         ></Post>
+        <Post
+          slug="epistemic"
+          title="yawning at the apocalypse"
+          date="2021-03-29"
+          picture="/avatars/5.jpg"
+        ></Post>
+        <Post
+          slug="epistemic"
+          title="yawning at the apocalypse"
+          date="2021-03-29"
+          picture="/avatars/5.jpg"
+        ></Post>
+        <Post
+          slug="epistemic"
+          title="yawning at the apocalypse"
+          date="2021-03-29"
+          picture="/avatars/5.jpg"
+        ></Post>{" "}
         <Post
           slug="epistemic"
           title="yawning at the apocalypse"
