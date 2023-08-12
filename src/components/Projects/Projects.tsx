@@ -31,6 +31,7 @@ export default function Projects({ className }: ProjectsProps) {
         className=" z-0 bottom-[0px] absolute left-[-10px] rotate-[10%] scale-y-[140%] scale-x-[180%]  animate-pulse2 transform scale-[110%] brightness-[150%]"
         draggable="false"
       ></img> */}
+
       <div
         className={mergeClasses(
           "grid grid-flow-row gap-y-6 justify-self-start pr-[20px]",
