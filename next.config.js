@@ -5,7 +5,6 @@ const nextConfig = {
   experimental: {
     appDir: true,
     newNextLinkBehavior: true,
-    runtime: "experimental-edge",
   },
 };
 
