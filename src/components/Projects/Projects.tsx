@@ -41,6 +41,18 @@ export default function Projects({ className }: ProjectsProps) {
       >
         {/* 'overflow-y-scroll scrollbar scrollbar-thumb-darkerBrand scrollbar-track-brand scrollbar-thin', */}
         <Post
+          slug="guicurcio"
+          title="guicurcio.com"
+          date="2021-03-29"
+          picture="/avatars/3.jpg"
+        ></Post>
+        <Post
+          slug="guicurcio"
+          title="guicurcio.com"
+          date="2021-03-29"
+          picture="/avatars/3.jpg"
+        ></Post>
+        <Post
           slug="podsfy"
           title="podsfy.com"
           date="2021-03-29"
