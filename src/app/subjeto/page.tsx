@@ -44,36 +44,7 @@ export default function Page() {
         <div className="grid grid-flow-col gap-5">
           <Projects></Projects>
           <BlogComponent>
-            <BlogPostPreview title="guicurcio.com">
-              <p className="font-moderat text-[#868F97] text-[14px] leading-[18px] tracking-[-2%]">
-                There's a really common notion in writing that you should write
-                what you know. I think that's
-              </p>
-              <p className="font-moderat text-[#868F97] text-[14px] leading-[18px] tracking-[-2%]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                eget ex et eros sagittis tempus. Phasellus iaculis laoreet augue
-                nec egestas. Praesent sit amet mattis diam. Donec sit amet nulla
-                quis orci rutrum...
-              </p>{" "}
-              <p className="font-moderat text-[#868F97] text-[14px] leading-[18px] tracking-[-2%]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                eget ex et eros sagittis tempus. Phasellus iaculis laoreet augue
-                nec egestas. Praesent sit amet mattis diam. Donec sit amet nulla
-                quis orci rutrum...
-              </p>{" "}
-              <p className="font-moderat text-[#868F97] text-[14px] leading-[18px] tracking-[-2%]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                eget ex et eros sagittis tempus. Phasellus iaculis laoreet augue
-                nec egestas. Praesent sit amet mattis diam. Donec sit amet nulla
-                quis orci rutrum...
-              </p>
-              <p className="font-moderat text-[#868F97] text-[14px] leading-[18px] tracking-[-2%]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                eget ex et eros sagittis tempus. Phasellus iaculis laoreet augue
-                nec egestas. Praesent sit amet mattis diam. Donec sit amet nulla
-                quis orci rutrum...
-              </p>
-            </BlogPostPreview>
+            <BlogPostPreview title="guicurcio.com"></BlogPostPreview>
           </BlogComponent>
         </div>
       </div>
