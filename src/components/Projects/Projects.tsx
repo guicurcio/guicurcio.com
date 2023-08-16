@@ -35,42 +35,48 @@ export default function Projects({ className }: ProjectsProps) {
       <div
         className={mergeClasses(
           "grid grid-flow-row gap-y-6 justify-self-start pr-[20px]",
-          "w-full h-full ",
+          "w-full h-screen ",
           " overflow-y-scroll  scrollbar-thumb-fondy scrollbar-track-read scrollbar-thin"
         )}
       >
-        {/* 'overflow-y-scroll scrollbar scrollbar-thumb-darkerBrand scrollbar-track-brand scrollbar-thin', */}
-        {/* <Post
+        <div
+          className={mergeClasses(
+            "grid grid-flow-row gap-y-8 justify-self-start pr-[20px] align-top content-start"
+          )}
+        >
+          {/* 'overflow-y-scroll scrollbar scrollbar-thumb-darkerBrand scrollbar-track-brand scrollbar-thin', */}
+          {/* <Post
           slug="guicurcio"
           title="guicurcio.com"
           date="2021-03-29"
           picture="/avatars/3.jpg"
         ></Post> */}
-        {/* <Post
+          {/* <Post
           slug="guicurcio"
           title="guicurcio.com"
           date="2021-03-29"
           picture="/avatars/3.jpg"
         ></Post> */}
-        <Post
-          slug="podsfy"
-          title="podsfy.com"
-          date="2021-03-29"
-          picture="/avatars/d.png"
-          excerpt="Podsfy is a podcast player that allows you to listen to your favorite podcasts, discover new ones, and keep track of your progress."
-        ></Post>
-        <Post
-          slug="inventingonprinciple"
-          title="inventingonprinciple.com"
-          date="2021-03-29"
-          picture="/avatars/2.jpg"
-        ></Post>
-        <Post
-          slug="subjeto"
-          title="subjeto.com"
-          date="2021-03-29"
-          picture="/avatars/3.jpg"
-        ></Post>
+          <Post
+            slug="podsfy"
+            title="podsfy.com"
+            date="2021-03-29"
+            picture="/avatars/d.png"
+            excerpt="Podsfy is a podcast player that allows you to listen to your favorite podcasts, discover new ones, and keep track of your progress."
+          ></Post>
+          <Post
+            slug="inventingonprinciple"
+            title="inventingonprinciple.com"
+            date="2021-03-29"
+            picture="/avatars/2.jpg"
+          ></Post>
+          <Post
+            slug="subjeto"
+            title="subjeto.com"
+            date="2021-03-29"
+            picture="/avatars/3.jpg"
+          ></Post>
+        </div>
       </div>
       <SectionIntro title="selected projects and essays"></SectionIntro>
     </div>

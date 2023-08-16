@@ -29,8 +29,8 @@ export default function BlogComponent({
 }: BlogComponentProps) {
   return (
     <div className="">
-      <BlogPostPreview title={title}></BlogPostPreview>
-      {/* <SectionIntro title={title}></SectionIntro> */}
+      <BlogPostPreview title={title}>{children}</BlogPostPreview>
+      <SectionIntro title={title}></SectionIntro>
     </div>
   );
 }

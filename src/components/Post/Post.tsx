@@ -83,7 +83,7 @@ export default function Post({
         status === "draft" && "cursor-not-allowed opacity-40 blur-[0.6px]"
       )}
     >
-      <p className="text-white font-calibre text-opacity-40 text-[12px] mt-[-6px]">
+      <p className="text-white font-calibre text-opacity-40 text-[12px] mt-[-4px] pl-[4px]">
         {date}
       </p>
       <div className="grid grid-flow-col gap-x-2  place-content-start h-fit ">

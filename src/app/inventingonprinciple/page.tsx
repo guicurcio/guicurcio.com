@@ -1,6 +1,8 @@
 "use client";
 
 import BlogComponent from "components/BlogComponent";
+import PostTitle from "components/PostTitle/PostTitle";
+import Text from "components/Text/Text";
 import { motion } from "framer-motion";
 import mergeClasses from "utils/mergeClasses";
 
@@ -18,7 +20,15 @@ export default function PodsfyPage() {
         "pl-[20px]  bg-black bg-opacity-[95%]"
       )}
     >
-      <BlogComponent title="podsfy.com"></BlogComponent>
+      <BlogComponent title="inventingonprinciple.com">
+        <PostTitle>A Podcast Database Powerhouse</PostTitle>
+        <Text>
+          In today's rapidly growing podcast ecosystem, it's clear we need more
+          than just a traditional platform. We need something that truly
+          understands podcast lovers and creators. Let me introduce Podsfy, our
+          answer to a multitude of podcasting challenges.
+        </Text>
+      </BlogComponent>
     </motion.div>
   );
 }
