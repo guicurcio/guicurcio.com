@@ -1,7 +1,5 @@
 import BlogPostPreview from "components/BlogPostPreview";
-import SectionIntro from "components/SectionIntro";
 import { ReactNode } from "react";
-import mergeClasses from "utils/mergeClasses";
 
 /**
  * BlogComponent Props description
