@@ -22,7 +22,7 @@ export default function PostTitle({
   return (
     <p
       className={mergeClasses(
-        "duration-2000 font-moderat text-[22px] font-normal tracking-normal text-[rgba(201,201,201,0.75)] text-opacity-60 antialiased shadow-none transition-all",
+        "duration-2000 font-moderat border-b w-fit border-opacity-10 border-white text-[26px] font-normal tracking-normal text-[rgba(201,201,201,0.75)] text-opacity-60 antialiased shadow-none transition-all",
         className
       )}
       {...props}
