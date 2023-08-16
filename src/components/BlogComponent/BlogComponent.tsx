@@ -30,7 +30,6 @@ export default function BlogComponent({
   return (
     <div className="">
       <BlogPostPreview title={title}>{children}</BlogPostPreview>
-      <SectionIntro title={title}></SectionIntro>
     </div>
   );
 }
