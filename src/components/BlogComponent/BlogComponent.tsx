@@ -30,7 +30,7 @@ export default function BlogComponent({
   return (
     <div className="">
       <BlogPostPreview title={title}></BlogPostPreview>
-      <SectionIntro title={title}></SectionIntro>
+      {/* <SectionIntro title={title}></SectionIntro> */}
     </div>
   );
 }
