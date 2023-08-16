@@ -57,6 +57,7 @@ export default function Projects({ className }: ProjectsProps) {
           title="podsfy.com"
           date="2021-03-29"
           picture="/avatars/d.png"
+          excerpt="Podsfy is a podcast player that allows you to listen to your favorite podcasts, discover new ones, and keep track of your progress."
         ></Post>
         <Post
           slug="inventingonprinciple"

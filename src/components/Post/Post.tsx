@@ -96,11 +96,8 @@ export default function Post({
           {title}
         </Link>
       </div>
-      <p className="grid h-fit  font-moderat text-xs text-sharp pr-[10px] mt-[-2px]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fugit
-        harum nisi recusandae aspernatur, quae nam, iste corporis error porro
-        aliquid nulla accusantium maiores pariatur illum, at expedita quaerat
-        enim?
+      <p className="grid h-[60px]  font-moderat text-xs text-sharp pr-[10px] mt-[5px]">
+        {excerpt}
       </p>
       {/* <ReadMore slug={slug}></ReadMore> */}
     </div>
