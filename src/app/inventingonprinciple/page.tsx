@@ -1,6 +1,7 @@
 "use client";
 
 import BlogComponent from "components/BlogComponent";
+import BlogPostPreview from "components/BlogPostPreview";
 import PostTitle from "components/PostTitle/PostTitle";
 import Text from "components/Text/Text";
 import { BLOGPOST_CLASSNAMES } from "constants/classnames";
@@ -13,75 +14,50 @@ export default function InventingOnPrinciplePage() {
       {...animVariants}
       className={mergeClasses(...BLOGPOST_CLASSNAMES)}
     >
-      <BlogComponent title="podsfy.com">
-        <Text>
-          In today's rapidly growing podcast ecosystem, it's clear we need more
-          than just a traditional platform. We need something that truly
-          understands podcast lovers and creators. Let me introduce Podsfy, our
-          answer to a multitude of podcasting challenges.
-        </Text>
-        <PostTitle>A Podcast Database Powerhouse</PostTitle>
-        <Text>
-          Imagine harnessing the power of distributed SQLite databases across
-          various regions to create a seamless experience. The most famous
-          podcasts get their pages built at build-time, meaning less frequency
-          of updates and more optimization. This allows us to have quick access
-          to the latest episodes while keeping the service highly responsive.
-        </Text>
-
-        <PostTitle>Dynamic Rendering & Customization</PostTitle>
-        <Text>
-          Why stop at build-time? With dynamic rendering for different podcasts,
-          we're not only saving pages but also personalizing them. This opens
-          doors for curated and personalized content, adding layers of depth and
-          engagement that haven't been explored before. User Profiles Podsfy
-          offers extensive user profiles, allowing podcast enthusiasts to
-          express themselves creatively. Whether it's sharing favorite books,
-          movies, or social media links, we provide a platform that feels
-          personal and connected.
-        </Text>
-        <PostTitle>User Profiles</PostTitle>
-        <Text>
-          Podsfy offers extensive user profiles, allowing podcast enthusiasts to
-          express themselves creatively. Whether it's sharing favorite books,
-          movies, or social media links, we provide a platform that feels
-          personal and connected.
-        </Text>
-        <PostTitle>Algorithmic Curation & Community Building</PostTitle>
+      <BlogPostPreview title="podsfy.com" imageURL="/avatars/2.jpg">
+        <PostTitle>The Guiding Principle</PostTitle>
 
         <Text>
-          Podsfy leverages algorithmic content curation to build a feedback loop
-          that refines user interests, driving constant novelty and variety.
-          This creates a community where likes, comments, and shares become more
-          than social features; they are pathways to validation and positive
-          reinforcement.
+          Bret Victor introduces the concept of having a guiding principle that
+          directs one's work and creativity. This principle is a personal motto
+          or belief that drives an individual's inventions and innovations. For
+          Victor himself, the principle is that "creators need an immediate
+          connection to what they create."
         </Text>
-        <PostTitle>Future Potential</PostTitle>
+
+        <PostTitle>The Immediate Feedback Principle</PostTitle>
         <Text>
-          We're looking into ideas such as Podsfy awards, 60-second clips, and
-          more. From rapid scrolling to ephemerally curated content that
-          disappears after a certain time, the possibilities are endless.
+          Victor emphasizes the importance of immediate feedback in the creative
+          process. He demonstrates this through live coding examples where
+          changes in the code are instantly reflected in the output. This
+          real-time connection between creation and result fosters a deeper
+          understanding and a more intuitive and efficient workflow.
         </Text>
-        <PostTitle>Why Podsfy?</PostTitle>
+        <PostTitle>Tools and Environments</PostTitle>
         <Text>
-          Traditional platforms might ask: why can't this be done at build-time?
-          The answer lies in flexibility, novelty, and engagement. Podsfy
-          combines the stability of a well-structured database with the dynamism
-          of on-demand rendering.
-        </Text>
-        <Text>
-          The architecture we've implemented, combined with the
-          community-focused features like personalized profiles, watchlists, and
-          social validation, makes Podsfy more than just a platform. It's a new
-          era in podcasting, bridging the gap between content and interaction.
+          The talk explores the design of tools and environments that enable
+          creators to see and understand their work dynamically. Victor
+          showcases various prototypes and tools he has developed that allow for
+          this immediate connection, such as a system for drawing dynamic
+          animations and a tool for exploring algorithms visually.
         </Text>
         <Text>
-          As we move forward, our roadmap includes exploration, lists,
-          notifications, and profile enhancements. Stay tuned as we navigate the
-          evolving world of podcasts, leading the way with innovation,
-          community, and creativity.
+          The talk serves as both an inspiration and a challenge to designers,
+          programmers, and creators in various fields. Victor encourages the
+          audience to find their guiding principle and to pursue work that
+          resonates with that principle. He challenges conventional thinking and
+          promotes a more responsive and humane approach to technology and
+          design.
         </Text>
-      </BlogComponent>
+        <Text>
+          "Inventing on Principle" is more than just a talk about programming or
+          design; it's a philosophy that encourages a mindful and principled
+          approach to creation. It has had a significant impact on how people
+          think about the relationship between the creator and the creation, and
+          it continues to inspire new ways of thinking about design, technology,
+          and innovation.
+        </Text>
+      </BlogPostPreview>
     </motion.div>
   );
 }

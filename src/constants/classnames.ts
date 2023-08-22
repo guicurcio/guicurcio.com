@@ -7,3 +7,19 @@ export const BLOGPOST_CLASSNAMES = [
   "border-sharper  border-opacity-10 py-[25px]",
   "pl-[20px] bg-black bg-opacity-[95%]",
 ];
+
+export const BLOGPOST_ANIMATION_VARIANTS = {
+  initial: {
+    opacity: 1,
+    y: 0,
+    x: 75,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    x: 0,
+  },
+  transition: {
+    duration: 0.35,
+  },
+};
