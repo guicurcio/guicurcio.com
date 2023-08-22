@@ -97,7 +97,7 @@ export default function Post({
         </Link>
       </div>
       <p className="grid h-[60px]  font-moderat text-xs text-sharp pr-[10px] mt-[5px]">
-        {excerpt}
+        {excerpt ? excerpt.slice(0, 210) : ""}...
       </p>
       {/* <ReadMore slug={slug}></ReadMore> */}
     </div>

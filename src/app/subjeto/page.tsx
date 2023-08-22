@@ -1,53 +1,48 @@
-import BlogComponent from "components/BlogComponent";
-import BlogPostPreview from "components/BlogPostPreview/BlogPostPreview";
-import Projects from "components/Projects";
+"use client";
 
-export default function Page() {
+import BlogPostPreview from "components/BlogPostPreview";
+import PostTitle from "components/PostTitle/PostTitle";
+import Text from "components/Text/Text";
+import { motion } from "framer-motion";
+import mergeClasses from "utils/mergeClasses";
+
+export default function PodsfyPage() {
   return (
-    <div className="mx-auto cursor-default relative select-none align-middle self-center my-[50px]">
-      <div className="grid grid-flow-row gap-y-14 max-w-[1800px] mx-auto">
-        <div
-          className="h-[201px] lg:w-[1822px] md:w-[600px]  mx-auto overflow-hidden rounded-[5px] border
-        border-sharper  border-opacity-10  bg-black bg-opacity-[95%] backdrop-blur-[10px] font-visuelt shadow-3xl "
-        >
-          <img
-            src="waves.svg"
-            className="h-[267px] top-[-20px] absolute right-[58px] w-[1300px] z-50 animate-pulse2 transform scale-[110%] brightness-[150%]"
-            draggable="false"
-          ></img>
-          <div className="w-[500px] h-[114px] my-[50px] mx-[50px]">
-            <div className="grid grid-flow-col gap-4 items-center justify-center">
-              <div className="">
-                <img
-                  src="https://guicurcio.com/assets/github-avatar.png"
-                  className="rounded-full w-[80px] h-[80px]"
-                ></img>
-              </div>
-              <div className="grid grid-flow-row gap-1">
-                <h1 className="font-moderat text-white text-[22px]">
-                  Guido Curcio
-                </h1>
-                <p className="font-moderat text-white text-[14px] leading-[17.5px] tracking-[-12%] text-opacity-[60%] w-[290px]">
-                  I'm an engineer.<br></br>
-                  Rarely a writer, but always a reader -- more of a listener
-                  than a talker. <br></br>
-                  {/* CEO and founder of subjeto.com */}
-                  <br></br>
-                  {/* Here, you will encounter the most recent projects I’ve worked
-                  in. In the blog, most often, I write about inventing on
-                  principle. */}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="grid grid-flow-col gap-5">
-          <Projects></Projects>
-          <BlogComponent>
-            <BlogPostPreview title="guicurcio.com"></BlogPostPreview>
-          </BlogComponent>
-        </div>
-      </div>
-    </div>
+    <motion.div
+      {...animVariants}
+      className={mergeClasses(
+        "grid grid-flow-col gap-0 self-start",
+        "backdrop-blur-[3px] font-visuelt shadow-3xl relative backdrop-brightness-[75%] backdrop-contrast-[112%]",
+        "overflow-y-scroll  scrollbar-thumb-fondy scrollbar-track-read scrollbar-thin",
+        "transition-none duration-0 animate-none",
+        "h-screen max-w-[800px] w-[800px] grid grid-flow-row gap-6",
+        "border-sharper  border-opacity-10 py-[25px]",
+        "pl-[20px]  bg-black bg-opacity-[95%]"
+      )}
+    >
+      <BlogPostPreview
+        title="inventingonprinciple.com"
+        imageURL="podsfy-selection.png"
+      >
+        <PostTitle>Inventing on Principle</PostTitle>
+        <Text>Creating user-facing, interactive experiences.</Text>
+      </BlogPostPreview>
+    </motion.div>
   );
 }
+
+const animVariants = {
+  initial: {
+    opacity: 1,
+    y: 0,
+    x: 75,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    x: 0,
+  },
+  transition: {
+    duration: 0.35,
+  },
+};

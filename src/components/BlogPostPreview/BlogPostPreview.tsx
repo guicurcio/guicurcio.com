@@ -27,6 +27,10 @@ export interface BlogPostPreviewProps {
    */
   date?: string;
   children?: ReactNode | ReactNode[] | string | string[];
+  /**
+   * URL of the image
+   */
+  imageURL?: string;
 }
 
 /**
@@ -37,13 +41,14 @@ export default function BlogPostPreview({
   title,
   date,
   children,
+  imageURL,
 }: BlogPostPreviewProps) {
   return (
     <div className="grid grid-flow-row gap-8  h-full w-full place-content-start mx-auto pl-[30px] pr-[40px]">
       <div className="grid grid-flow-row gap-5">
         <div className="grid grid-flow-col gap-2 ">
           <img
-            src="podsfy-selection.png"
+            src={imageURL || "podsfy-selection.png"}
             className="w-[350px] h-[250px] rounded-[6px] mx-auto"
           ></img>
           {/* <h1 className="font-moderat text-center self-center mx-auto text-[#C9C9C9E0] text-opacity-[88%] text-[32px] leading-[22px] tracking[-3%] lowercase">

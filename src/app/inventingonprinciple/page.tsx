@@ -21,13 +21,8 @@ export default function PodsfyPage() {
       )}
     >
       <BlogComponent title="inventingonprinciple.com">
-        <PostTitle>A Podcast Database Powerhouse</PostTitle>
-        <Text>
-          In today's rapidly growing podcast ecosystem, it's clear we need more
-          than just a traditional platform. We need something that truly
-          understands podcast lovers and creators. Let me introduce Podsfy, our
-          answer to a multitude of podcasting challenges.
-        </Text>
+        <PostTitle>Inventing on Principle</PostTitle>
+        <Text>Creating user-facing, interactive experiences.</Text>
       </BlogComponent>
     </motion.div>
   );

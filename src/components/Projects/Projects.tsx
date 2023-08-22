@@ -69,12 +69,14 @@ export default function Projects({ className }: ProjectsProps) {
             title="inventingonprinciple.com"
             date="2021-03-29"
             picture="/avatars/2.jpg"
+            excerpt="Podsfy is a podcast player that allows you to listen to your favorite podcasts, discover new ones, and keep track of your progress."
           ></Post>
           <Post
             slug="subjeto"
             title="subjeto.com"
             date="2021-03-29"
             picture="/avatars/3.jpg"
+            excerpt="Podsfy is a podcast player that allows you to listen to your favorite podcasts, discover new ones, and keep track of your progress."
           ></Post>
         </div>
       </div>
