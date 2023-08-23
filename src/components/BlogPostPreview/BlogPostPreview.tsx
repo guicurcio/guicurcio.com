@@ -49,7 +49,7 @@ export default function BlogPostPreview({
         <div className="grid grid-flow-col gap-2 ">
           <img
             src={imageURL || "podsfy-selection.png"}
-            className="w-[350px] h-[250px] rounded-[6px] mx-auto"
+            className="w-[450px] h-[305px] rounded-[6px] mx-auto border-[1px] border-sharper border-opacity-[25%]"
           ></img>
           {/* <h1 className="font-moderat text-center self-center mx-auto text-[#C9C9C9E0] text-opacity-[88%] text-[32px] leading-[22px] tracking[-3%] lowercase">
             {title}
