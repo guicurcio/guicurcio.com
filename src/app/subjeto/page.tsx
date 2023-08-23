@@ -1,6 +1,7 @@
 "use client";
 
 import BlogComponent from "components/BlogComponent";
+import BlogPostPreview from "components/BlogPostPreview";
 import PostTitle from "components/PostTitle/PostTitle";
 import Text from "components/Text/Text";
 import {
@@ -16,10 +17,10 @@ export default function SubjetoPage() {
       {...BLOGPOST_ANIMATION_VARIANTS}
       className={mergeClasses(...BLOGPOST_CLASSNAMES)}
     >
-      <BlogComponent title="subjeto.com">
+      <BlogPostPreview title="subjeto.com" imageURL="/avatars/3.jpg">
         <PostTitle>subjeto.com</PostTitle>
         <Text>...</Text>
-      </BlogComponent>
+      </BlogPostPreview>
     </motion.div>
   );
 }

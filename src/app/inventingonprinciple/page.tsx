@@ -14,7 +14,10 @@ export default function InventingOnPrinciplePage() {
       {...animVariants}
       className={mergeClasses(...BLOGPOST_CLASSNAMES)}
     >
-      <BlogPostPreview title="podsfy.com" imageURL="/avatars/2.jpg">
+      <BlogPostPreview
+        title="inventingonprinciple.com"
+        imageURL="/avatars/2.jpg"
+      >
         <PostTitle>The Guiding Principle</PostTitle>
 
         <Text>
