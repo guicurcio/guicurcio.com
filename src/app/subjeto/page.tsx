@@ -20,11 +20,10 @@ export default function SubjetoPage() {
         <PostTitle>The AI Agents Landscape</PostTitle>
 
         <Text>
-          Bret Victor introduces the concept of having a guiding principle that
-          directs one's work and creativity. This principle is a personal motto
-          or belief that drives an individual's inventions and innovations. For
-          Victor himself, the principle is that "creators need an immediate
-          connection to what they create."
+          The first to go are the customeer support. There are only going to be
+          prompt engineers that fine tune this AI agents. AI agents that you can
+          fine tune and speak with through an interface much similar to slack,
+          discord, and so on. With different back0ends
         </Text>
       </BlogPostPreview>
     </motion.div>

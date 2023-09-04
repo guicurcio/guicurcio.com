@@ -73,21 +73,14 @@ export default function Header({
   return (
     <Link
       className={mergeClasses(
-        "grid grid-flow-col gap-4 items-center pb-2",
+        "grid grid-flow-col gap-4",
         "hover:backdrop-brightness-[110%] hover:backdrop-contrast-[320%] hover:bg-uber hover:cursor-pointer",
-        "rounded-md",
-        "pl-[10px] pr-[20px] pt-[10px] pb-[10px]",
-        "hover:bg-codeTitles hover:bg-opacity-50",
-        "shadow-sm backdrop-blur-3xl transition duration-150 ease-in-out"
+        "rounded-md"
       )}
       href={"/"}
     >
-      <img
-        src="https://guicurcio.com/assets/github-avatar.png"
-        className="rounded-full w-[80px] h-[80px]"
-      ></img>
-      <div className="grid grid-flow-row">
-        <h1 className="font-moderat text-white text-[22px]">Guido Curcio</h1>
+      <div className="grid grid-flow-row gap-2">
+        <h1 className="font-moderat text-white text-[26px]">Guido Curcio</h1>
         <p className="font-moderat text-white text-[14px] leading-[17.5px] tracking-[-12%] text-opacity-[60%] w-[290px]">
           I'm an engineer.<br></br>
           Rarely a writer, but always a reader -- more of a listener than a
