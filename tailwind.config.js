@@ -318,7 +318,7 @@ module.exports = {
         accessModal: "420px",
       },
       animation: {
-        marquee: "marquee 100s linear infinite",
+        marquee: "marquee 130s linear infinite",
         marqueey: "marqueey 100s linear infinite",
       },
       keyframes: {

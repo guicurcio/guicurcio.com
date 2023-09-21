@@ -5,13 +5,13 @@ export const BLOGPOST_CLASSNAMES = [
   "transition-none duration-0 animate-none",
   "h-screen max-w-[800px] w-[800px] grid grid-flow-row gap-6",
   "border-sharper  border-opacity-10 py-[25px]",
-  "pl-[20px] bg-black bg-opacity-[95%]",
+  "bg-[#1E1E1E] bg-opacity-[95%]",
 ];
 
 export const BORDER_POSTS_CLASSNAMES = [
-  "col-span-1 grid grid-flow-col  border border-white/10 rounded-[5px] backdrop-brightness-[80%] backdrop-contrast-[110%]",
+  "col-span-1 grid grid-flow-col  border border-white/10 rounded-[3px] bg-[#1E1E1E] bg-opacity-[70%] backdrop-brightness-[80%] backdrop-contrast-[110%]",
   "backdrop-blur-[8px] hover:backdrop-blur-[8px]",
-  " transition duration-700 ease-in-out     hover:border-colorLink",
+  " transition duration-700 ease-in-out     hover:border-colorLink h-full w-full max-w-full max-h-full",
 ];
 
 export const BLOGPOST_ANIMATION_VARIANTS = {
