@@ -1,6 +1,5 @@
 import "styles/fonts.css";
 import "styles/globals.css";
-import Projects from "components/Projects";
 import mergeClasses from "utils/mergeClasses";
 
 export default function RootLayout({
@@ -10,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className=" h-screen w-screen overflow-hidden bg-[#101012] bg-opacity-[100%] relative">
+      <body className=" bg-[#101012] bg-opacity-[100%] relative">
         <img
           src="waves.svg"
           className={mergeClasses(
@@ -19,7 +18,7 @@ export default function RootLayout({
           )}
           draggable="false"
         ></img>
-        <div className="grid grid-flow-col gap-0 place-content-start h-screen">
+        <div className="w-full h-full">
           {/* <Projects></Projects> */}
           {children}
         </div>
