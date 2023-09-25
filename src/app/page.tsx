@@ -109,13 +109,27 @@ export default function Page() {
         </div>
         <div className="grid grid-flow-col grid-cols-3 row-span-1  gap-[3px] w-full h-full max-h-full max-w-full">
           <div className={mergeClasses(...BORDER_POSTS_CLASSNAMES, "")}>
-            <div className="grid grid-flow-row items-start">
+            <div className="grid grid-flow-row items-start relative">
+              <div className="absolute bottom-0 right-0 z-50 w-[300px] h-[230px] bg-[#111213] border-t border-l border-[#30363D] rounded-tl-[8px]">
+                <div className="bg-[#0A0808] h-full w-full">
+                  <p className="font-mono text-[#ACACAF] text-[14px] font-medium  leading-[22px] tracking-[-0.175px]">
+                    1 <span className="text-[#FF7B72]">import</span>{" "}
+                    matplotlib.pyplot <span className="text-[#FF7B72]">as</span>{" "}
+                    plt
+                  </p>
+                  <p className="font-mono text-[#ACACAF] text-[14px] font-medium  leading-[22px] tracking-[-0.175px]">
+                    2 <span className="text-[#FF7B72]">import</span>{" "}
+                    matplotlib.pyplot <span className="text-[#FF7B72]">as</span>{" "}
+                    plt
+                  </p>
+                </div>
+              </div>
               <div className="items-end place-content-end pt-[20px] pl-[20px]">
                 <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px] h-fit justify-end self-end place-self-end">
                   Engineering
                 </h1>
               </div>
-              <div className="grid pl-[30px] pr-[50px] items-start">
+              <div className="grid pl-[30px] pr-[50px] items-start relative">
                 <div className="grid grid-flow-row rounded-[12px] border border-opacity-20 border-white lg:w-[500px h-[286px] items-start px-[20px]">
                   <div className="grid grid-flow-col gap-[5px] pl-[0px] pt-[15px] items-start content-start place-content-start">
                     <div className="rounded-full w-4 h-4 border border-white border-opacity-20"></div>
@@ -124,10 +138,14 @@ export default function Page() {
                   </div>
                   <div className="grid grid-flow-row place-content-start">
                     <p className="font-mono text-[#ACACAF] text-[14px] font-medium  leading-[22px] tracking-[-0.175px]">
-                      $ pscale branch delete beam fix-timestamps
+                      <span className="text-[#FF7B72]">$</span>{" "}
+                      <span className="text-[#FF7B72]">git show</span> branch
+                      delete beam fix-timestamps
                     </p>
                     <p className="font-mono text-[#ACACAF] text-[14px] font-medium  leading-[22px] tracking-[-0.175px]">
-                      $ pscale branch delete beam fix-timestamps
+                      <span className="text-[#FF7B72]">$</span>{" "}
+                      <span className="text-[#FF7B72]">git show</span> branch
+                      delete beam fix-timestamps
                     </p>
                     <p className="font-mono text-[#ACACAF] text-[14px] font-medium  leading-[22px] tracking-[-0.175px]">
                       NAME              PARENT     PRODUCTION   CREATED AT
@@ -157,7 +175,82 @@ export default function Page() {
                   Design
                 </h1>
               </div>
-              <div></div>
+              <div className="overflow-hidden">
+                <div className="h-full w-[1100px] ml-[0px] grid grid-flow-col gap-[-250px] animate-marqueew overflow-hidden">
+                  <Image
+                    className="rounded-[8px] border border-white/10 w-[250px] h-[180px]"
+                    src="/assets/websites/hulu.png"
+                    alt="asd"
+                    width={250}
+                    height={180}
+                    quality={100}
+                  ></Image>
+                  <Image
+                    className="rounded-[8px] border border-white/10 w-[225px] h-[180px]"
+                    src="/assets/websites/hulu.png"
+                    alt="asd"
+                    width={225}
+                    height={180}
+                    quality={100}
+                  ></Image>{" "}
+                  <Image
+                    className="rounded-[8px] border border-white/10 w-[225px] h-[180px]"
+                    src="/assets/websites/hulu.png"
+                    alt="asd"
+                    width={225}
+                    height={180}
+                    quality={100}
+                  ></Image>
+                  <Image
+                    className="rounded-[8px] border border-white/10 w-[225px] h-[180px]"
+                    src="/assets/websites/hulu.png"
+                    alt="asd"
+                    width={225}
+                    height={180}
+                    quality={100}
+                  ></Image>{" "}
+                  <Image
+                    className="rounded-[8px] border border-white/10 w-[225px] h-[180px]"
+                    src="/assets/websites/hulu.png"
+                    alt="asd"
+                    width={225}
+                    height={180}
+                    quality={100}
+                  ></Image>{" "}
+                  <Image
+                    className="rounded-[8px] border border-white/10 w-[225px] h-[180px]"
+                    src="/assets/websites/hulu.png"
+                    alt="asd"
+                    width={225}
+                    height={180}
+                    quality={100}
+                  ></Image>{" "}
+                  <Image
+                    className="rounded-[8px] border border-white/10 w-[225px] h-[180px]"
+                    src="/assets/websites/hulu.png"
+                    alt="asd"
+                    width={225}
+                    height={180}
+                    quality={100}
+                  ></Image>{" "}
+                  <Image
+                    className="rounded-[8px] border border-white/10 w-[225px] h-[180px]"
+                    src="/assets/websites/hulu.png"
+                    alt="asd"
+                    width={225}
+                    height={180}
+                    quality={100}
+                  ></Image>{" "}
+                  <Image
+                    className="rounded-[8px] border border-white/10 w-[225px] h-[180px]"
+                    src="/assets/websites/hulu.png"
+                    alt="asd"
+                    width={225}
+                    height={180}
+                    quality={100}
+                  ></Image>{" "}
+                </div>
+              </div>
               <div className="items-end place-content-end pt-[20px] pl-[20px]">
                 <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px] h-fit justify-end self-end place-self-end">
                   Product Design

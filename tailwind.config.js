@@ -319,10 +319,15 @@ module.exports = {
       },
       animation: {
         marquee: "marquee 130s linear infinite",
+        marqueew: "marqueew 150s linear infinite",
         marqueey: "marqueey 100s linear infinite",
       },
       keyframes: {
         marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marqueew: {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-100%)" },
         },
