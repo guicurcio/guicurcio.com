@@ -880,4 +880,10 @@ input[type="text"]:focus {
   animation: pulse2 10s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+.boxy {
+  border-radius: 5px;
+  border: 1px solid rgba(43, 43, 43, 1);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #111 52.6%);
+}
+
 @tailwind utilities;

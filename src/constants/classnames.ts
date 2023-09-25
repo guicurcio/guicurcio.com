@@ -8,11 +8,7 @@ export const BLOGPOST_CLASSNAMES = [
   "bg-[#1E1E1E] bg-opacity-[95%]",
 ];
 
-export const BORDER_POSTS_CLASSNAMES = [
-  "col-span-1 grid grid-flow-col  border border-white/10 rounded-[3px] bg-[#1E1E1E] bg-opacity-[70%] backdrop-brightness-[80%] backdrop-contrast-[110%]",
-  "backdrop-blur-[8px] hover:backdrop-blur-[8px]",
-  " transition duration-700 ease-in-out     hover:border-colorLink h-full w-full max-w-full max-h-full",
-];
+export const BORDER_POSTS_CLASSNAMES = ["col-span-1 grid grid-flow-col boxy"];
 
 export const BLOGPOST_ANIMATION_VARIANTS = {
   initial: {
