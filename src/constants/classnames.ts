@@ -8,7 +8,7 @@ export const BLOGPOST_CLASSNAMES = [
   "bg-[#1E1E1E] bg-opacity-[95%]",
 ];
 
-export const BORDER_POSTS_CLASSNAMES = ["col-span-1 grid grid-flow-col boxy"];
+export const BORDER_POSTS_CLASSNAMES = ["col-span-1 boxy grid grid-flow-row"];
 
 export const BLOGPOST_ANIMATION_VARIANTS = {
   initial: {

@@ -109,34 +109,21 @@ export default function Page() {
         </div>
         <div className="grid grid-flow-col grid-cols-3 row-span-1  gap-[3px] w-full h-full max-h-full max-w-full">
           <div className={mergeClasses(...BORDER_POSTS_CLASSNAMES, "")}>
-            <div className="grid grid-flow-row items-start relative">
-              <div className="absolute bottom-0 right-0 z-50 w-[300px] h-[230px] bg-[#111213] border-t border-l border-[#30363D] rounded-tl-[8px]">
-                <div className="bg-[#0A0808] h-full w-full">
-                  <p className="font-mono text-[#ACACAF] text-[14px] font-medium  leading-[22px] tracking-[-0.175px]">
-                    1 <span className="text-[#FF7B72]">import</span>{" "}
-                    matplotlib.pyplot <span className="text-[#FF7B72]">as</span>{" "}
-                    plt
-                  </p>
-                  <p className="font-mono text-[#ACACAF] text-[14px] font-medium  leading-[22px] tracking-[-0.175px]">
-                    2 <span className="text-[#FF7B72]">import</span>{" "}
-                    matplotlib.pyplot <span className="text-[#FF7B72]">as</span>{" "}
-                    plt
-                  </p>
-                </div>
-              </div>
-              <div className="items-end place-content-end pt-[20px] pl-[20px]">
-                <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px] h-fit justify-end self-end place-self-end">
+            <div className="grid grid-flow-row place-content-around grid-rows-6">
+              <div className="grid grid-flow-row  row-span-1  place-content-end content-baseline">
+                <h1 className="font-visuelt justify-end w-fit pt-[20px] pr-[18px] text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
                   Engineering
                 </h1>
               </div>
-              <div className="grid pl-[30px] pr-[50px] items-start relative">
-                <div className="grid grid-flow-row rounded-[12px] border border-opacity-20 border-white lg:w-[500px h-[286px] items-start px-[20px]">
+
+              <div className="grid pl-[30px]  items-start relative row-span-4">
+                <div className="grid grid-flow-row rounded-[12px] border border-opacity-20 border-white   items-start px-[20px]">
                   <div className="grid grid-flow-col gap-[5px] pl-[0px] pt-[15px] items-start content-start place-content-start">
                     <div className="rounded-full w-4 h-4 border border-white border-opacity-20"></div>
                     <div className="rounded-full w-4 h-4 border border-white border-opacity-20"></div>
                     <div className="rounded-full w-4 h-4 border border-white border-opacity-20"></div>
                   </div>
-                  <div className="grid grid-flow-row place-content-start">
+                  <div className="grid grid-flow-row place-content-start pt-[20px] pb-[30px]">
                     <p className="font-mono text-[#ACACAF] text-[14px] font-medium  leading-[22px] tracking-[-0.175px]">
                       <span className="text-[#FF7B72]">$</span>{" "}
                       <span className="text-[#FF7B72]">git show</span> branch
@@ -158,25 +145,55 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-              <div className="items-end place-content-end pt-[20px] pl-[20px]">
-                <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px] h-fit justify-end self-end place-self-end">
-                  Product Engineering
-                </h1>
-                <h1 className="font-visuelt text-[#ACACAF] text-[18px] font-normal leading-[24px] h-fit justify-end self-end place-self-end">
-                  30 pieces
-                </h1>
+              <div className="grid relative row-span-1 content-start items-start place-items-start place-content-start">
+                <div className="grid grid-flow-row items-start pl-[20px]">
+                  <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
+                    Product Engineering
+                  </h1>
+                  <h1 className="font-visuelt text-[#ACACAF] text-[18px] font-normal leading-[24px]">
+                    30 pieces
+                  </h1>
+                </div>
+                <div className="grid grid-flow-row items-start">
+                  <div className="absolute bottom-0 right-0 z-50 w-[300px] h-[230px] bg-[#111213] border-t border-l border-[#30363D] rounded-tl-[8px]">
+                    <div className="bg-[#0A0808] h-full w-full pl-[8px]">
+                      <p className="font-mono text-[#ACACAF] text-[14px] font-medium  leading-[22px] tracking-[-0.175px]">
+                        1 <span className="text-[#FF7B72]">import</span>{" "}
+                        matplotlib.pyplot{" "}
+                        <span className="text-[#FF7B72]">as</span> plt
+                      </p>
+                      <p className="font-mono text-[#ACACAF] text-[14px] font-medium  leading-[22px] tracking-[-0.175px]">
+                        2 <span className="text-[#FF7B72]">import</span>{" "}
+                        matplotlib.pyplot{" "}
+                        <span className="text-[#FF7B72]">as</span> plt
+                      </p>
+                      <p className="font-mono text-[#ACACAF] text-[14px] font-medium  leading-[22px] tracking-[-0.175px]">
+                        3
+                      </p>
+                      <p className="font-mono text-[#ACACAF] text-[14px] font-medium  leading-[22px] tracking-[-0.175px]">
+                        4
+                      </p>
+                      <p className="font-mono text-[#ACACAF] text-[14px] font-medium  leading-[22px] tracking-[-0.175px]">
+                        5
+                      </p>
+                      <p className="font-mono text-[#ACACAF] text-[14px] font-medium  leading-[22px] tracking-[-0.175px]">
+                        6
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div className={mergeClasses(...BORDER_POSTS_CLASSNAMES)}>
-            <div className="grid grid-flow-row items-start">
-              <div className="items-end place-content-end pt-[20px] pl-[20px]">
-                <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px] h-fit justify-end self-end place-self-end">
-                  Design
+            <div className="grid grid-flow-row place-content-around grid-rows-6">
+              <div className="grid grid-flow-row  row-span-1  place-content-end content-baseline">
+                <h1 className="font-visuelt justify-end w-fit pt-[20px] pr-[18px] text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
+                  Engineering
                 </h1>
               </div>
-              <div className="relative">
-                <div className="h-full  ml-[0px] grid grid-flow-row ">
+              <div className="relative row-span-4 grid grid-flow-row ">
+                <div className="h-full  ml-[0px] grid grid-flow-row relative">
                   <div className="grid grid-flow-col w-[600px]">
                     <Image
                       className="rounded-[8px] border border-white/10 w-[250px] h-[180px]"
@@ -187,7 +204,7 @@ export default function Page() {
                       quality={100}
                     ></Image>
                   </div>
-                  <div className="absolute bottom-[-150px] right-[50px]">
+                  <div className="absolute bottom-[-50px] right-[150px]">
                     <Image
                       className=" w-[125px] h-[240px]"
                       src="/assets/mobile/1.png"
@@ -199,24 +216,24 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-              <div className="items-end place-content-end pt-[20px] pl-[20px]">
-                <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px] h-fit justify-end self-end place-self-end">
-                  Product Design
+              <div className="grid grid-flow-row items-start pl-[20px]">
+                <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
+                  Product Engineering
                 </h1>
-                <h1 className="font-visuelt text-[#ACACAF] text-[18px] font-normal leading-[24px] h-fit justify-end self-end place-self-end">
-                  5 Case Studies
+                <h1 className="font-visuelt text-[#ACACAF] text-[18px] font-normal leading-[24px]">
+                  30 pieces
                 </h1>
               </div>
             </div>
           </div>
           <div className={mergeClasses(...BORDER_POSTS_CLASSNAMES)}>
-            <div className="grid grid-flow-row items-start">
-              <div className="items-end place-content-end pt-[20px] pl-[20px]">
-                <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px] h-fit justify-end self-end place-self-end">
-                  Reading & Writing
+            <div className="grid grid-flow-row place-content-around grid-rows-6">
+              <div className="grid grid-flow-row  row-span-1  place-content-end content-baseline">
+                <h1 className="font-visuelt justify-end w-fit pt-[20px] pr-[18px] text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
+                  Engineering
                 </h1>
               </div>
-              <div className="overflow-hidden">
+              <div className="overflow-hidden grid row-span-4">
                 <div className="h-full w-[1500px] ml-[0px] mt-[150px] grid grid-flow-col gap-4 animate-marquee overflow-hidden">
                   <Image
                     className="rounded-[8px] border border-white/10 w-[150px] h-[180px]"
@@ -300,12 +317,12 @@ export default function Page() {
                   ></Image>
                 </div>
               </div>
-              <div className="items-end place-content-end pt-[20px] pl-[20px]">
-                <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px] h-fit justify-end self-end place-self-end">
-                  Product Design
+              <div className="grid grid-flow-row items-start pl-[20px]">
+                <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
+                  Product Engineering
                 </h1>
-                <h1 className="font-visuelt text-[#ACACAF] text-[18px] font-normal leading-[24px] h-fit justify-end self-end place-self-end">
-                  5 Case Studies
+                <h1 className="font-visuelt text-[#ACACAF] text-[18px] font-normal leading-[24px]">
+                  30 pieces
                 </h1>
               </div>
             </div>
