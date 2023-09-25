@@ -175,80 +175,28 @@ export default function Page() {
                   Design
                 </h1>
               </div>
-              <div className="overflow-hidden">
-                <div className="h-full w-[1100px] ml-[0px] grid grid-flow-col gap-[-250px] animate-marqueew overflow-hidden">
-                  <Image
-                    className="rounded-[8px] border border-white/10 w-[250px] h-[180px]"
-                    src="/assets/websites/hulu.png"
-                    alt="asd"
-                    width={250}
-                    height={180}
-                    quality={100}
-                  ></Image>
-                  <Image
-                    className="rounded-[8px] border border-white/10 w-[225px] h-[180px]"
-                    src="/assets/websites/hulu.png"
-                    alt="asd"
-                    width={225}
-                    height={180}
-                    quality={100}
-                  ></Image>{" "}
-                  <Image
-                    className="rounded-[8px] border border-white/10 w-[225px] h-[180px]"
-                    src="/assets/websites/hulu.png"
-                    alt="asd"
-                    width={225}
-                    height={180}
-                    quality={100}
-                  ></Image>
-                  <Image
-                    className="rounded-[8px] border border-white/10 w-[225px] h-[180px]"
-                    src="/assets/websites/hulu.png"
-                    alt="asd"
-                    width={225}
-                    height={180}
-                    quality={100}
-                  ></Image>{" "}
-                  <Image
-                    className="rounded-[8px] border border-white/10 w-[225px] h-[180px]"
-                    src="/assets/websites/hulu.png"
-                    alt="asd"
-                    width={225}
-                    height={180}
-                    quality={100}
-                  ></Image>{" "}
-                  <Image
-                    className="rounded-[8px] border border-white/10 w-[225px] h-[180px]"
-                    src="/assets/websites/hulu.png"
-                    alt="asd"
-                    width={225}
-                    height={180}
-                    quality={100}
-                  ></Image>{" "}
-                  <Image
-                    className="rounded-[8px] border border-white/10 w-[225px] h-[180px]"
-                    src="/assets/websites/hulu.png"
-                    alt="asd"
-                    width={225}
-                    height={180}
-                    quality={100}
-                  ></Image>{" "}
-                  <Image
-                    className="rounded-[8px] border border-white/10 w-[225px] h-[180px]"
-                    src="/assets/websites/hulu.png"
-                    alt="asd"
-                    width={225}
-                    height={180}
-                    quality={100}
-                  ></Image>{" "}
-                  <Image
-                    className="rounded-[8px] border border-white/10 w-[225px] h-[180px]"
-                    src="/assets/websites/hulu.png"
-                    alt="asd"
-                    width={225}
-                    height={180}
-                    quality={100}
-                  ></Image>{" "}
+              <div className="relative">
+                <div className="h-full  ml-[0px] grid grid-flow-row ">
+                  <div className="grid grid-flow-col w-[600px]">
+                    <Image
+                      className="rounded-[8px] border border-white/10 w-[250px] h-[180px]"
+                      src="/subjeto-selection.png"
+                      alt="asd"
+                      width={250}
+                      height={180}
+                      quality={100}
+                    ></Image>
+                  </div>
+                  <div className="absolute bottom-[-150px] right-[50px]">
+                    <Image
+                      className=" w-[125px] h-[240px]"
+                      src="/assets/mobile/1.png"
+                      alt="asd"
+                      width={125}
+                      height={240}
+                      quality={100}
+                    ></Image>
+                  </div>
                 </div>
               </div>
               <div className="items-end place-content-end pt-[20px] pl-[20px]">
