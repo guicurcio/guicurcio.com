@@ -75,6 +75,11 @@ body {
   );
 }
 
+.gradient-purple-pink-red {
+  @apply bg-gradient-to-r;
+  @apply from-purple-400 via-pink-500 to-red-500;
+}
+
 .glow {
   /* animation: ken 100s ease-in-out; */
   position: absolute;

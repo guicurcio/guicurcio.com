@@ -113,10 +113,19 @@ export default function Page() {
             className={mergeClasses(...BORDER_POSTS_CLASSNAMES, "col-span-5")}
           >
             <div className="grid grid-flow-row place-content-around grid-rows-6 grid-cols-1 w-full">
-              <div className="grid grid-flow-row  row-span-1 min-w-full col-span-1 ">
-                <h1 className="font-visuelt  w-fit pt-[20px] pl-[18px] text-[#F2F2F270] text-[18px] font-normal leading-[24px]">
-                  Projects - podsfy.com
-                </h1>
+              <div className="grid grid-flow-col place-content-between pt-[18px] px-[18px]   row-span-1  col-span-1 ">
+                <div>
+                  <h1 className="font-visuelt  w-fit align-middle  text-[#F2F2F270] text-[18px] font-normal leading-[24px]">
+                    Projects - podsfy.com
+                  </h1>
+                </div>
+                <div>
+                  <img
+                    src="assets/arrow.svg"
+                    className="align-start self-start mt-[-6px] cursor-pointer hover:scale-[101%] transition-all duration-500 ease-in-out"
+                    draggable="false"
+                  ></img>
+                </div>
               </div>
               <div className=" grid grid-flow-row  row-span-5 w-full  overflow-hidden ">
                 <div className=" grid grid-flow-row gap-0 ">
@@ -147,13 +156,16 @@ export default function Page() {
             </div>
           </div>
           <div
-            className={mergeClasses(...BORDER_POSTS_CLASSNAMES, "col-span-4")}
+            className={mergeClasses(
+              ...BORDER_POSTS_CLASSNAMES,
+              "col-span-4 hover:border border-collapse hover:border-1 transition-colors duration-700 ease-in-out"
+            )}
           >
             <div className="grid grid-flow-row   grid-rows-6">
               <div className="grid grid-flow-row  row-span-1  place-content-end content-baseline">
-                <h1 className="font-visuelt justify-end w-fit pt-[20px] pr-[18px] text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
+                {/* <h1 className="font-visuelt justify-end w-fit pt-[20px] pr-[18px] text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
                   Engineering
-                </h1>
+                </h1> */}
               </div>
 
               <div className="grid   pl-[30px] pr-[80px] w-full  items-start relative row-span-4">
@@ -259,7 +271,7 @@ export default function Page() {
             <div className="grid grid-flow-row place-content-around grid-rows-6 grid-cols-1 w-full">
               <div className="grid grid-flow-row  row-span-1 min-w-full col-span-1  place-content-end content-baseline">
                 <h1 className="font-visuelt justify-end w-fit pt-[20px] pr-[18px] text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
-                  Reading
+                  Recommended Books
                 </h1>
               </div>
               <div className="overflow-hidden grid-flow-row  items-start place-content-baseline grid row-span-5">

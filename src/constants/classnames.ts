@@ -9,7 +9,7 @@ export const BLOGPOST_CLASSNAMES = [
 ];
 
 export const BORDER_POSTS_CLASSNAMES = [
-  "col-span-1 boxy rounded-[2px] grid grid-flow-row backdrop-blur-[2px] backdrop-brightness-[65%] backdrop-contrast-[112%] shadow-3xl",
+  "col-span-1  boxy rounded-[2px] grid grid-flow-row backdrop-blur-[2px] backdrop-brightness-[65%] backdrop-contrast-[112%] shadow-3xl",
 ];
 
 export const BLOGPOST_ANIMATION_VARIANTS = {
