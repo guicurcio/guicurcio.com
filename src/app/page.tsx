@@ -66,7 +66,7 @@ export default function Page() {
                 Product Design
               </h1>
               <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px] h-fit justify-end self-end place-self-end">
-                Agriculture
+                Gardening
               </h1>
               <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px] h-fit justify-end self-end place-self-end">
                 Writing
@@ -247,53 +247,13 @@ export default function Page() {
                       height={1780}
                       quality={100}
                     ></Image>
-                    {/* <Image
-                      className="rounded-[10px] w-[150px] h-[100px] object-top"
-                      src="/assets/websites/celeique1.jpg"
-                      alt="asd"
-                      width={1920}
-                      height={1080}
-                      quality={100}
-                    ></Image>
-                    <Image
-                      className="rounded-[10px]  w-[150px] h-[100px] object-cover"
-                      src="/podsfy-selection.png"
-                      alt="asd"
-                      width={250}
-                      height={180}
-                      quality={100}
-                    ></Image>
-                    <Image
-                      className="rounded-[10px] w-[150px] h-[100px] object-cover"
-                      src="/assets/websites/4.jpg"
-                      alt="asd"
-                      width={250}
-                      height={150}
-                      quality={100}
-                    ></Image> */}
-                    {/* <Image
-                      className="rounded-[10px] w-[150px] h-[100px]"
-                      src="/assets/websites/ipad.png"
-                      alt="asd"
-                      width={1920}
-                      height={1080}
-                      quality={100}
-                    ></Image> */}
-                    {/* <Image
-                      className=" w-[80px] h-[160px] absolute bottom-[-50px] right-[150px]"
-                      src="/assets/mobile/1.png"
-                      alt="asd"
-                      width={125}
-                      height={240}
-                      quality={100}
-                    ></Image> */}
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div
-            className={mergeClasses(...BORDER_POSTS_CLASSNAMES, "col-span-3")}
+            className={mergeClasses(...BORDER_POSTS_CLASSNAMES, "col-span-4")}
           >
             <div className="grid grid-flow-row place-content-around grid-rows-6 grid-cols-1 w-full">
               <div className="grid grid-flow-row  row-span-1 min-w-full col-span-1  place-content-end content-baseline">
@@ -302,7 +262,7 @@ export default function Page() {
                 </h1>
               </div>
               <div className="overflow-hidden grid-flow-row  items-start place-content-baseline grid row-span-5">
-                <div className="h-full w-[1500px] ml-[0px] mt-[50px] grid grid-flow-col gap-4 animate-marquee">
+                <div className="h-full w-[800px] ml-[0px] grid grid-flow-col grid-rows-2 gap-4 animate-marquee">
                   <Image
                     className="rounded-[8px] brightness-[80%] hover:brightness-105 border border-white/10 w-[150px] h-[180px]"
                     src="/assets/achop.jpg"
