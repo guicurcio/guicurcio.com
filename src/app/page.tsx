@@ -224,11 +224,23 @@ export default function Page() {
                   Projects - podsfy.com
                 </h1>
               </div>
-              <div className="relative grid grid-flow-row  row-span-5 w-full  overflow-hidden ">
-                <div className="h-full   grid grid-flow-row overflow-hidden ">
-                  <div className="grid grid-flow-row mx-auto overflow-hidden mb-[-150px]">
+              <div className=" grid grid-flow-row  row-span-5 w-full  overflow-hidden ">
+                <div className=" grid grid-flow-row gap-0 ">
+                  <div className="grid grid-flow-row mx-auto gap-0 border-t border-l border-r border-[#333333] rounded-t-[4px]">
+                    <div className="bg-[#191C1F]  bg-opacity-25 backdrop-blur-[3px] backdrop-brightness-[55%] rounded-t-[6px] px-3  grid grid-flow-col items-start place-items-start h-fit py-3">
+                      <div className=" grid grid-flow-col items-start content-start gap-2 ">
+                        <div className="rounded-full w-3 h-3  bg-[#EE6A5F] "></div>
+                        <div className="rounded-full w-3 h-3 bg-[#F5BD4F] "></div>
+                        <div className="rounded-full w-3 h-3  bg-[#61C454]"></div>
+                      </div>
+                      <div className="grid grid-flow-col items-start content-start gap-2 bg-[#0C0F12] px-20 border border-white border-opacity-10 rounded-[6px] justify-start self-baseline mt-[-5px]">
+                        <h1 className="text-white font-mono text-[14px]">
+                          podsfy.com
+                        </h1>
+                      </div>
+                    </div>
                     <Image
-                      className="rounded-t-[3px] w-[600px] h-[450px] mb-[-150px]"
+                      className="w-[550px] h-[360px] mt-[-4px]"
                       src="/assets/websites/podsfy2.jpg"
                       alt="asd"
                       width={1920}
@@ -290,9 +302,9 @@ export default function Page() {
                 </h1>
               </div>
               <div className="overflow-hidden grid-flow-row  items-start place-content-baseline grid row-span-5">
-                <div className="h-full w-[1500px] ml-[0px] mt-[50px] grid grid-flow-col gap-4 animate-marquee overflow-hidden">
+                <div className="h-full w-[1500px] ml-[0px] mt-[50px] grid grid-flow-col gap-4 animate-marquee">
                   <Image
-                    className="rounded-[8px] border border-white/10 w-[150px] h-[180px]"
+                    className="rounded-[8px] brightness-[80%] hover:brightness-105 border border-white/10 w-[150px] h-[180px]"
                     src="/assets/achop.jpg"
                     alt="asd"
                     width={150}
@@ -300,7 +312,7 @@ export default function Page() {
                     quality={100}
                   ></Image>
                   <Image
-                    className="rounded-[8px] border border-white/0 w-[150px] h-[180px]"
+                    className="rounded-[8px] brightness-[80%] hover:brightness-105 border border-white/10 w-[150px] h-[180px]"
                     src="/assets/cst.jpg"
                     alt="asd"
                     width={150}
@@ -308,7 +320,7 @@ export default function Page() {
                     quality={100}
                   ></Image>
                   <Image
-                    className="rounded-[8px] border border-white/0 w-[150px] h-[180px]"
+                    className="rounded-[8px] brightness-[80%] hover:brightness-105 border border-white/10 w-[150px] h-[180px]"
                     src="/assets/geb.jpg"
                     alt="asd"
                     width={150}
@@ -316,7 +328,7 @@ export default function Page() {
                     quality={100}
                   ></Image>
                   <Image
-                    className="rounded-[8px] border border-white/0 w-[150px] h-[180px]"
+                    className="rounded-[8px] brightness-[80%] hover:brightness-105 border border-white/10 w-[150px] h-[180px]"
                     src="/assets/fbr.jpg"
                     alt="asd"
                     width={150}
@@ -324,7 +336,7 @@ export default function Page() {
                     quality={100}
                   ></Image>
                   <Image
-                    className="rounded-[8px] border border-white/0 w-[150px] h-[180px]"
+                    className="rounded-[8px] brightness-[80%] hover:brightness-105 border border-white/10 w-[150px] h-[180px]"
                     src="/assets/l.jpg"
                     alt="asd"
                     width={150}
@@ -332,7 +344,7 @@ export default function Page() {
                     quality={100}
                   ></Image>
                   <Image
-                    className="rounded-[8px] border border-white/0 w-[150px] h-[180px]"
+                    className="rounded-[8px] brightness-[80%] hover:brightness-105 border border-white/10 w-[150px] h-[180px]"
                     src="/assets/ia.jpg"
                     alt="asd"
                     width={150}
@@ -340,7 +352,7 @@ export default function Page() {
                     quality={100}
                   ></Image>
                   <Image
-                    className="rounded-[8px] border border-white/0 w-[150px] h-[180px]"
+                    className="rounded-[8px] brightness-[80%] hover:brightness-105 border border-white/10 w-[150px] h-[180px]"
                     src="/assets/tboi.jpg"
                     alt="asd"
                     width={150}
@@ -348,7 +360,7 @@ export default function Page() {
                     quality={100}
                   ></Image>
                   <Image
-                    className="rounded-[8px] border border-white/0 w-[150px] h-[180px]"
+                    className="rounded-[8px] brightness-[80%] hover:brightness-105 border border-white/10 w-[150px] h-[180px]"
                     src="/assets/tbp.jpg"
                     alt="asd"
                     width={150}
@@ -356,7 +368,7 @@ export default function Page() {
                     quality={100}
                   ></Image>
                   <Image
-                    className="rounded-[8px] border border-white/0 w-[150px] h-[180px]"
+                    className="rounded-[8px] brightness-[80%] hover:brightness-105 border border-white/10 w-[150px] h-[180px]"
                     src="/assets/tis.jpg"
                     alt="asd"
                     width={150}
@@ -364,7 +376,7 @@ export default function Page() {
                     quality={100}
                   ></Image>
                   <Image
-                    className="rounded-[8px] border border-white/0 w-[150px] h-[180px]"
+                    className="rounded-[8px] brightness-[80%] hover:brightness-105 border border-white/10 w-[150px] h-[180px]"
                     src="/assets/u.jpg"
                     alt="asd"
                     width={150}
