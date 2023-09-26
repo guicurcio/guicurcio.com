@@ -10,14 +10,14 @@ export default function Page() {
       <div className="grid grid-flow-row grid-rows-2 gap-y-1 w-full h-full ">
         <div className="grid grid-flow-col grid-cols-12 row-span-1 gap-1 w-full h-full">
           <div className={mergeClasses("col-span-4 grid grid-flow-col")}>
-            <div className="px-[0px] pb-[20px] grid grid-flow-row gap-[1px] content-end">
-              <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px] h-fit">
+            {/* <div className="px-[0px] pb-[20px] grid grid-flow-row gap-[1px] content-end">
+              <h1 className="font-visue lt text-[#F2F2F2] text-[18px] font-normal leading-[24px] h-fit">
                 Buenos Aires, Argentina
               </h1>
               <h1 className="text-[#F2F2F290] text-[16px] font-moderat leading-[22px] lg:w-[380px] h-fit">
                 Resume and Work Experience
               </h1>
-            </div>
+            </div> */}
           </div>
           <div
             className={mergeClasses(
@@ -45,14 +45,15 @@ export default function Page() {
                   Senior Product Engineer
                 </h1>
                 <h1 className="text-[#F2F2F290] text-[16px] font-moderat leading-[22px] lg:w-[380px] h-fit">
-                  Resume and Work Experience
+                  Buenos Aires, Argentina
                 </h1>
               </div>
             </div>
           </div>
           <div
             className={mergeClasses(
-              "col-span-3 grid grid-flow-row content-between"
+              ...BORDER_POSTS_CLASSNAMES,
+              "col-span-3 grid grid-flow-row content-between px-[25px] py-[20px]"
             )}
           >
             <div className="px-[0px] pb-[20px] grid grid-flow-row gap-[1px] content-start ">
