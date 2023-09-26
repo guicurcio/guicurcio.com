@@ -119,7 +119,7 @@ export default function Page() {
               <div className="grid   pl-[30px] pr-[80px] w-full  items-start relative row-span-4">
                 <div className="absolute top-[-25px] right-[50px]">
                   <Image
-                    className=" w-[74px] h-[72px]"
+                    className=" w-[60px] h-[60px]"
                     src="/assets/socials/github-logo-big.svg"
                     alt="asd"
                     width={74}
@@ -213,28 +213,50 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className={mergeClasses(...BORDER_POSTS_CLASSNAMES)}>
-            <div className="grid grid-flow-row place-content-around grid-rows-6">
-              <div className="grid grid-flow-row  row-span-1  place-content-end content-baseline">
+          <div className={mergeClasses(...BORDER_POSTS_CLASSNAMES, "")}>
+            <div className="grid grid-flow-row place-content-around grid-rows-6 grid-cols-1 w-full">
+              <div className="grid grid-flow-row  row-span-1 min-w-full col-span-1  place-content-end content-baseline">
                 <h1 className="font-visuelt justify-end w-fit pt-[20px] pr-[18px] text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
                   Engineering
                 </h1>
               </div>
-              <div className="relative row-span-4 grid grid-flow-row ">
-                <div className="h-full  ml-[0px] grid grid-flow-row relative">
-                  <div className="grid grid-flow-col w-[600px]">
+              <div className="relative grid grid-flow-row  row-span-4 w-full   py-20 overflow-hidden ">
+                <div className="h-full  ml-[0px] grid grid-flow-row relative w-min-full">
+                  <div className="grid grid-flow-col  gap-[0px] relative w-min-full">
                     <Image
-                      className="rounded-[8px] border border-white/10 w-[250px] h-[180px]"
-                      src="/subjeto-selection.png"
+                      className="rounded-[10px] w-[150px] h-[100px] object-top"
+                      src="/assets/websites/celeique1.jpg"
+                      alt="asd"
+                      width={1920}
+                      height={1080}
+                      quality={100}
+                    ></Image>
+                    <Image
+                      className="rounded-[10px]  w-[150px] h-[100px] object-cover"
+                      src="/podsfy-selection.png"
                       alt="asd"
                       width={250}
                       height={180}
                       quality={100}
                     ></Image>
-                  </div>
-                  <div className="absolute bottom-[-50px] right-[150px]">
                     <Image
-                      className=" w-[125px] h-[240px]"
+                      className="rounded-[10px] w-[150px] h-[100px] object-cover"
+                      src="/assets/websites/4.jpg"
+                      alt="asd"
+                      width={250}
+                      height={150}
+                      quality={100}
+                    ></Image>
+                    {/* <Image
+                      className="rounded-[10px] w-[150px] h-[100px]"
+                      src="/assets/websites/ipad.png"
+                      alt="asd"
+                      width={1920}
+                      height={1080}
+                      quality={100}
+                    ></Image> */}
+                    <Image
+                      className=" w-[80px] h-[160px] absolute bottom-[-50px] right-[150px]"
                       src="/assets/mobile/1.png"
                       alt="asd"
                       width={125}
@@ -244,7 +266,7 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-              <div className="grid grid-flow-row items-start pl-[20px]">
+              <div className="grid grid-flow-row items-start row-span-1 pl-[20px] w-full">
                 <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
                   Product Engineering
                 </h1>
@@ -255,13 +277,13 @@ export default function Page() {
             </div>
           </div>
           <div className={mergeClasses(...BORDER_POSTS_CLASSNAMES)}>
-            <div className="grid grid-flow-row place-content-around grid-rows-6">
-              <div className="grid grid-flow-row  row-span-1  place-content-end content-baseline">
+            <div className="grid grid-flow-row place-content-around grid-rows-6 grid-cols-1 w-full">
+              <div className="grid grid-flow-row  row-span-1 min-w-full col-span-1  place-content-end content-baseline">
                 <h1 className="font-visuelt justify-end w-fit pt-[20px] pr-[18px] text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
                   Engineering
                 </h1>
               </div>
-              <div className="overflow-hidden grid row-span-4">
+              <div className="overflow-hidden grid-flow-row border items-start place-content-baseline grid row-span-4">
                 <div className="h-full w-[1500px] ml-[0px] mt-[150px] grid grid-flow-col gap-4 animate-marquee overflow-hidden">
                   <Image
                     className="rounded-[8px] border border-white/10 w-[150px] h-[180px]"
@@ -345,7 +367,7 @@ export default function Page() {
                   ></Image>
                 </div>
               </div>
-              <div className="grid grid-flow-row items-start pl-[20px]">
+              <div className="grid grid-flow-row items-start place-content-start pl-[20px] ">
                 <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
                   Product Engineering
                 </h1>
