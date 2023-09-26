@@ -8,8 +8,8 @@ export default function Page() {
   return (
     <div className="w-full h-full px-[50px] pt-[30px] pb-[10px]">
       <div className="grid grid-flow-row grid-rows-2 gap-y-1 w-full h-full ">
-        <div className="grid grid-flow-col grid-cols-12 row-span-1 gap-1 w-full h-full">
-          <div className={mergeClasses("col-span-4 grid grid-flow-col")}>
+        <div className="grid grid-flow-col grid-cols-12 row-span-1 gap-2 w-full h-full">
+          <div className={mergeClasses("col-span-5 grid grid-flow-col")}>
             {/* <div className="px-[0px] pb-[20px] grid grid-flow-row gap-[1px] content-end">
               <h1 className="font-visue lt text-[#F2F2F2] text-[18px] font-normal leading-[24px] h-fit">
                 Buenos Aires, Argentina
@@ -22,7 +22,7 @@ export default function Page() {
           <div
             className={mergeClasses(
               ...BORDER_POSTS_CLASSNAMES,
-              "relative overflow-y-hidden col-span-5"
+              "relative overflow-y-hidden col-span-4"
             )}
           >
             <img
@@ -108,7 +108,44 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="grid grid-flow-col grid-cols-12 row-span-1  gap-[3px] w-full h-full max-h-full max-w-full">
+        <div className="grid grid-flow-col grid-cols-12 row-span-1  gap-2 w-full h-full max-h-full max-w-full">
+          <div
+            className={mergeClasses(...BORDER_POSTS_CLASSNAMES, "col-span-5")}
+          >
+            <div className="grid grid-flow-row place-content-around grid-rows-6 grid-cols-1 w-full">
+              <div className="grid grid-flow-row  row-span-1 min-w-full col-span-1 ">
+                <h1 className="font-visuelt  w-fit pt-[20px] pl-[18px] text-[#F2F2F270] text-[18px] font-normal leading-[24px]">
+                  Projects - podsfy.com
+                </h1>
+              </div>
+              <div className=" grid grid-flow-row  row-span-5 w-full  overflow-hidden ">
+                <div className=" grid grid-flow-row gap-0 ">
+                  <div className="grid grid-flow-row mx-auto gap-0 border-t border-l border-r border-[#333333] rounded-t-[4px]">
+                    <div className="bg-[#191C1F]  bg-opacity-25 backdrop-blur-[3px] backdrop-brightness-[55%] rounded-t-[6px] px-3  grid grid-flow-col items-start place-items-start h-fit py-3">
+                      <div className=" grid grid-flow-col items-start content-start gap-2 ">
+                        <div className="rounded-full w-3 h-3  bg-[#EE6A5F] "></div>
+                        <div className="rounded-full w-3 h-3 bg-[#F5BD4F] "></div>
+                        <div className="rounded-full w-3 h-3  bg-[#61C454]"></div>
+                      </div>
+                      <div className="grid grid-flow-col items-start content-start gap-2 bg-[#0C0F12] px-20 border border-white border-opacity-10 rounded-[6px] justify-start self-baseline mt-[-5px]">
+                        <h1 className="text-white font-mono text-[14px]">
+                          podsfy.com
+                        </h1>
+                      </div>
+                    </div>
+                    <Image
+                      className="w-[550px] h-[360px] mt-[-4px]"
+                      src="/assets/websites/podsfy2.jpg"
+                      alt="asd"
+                      width={1920}
+                      height={1780}
+                      quality={100}
+                    ></Image>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div
             className={mergeClasses(...BORDER_POSTS_CLASSNAMES, "col-span-4")}
           >
@@ -217,44 +254,7 @@ export default function Page() {
             </div>
           </div>
           <div
-            className={mergeClasses(...BORDER_POSTS_CLASSNAMES, "col-span-5")}
-          >
-            <div className="grid grid-flow-row place-content-around grid-rows-6 grid-cols-1 w-full">
-              <div className="grid grid-flow-row  row-span-1 min-w-full col-span-1 ">
-                <h1 className="font-visuelt  w-fit pt-[20px] pl-[18px] text-[#F2F2F270] text-[18px] font-normal leading-[24px]">
-                  Projects - podsfy.com
-                </h1>
-              </div>
-              <div className=" grid grid-flow-row  row-span-5 w-full  overflow-hidden ">
-                <div className=" grid grid-flow-row gap-0 ">
-                  <div className="grid grid-flow-row mx-auto gap-0 border-t border-l border-r border-[#333333] rounded-t-[4px]">
-                    <div className="bg-[#191C1F]  bg-opacity-25 backdrop-blur-[3px] backdrop-brightness-[55%] rounded-t-[6px] px-3  grid grid-flow-col items-start place-items-start h-fit py-3">
-                      <div className=" grid grid-flow-col items-start content-start gap-2 ">
-                        <div className="rounded-full w-3 h-3  bg-[#EE6A5F] "></div>
-                        <div className="rounded-full w-3 h-3 bg-[#F5BD4F] "></div>
-                        <div className="rounded-full w-3 h-3  bg-[#61C454]"></div>
-                      </div>
-                      <div className="grid grid-flow-col items-start content-start gap-2 bg-[#0C0F12] px-20 border border-white border-opacity-10 rounded-[6px] justify-start self-baseline mt-[-5px]">
-                        <h1 className="text-white font-mono text-[14px]">
-                          podsfy.com
-                        </h1>
-                      </div>
-                    </div>
-                    <Image
-                      className="w-[550px] h-[360px] mt-[-4px]"
-                      src="/assets/websites/podsfy2.jpg"
-                      alt="asd"
-                      width={1920}
-                      height={1780}
-                      quality={100}
-                    ></Image>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className={mergeClasses(...BORDER_POSTS_CLASSNAMES, "col-span-4")}
+            className={mergeClasses(...BORDER_POSTS_CLASSNAMES, "col-span-3")}
           >
             <div className="grid grid-flow-row place-content-around grid-rows-6 grid-cols-1 w-full">
               <div className="grid grid-flow-row  row-span-1 min-w-full col-span-1  place-content-end content-baseline">

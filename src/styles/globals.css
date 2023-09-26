@@ -881,7 +881,6 @@ input[type="text"]:focus {
 }
 
 .boxy {
-  border-radius: 5px;
   border: 1px solid rgba(43, 43, 43, 1);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #111 52.6%);
 }
