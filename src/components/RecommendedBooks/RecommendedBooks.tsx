@@ -14,7 +14,7 @@ export interface RecommendedBooksProps {
 }
 
 const BOOK_CLASSES = [
-  "rounded-[1px] Abrightness-[80%] hover:brightness-105 border-2 border-white/30 w-[150px] h-[180px]",
+  "rounded-[1px] brightness-[80%] transition-all duration-500 ease-in-out hover:brightness-105 border-2 border-white/30 w-[150px] h-[180px]",
 ];
 
 /**
@@ -25,7 +25,7 @@ export default function RecommendedBooks({
 }: RecommendedBooksProps): JSX.Element {
   return (
     <div className={mergeClasses(...BORDER_POSTS_CLASSNAMES, "col-span-3")}>
-      <div className="grid grid-flow-row place-content-around grid-rows-6 grid-cols-1 w-full">
+      <div className="grid grid-flow-row  place-content-around grid-rows-6 grid-cols-1 w-full">
         <div className="grid grid-flow-row  row-span-1 min-w-full col-span-1  place-content-end content-baseline">
           <h1 className="font-visuelt justify-end w-fit pt-[20px] pr-[18px] text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
             Recommended Books

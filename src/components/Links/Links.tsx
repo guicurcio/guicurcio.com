@@ -1,5 +1,4 @@
 import { BORDER_POSTS_CLASSNAMES } from "constants/classnames";
-import Image from "next/image";
 import mergeClasses from "utils/mergeClasses";
 
 /**
@@ -21,7 +20,7 @@ export default function Links({ className }: LinksProps): JSX.Element {
     <div
       className={mergeClasses(
         ...BORDER_POSTS_CLASSNAMES,
-        "lg:col-span-3 col-span-12 grid grid-flow-row content-between px-[25px] py-[20px] row-span-1"
+        "lg:col-span-3 col-span-12 grid grid-flow-row content-between px-[25px] py-[20px]"
       )}
     >
       <div className="px-[0px] pb-[20px] grid grid-flow-row gap-[1px] content-start ">
@@ -48,31 +47,41 @@ export default function Links({ className }: LinksProps): JSX.Element {
         </h1>
       </div>
       <div className="grid grid-flow-col gap-[15px] content-end items-end pb-[10px] place-content-end pl-[15px]">
-        <img
-          src="assets/socials/github.svg"
-          className="align-middle self-center"
-          draggable="false"
-        ></img>
-        <img
-          src="assets/socials/twitter.svg"
-          className="align-middle self-center"
-          draggable="false"
-        ></img>
-        <img
-          src="assets/socials/linkedin.svg"
-          className="align-middle self-center"
-          draggable="false"
-        ></img>
-        <img
-          src="assets/socials/youtube.svg"
-          className="align-middle self-center"
-          draggable="false"
-        ></img>
-        <img
-          src="assets/socials/twitch.svg"
-          className="align-middle self-center"
-          draggable="false"
-        ></img>
+        <a href="https://github.com/guicurcio" target="_blank">
+          <img
+            src="assets/socials/github.svg"
+            className="align-middle self-center"
+            draggable="false"
+          ></img>
+        </a>
+        <a href="https://twitter.com/guicurcio" target="_blank">
+          <img
+            src="assets/socials/twitter.svg"
+            className="align-middle self-center"
+            draggable="false"
+          ></img>
+        </a>
+        <a href="https://linkedin.com/guicurcio" target="_blank">
+          <img
+            src="assets/socials/linkedin.svg"
+            className="align-middle self-center"
+            draggable="false"
+          ></img>
+        </a>
+        <a href="https://youtube.com/guicurcio" target="_blank">
+          <img
+            src="assets/socials/youtube.svg"
+            className="align-middle self-center"
+            draggable="false"
+          ></img>
+        </a>
+        <a href="https://twitch.com/guicurcio" target="_blank">
+          <img
+            src="assets/socials/twitch.svg"
+            className="align-middle self-center"
+            draggable="false"
+          ></img>
+        </a>
       </div>
     </div>
   );

@@ -11,19 +11,25 @@ export interface EssayProps {
    */
   className?: string;
   // children: React.ReactNode | React.ReactNode[] | string;
+  name?: string;
+  postTitle?: string;
 }
 
 /**
  * Essay Component
  */
-export default function Essay({ className }: EssayProps): JSX.Element {
+export default function Essay({
+  className,
+  name = "",
+  postTitle = "",
+}: EssayProps): JSX.Element {
   return (
     <div className={mergeClasses(...BORDER_POSTS_CLASSNAMES, "col-span-4")}>
       <div className="grid grid-flow-row place-content-around grid-rows-6 grid-cols-1 w-full">
         <div className="grid grid-flow-col place-content-between pt-[18px] px-[18px]   row-span-1  col-span-1 ">
           <div>
             <h1 className="font-visuelt  w-fit align-middle  text-[#F2F2F270] text-[18px] font-normal leading-[24px]">
-              Essays - podsfy.com
+              Post - {name}
             </h1>
           </div>
           <div>
@@ -34,11 +40,10 @@ export default function Essay({ className }: EssayProps): JSX.Element {
             ></img>
           </div>
         </div>
-        <div className=" grid grid-flow-row  row-span-6 w-full  overflow-hidden ">
-          <div className="bg-[#F5F5F5] border-[#EBEBEB] border-2 rounded-t-[6px]   shadow-sm gap-1 px-10 pt-[40px] shadow-white mx-[110px] grid grid-flow-row items-start place-items-start h-fit py-3">
-            <div> </div>
+        <div className=" grid grid-flow-row  row-span-6 h-full w-full  overflow-hidden ">
+          <div className="bg-[#F5F5F5] border-[#EBEBEB] border-2 rounded-t-[6px]   shadow-sm gap-1 px-10 pt-[40px] shadow-white mx-[110px] grid grid-flow-row items-start place-items-start  py-3">
             <h1 className="text-black font-inter font-semibold text-[26px]">
-              The Guiding Principle
+              {postTitle}
             </h1>
             <p className="text-[14px] font-light font-inter text-[#707070] leading-[18.2px] tracking-[-0.07px] text-justify">
               We discuss analogs based on elliptic curves over finite fields of
