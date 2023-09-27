@@ -21,7 +21,7 @@ export default function Links({ className }: LinksProps): JSX.Element {
     <div
       className={mergeClasses(
         ...BORDER_POSTS_CLASSNAMES,
-        "col-span-3 grid grid-flow-row content-between px-[25px] py-[20px]"
+        "lg:col-span-3 col-span-12 grid grid-flow-row content-between px-[25px] py-[20px] row-span-1"
       )}
     >
       <div className="px-[0px] pb-[20px] grid grid-flow-row gap-[1px] content-start ">
