@@ -1,0 +1,28 @@
+<svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_ii_21_32359)">
+<rect y="0.0625" width="48" height="48" rx="8" fill="white" fill-opacity="0.01"/>
+<g clip-path="url(#clip0_21_32359)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.4501 15.4405H21.0201L18.0351 27.3835L17.1691 23.3445H12.8691V25.6025H15.3441L16.8461 32.6125L19.0461 32.6505L22.7831 17.7005H35.4491V15.4395L35.4501 15.4405ZM23.5031 20.8265H26.6261L29.4611 24.8215L32.3191 20.8265H35.3001L30.9621 26.7515L35.3741 32.6575H32.2041L29.3691 28.6635L26.5121 32.6585H23.5071L27.8681 26.7105L23.5031 20.8275V20.8265Z" fill="#EF5A3C"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_ii_21_32359" x="0" y="-0.9375" width="48" height="49" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect1_innerShadow_21_32359"/>
+<feOffset dy="-1"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_21_32359"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="effect1_innerShadow_21_32359" result="effect2_innerShadow_21_32359"/>
+</filter>
+<clipPath id="clip0_21_32359">
+<rect width="29" height="28" fill="white" transform="translate(9.5 10.0625)"/>
+</clipPath>
+</defs>
+</svg>

@@ -27,11 +27,7 @@ export default function EngineeringLibrary({
       )}
     >
       <div className="grid grid-flow-row   grid-rows-6">
-        <div className="grid grid-flow-row  row-span-1  place-content-end content-baseline">
-          {/* <h1 className="font-visuelt justify-end w-fit pt-[20px] pr-[18px] text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
-          Engineering
-        </h1> */}
-        </div>
+        <div className="grid grid-flow-row  row-span-1  place-content-end content-baseline"></div>
 
         <div className="grid   pl-[30px] pr-[80px] w-full  items-start relative row-span-4">
           <div className="absolute top-[-25px] right-[50px] z-20">
@@ -81,9 +77,9 @@ export default function EngineeringLibrary({
         <div className="grid relative row-span-1 content-start items-start place-items-start place-content-start">
           <div className="grid grid-flow-row items-start pl-[20px]">
             <h1 className="font-visuelt text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
-              Product Engineering
+              Open Source Libraries
             </h1>
-            <h1 className="font-visuelt text-[#ACACAF] text-[18px] font-normal leading-[24px]">
+            <h1 className="font-visuelt text-[#ACACAF80] text-[18px] font-normal leading-[24px]">
               30 pieces
             </h1>
           </div>
