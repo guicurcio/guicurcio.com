@@ -7,6 +7,7 @@ import Essay from "components/Essay/Essay";
 import Links from "components/Links/Links";
 import Project from "components/Project/Project";
 import RecommendedBooks from "components/RecommendedBooks/RecommendedBooks";
+import Resume from "components/Resume/Resume";
 import mergeClasses from "utils/mergeClasses";
 
 export default function Page() {
@@ -44,6 +45,9 @@ export default function Page() {
           ></Project>
           <EngineeringLibrary></EngineeringLibrary>
         </div>
+        {/* <div className="grid grid-flow-col grid-cols-12 row-span-6 gap-2 w-full h-full">
+          <Resume></Resume>
+        </div> */}
       </div>
     </div>
   );

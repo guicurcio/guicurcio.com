@@ -68,20 +68,20 @@ export default function Links({ className }: LinksProps): JSX.Element {
             draggable="false"
           ></img>
         </a>
-        <a href="https://youtube.com/guicurcio" target="_blank">
+        {/* <a href="https://youtube.com/guicurcio" target="_blank">
           <img
             src="assets/socials/youtube.svg"
             className="align-middle self-center"
             draggable="false"
           ></img>
-        </a>
-        <a href="https://twitch.com/guicurcio" target="_blank">
+        </a> */}
+        {/* <a href="https://twitch.com/guicurcio" target="_blank">
           <img
             src="assets/socials/twitch.svg"
             className="align-middle self-center"
             draggable="false"
           ></img>
-        </a>
+        </a> */}
       </div>
     </div>
   );
