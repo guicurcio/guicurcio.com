@@ -40,8 +40,8 @@ export default function Page() {
         <div className="grid grid-flow-col grid-cols-12 row-span-6 gap-2 w-full h-full">
           <CompaniesWorked></CompaniesWorked>
           <Project
-            name="guicurcio.com"
-            imageURL="/assets/websites/podsfy2.jpg"
+            name="sumias.com"
+            imageURL="/assets/websites/sumias.png"
           ></Project>
           <EngineeringLibrary></EngineeringLibrary>
         </div>
