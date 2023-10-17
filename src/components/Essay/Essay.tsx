@@ -41,11 +41,11 @@ export default function Essay({
           </div>
         </div>
         <div className=" grid grid-flow-row  row-span-6 h-full w-full  overflow-hidden ">
-          <div className="bg-[#F5F5F5] border-[#EBEBEB] border-2 rounded-t-[6px]   shadow-sm gap-1 px-10 pt-[40px] shadow-white mx-[110px] grid grid-flow-row items-start place-items-start  py-3">
-            <h1 className="text-black font-inter font-semibold text-[26px]">
+          <div className="bg-[#F5F5F5] border-[#EBEBEB] border-2 rounded-t-[1px] shadow-sm gap-1 px-10 pt-[30px] shadow-white mx-[80px] grid grid-flow-row items-start place-items-start  py-3">
+            <h1 className="text-black font-inter font-semibold text-[26px] pt-[10px]">
               {postTitle}
             </h1>
-            <p className="text-[14px] font-light font-inter text-[#707070] leading-[18.2px] tracking-[-0.07px] text-justify">
+            <p className="text-[14px] font-light font-inter text-[#707070] mt-[-110px] leading-[18.2px] tracking-[-0.07px] text-justify">
               We discuss analogs based on elliptic curves over finite fields of
               public key cryptosystems which use the multiplicative group of a
               finite field. These elliptic curve cryptosystems may be more

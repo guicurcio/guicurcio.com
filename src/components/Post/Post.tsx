@@ -89,7 +89,7 @@ export default function Post({
       <div className="grid grid-flow-col gap-x-2  place-content-start h-fit ">
         <Avatar picture={picture || "/avatars/1.jpg"} />
         <Link
-          href={status === "draft" ? "/" : `/${slug}`}
+          href={`/${slug}`}
           scroll={false}
           className="text-left self-start justify-start justifese font-moderat text-[17px] font-normal lowercase tracking-[-0.070em] text-[#c9c9c9e0] text-opacity-75 antialiased shadow-none"
         >

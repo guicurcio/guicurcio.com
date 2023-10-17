@@ -27,11 +27,11 @@ export default function Page() {
           <Project
             name="podsfy.com"
             imageURL="/assets/websites/podsfy2.jpg"
-            URL="https://podsfy.com"
+            URL="/podsfy"
           ></Project>
           <Essay
-            name="The Guiding Principle"
-            postTitle="The Guiding Principle"
+            name="AI Assisted Product Design"
+            postTitle="AI Assisted Product Design"
           ></Essay>
           <RecommendedBooks></RecommendedBooks>
         </div>

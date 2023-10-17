@@ -1,7 +1,4 @@
-import PostTitle from "components/PostTitle/PostTitle";
-import Text from "components/Text/Text";
 import { ReactNode } from "react";
-import mergeClasses from "utils/mergeClasses";
 
 /**
  * BlogPostPreview Props description
@@ -44,7 +41,7 @@ export default function BlogPostPreview({
   imageURL,
 }: BlogPostPreviewProps) {
   return (
-    <div className="grid grid-flow-row gap-8  h-full w-full place-content-start mx-auto pl-[30px] pr-[40px]">
+    <div className="grid grid-flow-row gap-8 h-full w-full place-content-between mx-auto pl-[30px] pr-[40px]">
       <div className="grid grid-flow-row gap-5">
         <div className="grid grid-flow-col gap-2 ">
           <img

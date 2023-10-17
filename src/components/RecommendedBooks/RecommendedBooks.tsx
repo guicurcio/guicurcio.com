@@ -28,7 +28,7 @@ export default function RecommendedBooks({
       <div className="grid grid-flow-row  place-content-around grid-rows-6 grid-cols-1 w-full">
         <div className="grid grid-flow-row  row-span-1 min-w-full col-span-1  place-content-end content-baseline">
           <h1 className="font-visuelt justify-end w-fit pt-[20px] pr-[18px] text-[#F2F2F2] text-[18px] font-normal leading-[24px]">
-            Recommended Books
+            My Library
           </h1>
         </div>
         <div className="grid-flow-row overflow-hidden relative gap-x-12  items-start place-content-baseline grid row-span-5 overflow-x-hidden">

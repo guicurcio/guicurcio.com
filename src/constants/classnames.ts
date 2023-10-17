@@ -1,5 +1,5 @@
 export const BLOGPOST_CLASSNAMES = [
-  "grid grid-flow-col gap-0 self-start",
+  "grid grid-flow-col gap-0 mx-auto",
   "backdrop-blur-[5px] font-visuelt shadow-3xl relative backdrop-brightness-[55%] backdrop-contrast-[112%]",
   "overflow-y-scroll  scrollbar-thumb-fondy scrollbar-track-read scrollbar-thin",
   "transition-none duration-0 animate-none",

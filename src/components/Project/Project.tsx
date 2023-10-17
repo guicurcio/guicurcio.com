@@ -49,7 +49,8 @@ export default function Project({
             </h1>
           </div>
           <div>
-            <a href={URL} target="_blank">
+            {/* target="_blank" */}
+            <a href={URL}>
               <img
                 src="assets/arrow.svg"
                 className="align-start self-start mt-[-6px] cursor-pointer hover:scale-[101%] transition-all duration-500 ease-in-out"
