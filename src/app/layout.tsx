@@ -10,14 +10,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className=" bg-[#161515] bg-opacity-[100%] relative">
-        {/* <img
+        <img
           src="waves.svg"
           className={mergeClasses(
-            "bottom-[90px] left-[50px] rotate-[160deg] absolute ",
-            "animate-pulse2 transform scale-y-[280%] scale-x-[250%] brightness-[180%] contrast-[100%]"
+            "bottom-[550px]  left-[-250px] rotate-[160deg] absolute scale-y-[1]",
+            "animate-pulse2 transform scale-y-[480%] scale-x-[250%] brightness-[150%]  contrast-[150%]"
           )}
           draggable="false"
-        ></img> */}
+        ></img>
         <div className="w-full h-full">
           {/* <Projects></Projects> */}
           {children}
