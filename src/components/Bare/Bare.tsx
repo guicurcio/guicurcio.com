@@ -47,7 +47,10 @@ export default function Bare({
           <div className="absolute bottom-0 w-full h-[55px] text-center  rounded-t place-self-end place-content-end items-end place-items-end">
             {" "}
             <div className="relative text-center w-full  h-full">
-              <h1 className="text-white text-[25px] font-moderat  text-center left-1/3 right-1/3  absolute bottom-3 place-content-end self-baseline">
+              <span className="text-[12px] text-white font-visuelt text-opacity-75">
+                interests
+              </span>
+              <h1 className="text-white text-[25px] font-moderat  text-center left-1/3 right-1/3  absolute bottom-1 place-content-end self-baseline">
                 {interest}
               </h1>
             </div>

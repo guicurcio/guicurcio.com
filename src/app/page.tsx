@@ -98,7 +98,7 @@ export default function Page() {
           ></Project>
           <Bare
             interest="Gardening"
-            imageURL="/assets/interests/greenhouse.png"
+            imageURL="/assets/interests/greenhouse2.png"
           ></Bare>
           <Essay
             name="The Epistemic Trinity"
