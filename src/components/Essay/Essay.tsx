@@ -28,7 +28,7 @@ export default function Essay({
       <div className="grid grid-flow-row place-content-around grid-rows-6 grid-cols-1 w-full">
         <div className="grid grid-flow-col place-content-between pt-[18px] px-[18px]   row-span-1  col-span-1 ">
           <div>
-            <h1 className="font-visuelt  w-fit align-middle  text-[#F2F2F270] text-[18px] font-normal leading-[24px]">
+            <h1 className="font-visuelt  invisible w-fit align-middle  text-[#F2F2F270] text-[18px] font-normal leading-[24px]">
               Post - {name}
             </h1>
           </div>
