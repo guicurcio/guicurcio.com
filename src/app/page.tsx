@@ -5,9 +5,9 @@ import Bare from "components/Bare/Bare";
 import CompaniesWorked from "components/CompaniesWorked/CompaniesWorked";
 import EngineeringLibrary from "components/EngineeringLibrary/EngineeringLibrary";
 import Essay from "components/Essay/Essay";
-import Links from "components/Links/Links";
 import Project from "components/Project/Project";
 import RecommendedBooks from "components/RecommendedBooks/RecommendedBooks";
+import Image from "next/image";
 import mergeClasses from "utils/mergeClasses";
 
 export default function Page() {
@@ -21,7 +21,6 @@ export default function Page() {
             )}
           ></div>
           <AboutMe></AboutMe>
-          {/* <Links></Links> */}
         </div>
         <div className="grid lg:grid-flow-col grid-flow-row grid-rows-1 lg:grid-cols-12 row-span-1 lg:row-span-2 gap-2 w-full h-full">
           <Project
@@ -32,6 +31,34 @@ export default function Page() {
           <Essay
             name="AI Assisted Product Design"
             postTitle="AI Assisted Product Design"
+            slug="ai-assisted-product-design"
+            className=""
+            children={
+              <>
+                <p className="text-[14px] font-light font-inter text-[#707070] pt-[10px]  leading-[18.2px] tracking-[-0.07px] text-justify">
+                  Have you ever paused to consider the haunting beauty of a Bach
+                  composition or the intricate patterns of a Van Gogh painting?
+                  Now, imagine a world where machines claim the title of the
+                  artist. A world where the gentle brush strokes and the subtle
+                  piano chords are not birthed from human hands and souls but
+                  from cold, calculating algorithms.
+                </p>
+                <Image
+                  className="w-[150px] h-[100px] mt-[15px] mb-[5px] mx-auto object-fill grayscale hover:grayscale-0"
+                  src={"/podsfy-selection.png"}
+                  alt="asd"
+                  width={1920}
+                  height={1080}
+                  quality={100}
+                ></Image>
+                <p className="text-[14px] font-light font-inter mb-[5px] text-[#707070] pt-[10px]  leading-[18.2px] tracking-[-0.07px] text-justify">
+                  We're on the cusp of such a world, and as we inch closer,
+                  there's a nagging question: In this AI-driven design utopia
+                  (or dystopia, depending on your perspective), what becomes of
+                  the human artist...
+                </p>
+              </>
+            }
           ></Essay>
           <RecommendedBooks></RecommendedBooks>
         </div>
@@ -64,8 +91,9 @@ export default function Page() {
         <div className="grid grid-flow-col grid-cols-12 row-span-3 gap-2 w-full h-full">
           <Project
             name="obtuso.com"
-            imageURL="/assets/websites/sumias4.png"
+            imageURL="/assets/websites/obtuso.png"
             URL="/obtuso"
+            imageClassname="object-cover"
           ></Project>
           <Bare
             interest="Podcasts"
@@ -82,7 +110,7 @@ export default function Page() {
           <Bare interest="Chess" imageURL="/assets/interests/chess.png"></Bare>
           <Project
             name="guicurcio.com"
-            imageURL="/assets/websites/guicurcio.jpg"
+            imageURL="/assets/websites/guicurcio3.jpg"
             URL="/"
           ></Project>
           <Project

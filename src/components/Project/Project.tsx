@@ -22,6 +22,7 @@ export interface ProjectProps {
    * https://example.com/Project
    */
   URL?: string;
+  imageClassname?: string;
 }
 
 /**
@@ -32,6 +33,7 @@ export default function Project({
   name = "",
   imageURL = "",
   URL = "",
+  imageClassname = "",
 }: ProjectProps): JSX.Element {
   return (
     <div
@@ -78,7 +80,10 @@ export default function Project({
                 </div>
               </div>
               <Image
-                className="w-[550px] h-[360px] mt-[-4px] brightness-[80%] transition-all duration-500 ease-in-out hover:brightness-105"
+                className={mergeClasses(
+                  "w-[550px] h-[360px] mt-[-4px] brightness-[80%] transition-all duration-500 ease-in-out hover:brightness-105",
+                  imageClassname
+                )}
                 src={imageURL}
                 alt="asd"
                 width={1920}
