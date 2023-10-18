@@ -3,13 +3,13 @@ export const BLOGPOST_CLASSNAMES = [
   "backdrop-blur-[5px] font-visuelt shadow-3xl relative backdrop-brightness-[55%] backdrop-contrast-[112%]",
   "overflow-y-scroll  scrollbar-thumb-fondy scrollbar-track-read scrollbar-thin",
   "transition-none duration-0 animate-none",
-  "h-screen max-w-[800px] w-[800px] grid grid-flow-row gap-6",
-  "border-sharper  border-opacity-10 py-[25px]",
+  "h-screen max-w-[900px] w-[900px] grid grid-flow-row gap-6",
+  "border-sharper  border-opacity-10 py-[50px]",
   "bg-[#1E1E1E] bg-opacity-[95%]",
 ];
 
 export const BORDER_POSTS_CLASSNAMES = [
-  "col-span-1  boxy rounded-[2px] grid grid-flow-row backdrop-blur-[2px] backdrop-brightness-[65%] backdrop-contrast-[112%] shadow-3xl",
+  "col-span-1 boxy rounded-[2px] grid grid-flow-row backdrop-blur-[2px] backdrop-brightness-[65%] backdrop-contrast-[112%] shadow-3xl",
 ];
 
 export const BLOGPOST_ANIMATION_VARIANTS = {

@@ -18,7 +18,7 @@ export default function RootLayout({
           )}
           draggable="false"
         ></img> */}
-        <div className="w-full h-full scale-[95%]">
+        <div className="w-full h-full">
           {/* <Projects></Projects> */}
           {children}
         </div>
