@@ -77,12 +77,13 @@ export default function Page() {
         <div className="grid grid-flow-col grid-cols-12 row-span-3 gap-2 w-full h-full">
           <Bare
             interest="Coffee"
-            imageURL="/assets/interests/coffee.png"
+            imageURL="/assets/interests/coffee2.png"
           ></Bare>
           <Bare
-            interest="Gardening"
-            imageURL="/assets/interests/greenhouse.png"
+            interest="Podcasts"
+            imageURL="/assets/interests/podcasts.png"
           ></Bare>
+
           <Essay
             name="Inventing On Principle"
             postTitle="Inventing On Principle"
@@ -96,7 +97,7 @@ export default function Page() {
             imageClassname="object-cover"
           ></Project>
           <Bare
-            interest="Podcasts"
+            interest="Gardening"
             imageURL="/assets/interests/greenhouse.png"
           ></Bare>
           <Essay
