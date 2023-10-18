@@ -87,6 +87,7 @@ export default function Page() {
           <Essay
             name="Principles in Pixels"
             postTitle="Principles in Pixels"
+            slug="principles-in-pixels"
             children={
               <>
                 <p className="text-[14px] font-light font-inter text-[#707070] pt-[10px]  leading-[18.2px] tracking-[-0.07px] text-justify">
