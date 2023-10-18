@@ -17,11 +17,11 @@ export default function Page() {
         <div className="grid lg:grid-flow-col grid-flow-row grid-rows-2 lg:grid-rows-1 row-span-3 lg:grid-cols-12 lg:row-span-2 gap-2 w-full h-full">
           <div
             className={mergeClasses(
-              "lg:col-span-5 lg:grid grid-flow-col hidden"
+              "lg:col-span-7 lg:grid grid-flow-col hidden"
             )}
           ></div>
           <AboutMe></AboutMe>
-          <Links></Links>
+          {/* <Links></Links> */}
         </div>
         <div className="grid lg:grid-flow-col grid-flow-row grid-rows-1 lg:grid-cols-12 row-span-1 lg:row-span-2 gap-2 w-full h-full">
           <Project
@@ -45,12 +45,9 @@ export default function Page() {
           ></Project>
           <EngineeringLibrary></EngineeringLibrary>
         </div>
-        {/* <div className="grid grid-flow-col grid-cols-12 row-span-6 gap-2 w-full h-full">
-          <Resume></Resume>
-        </div> */}
       </div>
-      <div className="grid grid-flow-row grid-rows-6 gap-y-1 w-full h-full ">
-        <div className="grid grid-flow-col grid-cols-12 row-span-6 gap-2 w-full h-full">
+      <div className="grid grid-flow-row grid-rows-6 gap-4 w-full h-full">
+        <div className="grid grid-flow-col grid-cols-12 row-span-3 gap-2 w-full h-full">
           <Bare
             interest="Coffee"
             imageURL="/assets/interests/coffee.png"
@@ -60,13 +57,40 @@ export default function Page() {
             imageURL="/assets/interests/greenhouse.png"
           ></Bare>
           <Essay
-            name="AI Assisted Product Design"
-            postTitle="AI Assisted Product Design"
+            name="Inventing On Principle"
+            postTitle="Inventing On Principle"
           ></Essay>
         </div>
-        {/* <div className="grid grid-flow-col grid-cols-12 row-span-6 gap-2 w-full h-full">
-          <Resume></Resume>
-        </div> */}
+        <div className="grid grid-flow-col grid-cols-12 row-span-3 gap-2 w-full h-full">
+          <Project
+            name="obtuso.com"
+            imageURL="/assets/websites/sumias4.png"
+            URL="/obtuso"
+          ></Project>
+          <Bare
+            interest="Podcasts"
+            imageURL="/assets/interests/greenhouse.png"
+          ></Bare>
+          <Essay
+            name="The Epistemic Trinity"
+            postTitle="The Epistemic Trinity"
+          ></Essay>
+        </div>
+      </div>
+      <div className="grid grid-flow-row grid-rows-6 gap-4 w-full h-full">
+        <div className="grid grid-flow-col grid-cols-12 row-span-3 gap-2 w-full h-full">
+          <Bare interest="Chess" imageURL="/assets/interests/chess.png"></Bare>
+          <Project
+            name="guicurcio.com"
+            imageURL="/assets/websites/guicurcio.jpg"
+            URL="/"
+          ></Project>
+          <Project
+            name="subidos.com"
+            imageURL="/assets/websites/subidos.jpg"
+            URL="/subidos"
+          ></Project>
+        </div>
       </div>
     </div>
   );
