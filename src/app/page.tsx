@@ -17,7 +17,7 @@ export default function Page() {
         <div className="grid lg:grid-flow-col grid-flow-row grid-rows-2 lg:grid-rows-1 row-span-3 lg:grid-cols-12 lg:row-span-2 gap-2 w-full h-full">
           <div
             className={mergeClasses(
-              "lg:col-span-7 lg:grid grid-flow-col hidden"
+              "lg:col-span-8 lg:grid grid-flow-col hidden"
             )}
           ></div>
           <AboutMe></AboutMe>
@@ -85,8 +85,33 @@ export default function Page() {
           ></Bare>
 
           <Essay
-            name="Inventing On Principle"
-            postTitle="Inventing On Principle"
+            name="Principles in Pixels"
+            postTitle="Principles in Pixels"
+            children={
+              <>
+                <p className="text-[14px] font-light font-inter text-[#707070] pt-[10px]  leading-[18.2px] tracking-[-0.07px] text-justify">
+                  We often find ourselves lost in the labyrinth of code,
+                  interfaces, and digital constructs, forgetting the very
+                  essence of why we create. Bret Victor's "Inventing on
+                  Principle" serves as a beacon, reminding us of the soul behind
+                  the software.
+                </p>
+
+                <p className="text-[14px] font-light font-inter mb-[5px] text-[#707070] pt-[10px]  leading-[18.2px] tracking-[-0.07px] text-justify">
+                  The allure of Victor's "immediate connection" is not just in
+                  revolutionizing software design; it's a clarion call for every
+                  creator, in every field, to witness the real-time fruition of
+                  their ideas. This immediacy, this tangible dance between idea
+                  and outcome, transcends code—it has the potential to redefine
+                  any craft, from architecture to zoology.
+                </p>
+                <p className="text-[14px] font-light font-inter mb-[5px] text-[#707070] pt-[10px]  leading-[18.2px] tracking-[-0.07px] text-justify">
+                  Yet, at the heart of Victor's ethos is not just the how but
+                  the why. The guiding principle. It's not a mere compass but
+                  the very wind that propels our sails.
+                </p>
+              </>
+            }
           ></Essay>
         </div>
         <div className="grid grid-flow-col grid-cols-12 row-span-3 gap-2 w-full h-full">
