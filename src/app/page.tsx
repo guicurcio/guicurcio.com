@@ -1,6 +1,7 @@
 export const dynamic = "force-static";
 
 import AboutMe from "components/AboutMe/AboutMe";
+import Bare from "components/Bare/Bare";
 import CompaniesWorked from "components/CompaniesWorked/CompaniesWorked";
 import EngineeringLibrary from "components/EngineeringLibrary/EngineeringLibrary";
 import Essay from "components/Essay/Essay";
@@ -11,7 +12,7 @@ import mergeClasses from "utils/mergeClasses";
 
 export default function Page() {
   return (
-    <div className="w-full h-full px-[50px] lg:pt-[30px] pb-[10px] grid grid-flow-row gap-y-4">
+    <div className="w-full h-full px-[50px] lg:pt-[30px] pb-[20px] grid grid-flow-row gap-y-4">
       <div className="grid grid-flow-row grid-rows-4 gap-y-4 w-full h-full ">
         <div className="grid lg:grid-flow-col grid-flow-row grid-rows-2 lg:grid-rows-1 row-span-3 lg:grid-cols-12 lg:row-span-2 gap-2 w-full h-full">
           <div
@@ -50,12 +51,18 @@ export default function Page() {
       </div>
       <div className="grid grid-flow-row grid-rows-6 gap-y-1 w-full h-full ">
         <div className="grid grid-flow-col grid-cols-12 row-span-6 gap-2 w-full h-full">
-          <CompaniesWorked></CompaniesWorked>
-          <Project
-            name="sumias.com"
-            imageURL="/assets/websites/sumias.png"
-          ></Project>
-          <EngineeringLibrary></EngineeringLibrary>
+          <Bare
+            interest="Coffee"
+            imageURL="/assets/interests/coffee.png"
+          ></Bare>
+          <Bare
+            interest="Gardening"
+            imageURL="/assets/interests/greenhouse.png"
+          ></Bare>
+          <Essay
+            name="AI Assisted Product Design"
+            postTitle="AI Assisted Product Design"
+          ></Essay>
         </div>
         {/* <div className="grid grid-flow-col grid-cols-12 row-span-6 gap-2 w-full h-full">
           <Resume></Resume>

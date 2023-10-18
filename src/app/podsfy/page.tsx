@@ -7,6 +7,7 @@ import {
   BORDER_POSTS_CLASSNAMES,
 } from "constants/classnames";
 import Image from "next/image";
+import Link from "next/link";
 import mergeClasses from "utils/mergeClasses";
 
 export default function PodsfyPage() {
@@ -15,13 +16,13 @@ export default function PodsfyPage() {
       className={mergeClasses(...BLOGPOST_CLASSNAMES, BORDER_POSTS_CLASSNAMES)}
     >
       <div className="grid grid-flow-row gap-8 h-full w-full place-content-between mx-auto pl-[30px] pr-[40px]">
-        <a>
+        <Link href={"/"}>
           <img
             src="assets/arrow.svg"
-            className="scale-x-[-100%] align-start self-start mt-[-6px] cursor-pointer hover:scale-[101%] transition-all duration-500 ease-in-out"
+            className="scale-x-[-100%] align-start self-start mt-[-20px] cursor-pointer"
             draggable="false"
           ></img>
-        </a>
+        </Link>
         <div className="grid grid-flow-row mx-auto gap-0 border-t border-l border-r border-[#333333] rounded-t-[4px]">
           <div className="bg-[#191C1F]  bg-opacity-25 backdrop-blur-[3px] backdrop-brightness-[55%] rounded-t-[6px] px-3  grid grid-flow-col items-start place-items-start h-fit py-3">
             <div className=" grid grid-flow-col items-start content-start gap-2 ">
@@ -44,11 +45,11 @@ export default function PodsfyPage() {
             </div>
           </div>
           <Image
-            className="w-[550px] h-[360px] mt-[-4px] brightness-[80%] transition-all duration-500 ease-in-out hover:brightness-105"
+            className="w-[550px] object-fill h-[360px] mt-[-4px] brightness-[80%] transition-all duration-500 ease-in-out hover:brightness-105"
             src={"/podsfy-selection.png"}
             alt="asd"
             width={1920}
-            height={1780}
+            height={1080}
             quality={100}
           ></Image>
         </div>
