@@ -29,18 +29,14 @@ export default function Bare({
   imageURL = "/assets/interests/coffee.png",
 }: BareProps): JSX.Element {
   return (
-    <div className={mergeClasses(...BORDER_POSTS_CLASSNAMES, "col-span-3")}>
-      <div className="grid grid-flow-row place-content-around grid-rows-6 grid-cols-1 w-full">
-        <div className="grid grid-flow-row  pt-[18px] px-[18px]   row-span-1  col-span-1 ">
-          <h1 className="font-visuelt  w-fit align-middle  text-[#F2F2F270] text-[18px] font-normal leading-[24px]">
-            Interest - {interest}
-          </h1>
-        </div>
-        <div className="grid grid-flow-row  row-span-5 w-full  overflow-hidden ">
+    <div className={mergeClasses(BORDER_POSTS_CLASSNAMES, "col-span-3 h-full")}>
+      <div className="grid grid-flow-row place-content-around grid-rows-6 h-full grid-cols-1 w-full">
+        <div className="grid grid-flow-row  row-span-6 w-full h-full relative overflow-y-hidden">
           <Image
             className={mergeClasses(
-              "w-[350px] h-[250px] mt-[-4px] mx-auto brightness-[80%] rounded-[12px]",
-              "border-sharper border border-opacity-10"
+              "w-full h-full mt-[-4px] mx-auto brightness-[80%] rounded-[12px]",
+              "border-sharper border border-opacity-10 rounded-b-[200000px]",
+              "absolute top-[-50px]"
             )}
             src={imageURL}
             alt="asd"
@@ -48,7 +44,16 @@ export default function Bare({
             height={1080}
             quality={100}
           ></Image>
+          <div className="absolute bottom-0 w-full h-[55px] text-center  rounded-t place-self-end place-content-end items-end place-items-end">
+            {" "}
+            <div className="relative text-center w-full  h-full">
+              <h1 className="text-white text-[25px] font-moderat  text-center left-1/3 right-1/3  absolute bottom-3 place-content-end self-baseline">
+                {interest}
+              </h1>
+            </div>
+          </div>
         </div>
+        <div></div>
       </div>
     </div>
   );
