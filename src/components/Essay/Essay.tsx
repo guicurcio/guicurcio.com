@@ -41,8 +41,11 @@ export default function Essay({
         </div>
         <div className=" grid grid-flow-row  row-span-6 h-full w-full  overflow-hidden ">
           <div className="bg-[#F5F5F5] border-[#EBEBEB] bg-paper border-2 rounded-t-[1px] shadow-sm gap-1  shadow-white mx-[80px] grid grid-flow-row items-start place-items-start ">
-            <div className="backdrop:backdrop-blur-[500%] backdrop:backdrop-brightness-[50%]  h-full w-full block bg-white bg-opacity-80 px-10 py-4">
-              <h1 className="text-black font-inter font-semibold text-[26px] pt-[10px]">
+            <div className="backdrop:backdrop-blur-[500%] backdrop:backdrop-brightness-[50%]  h-full w-full block bg-white bg-opacity-80 px-10 pt-[16px]">
+              <p className="text-[14px] font-light font-inter text-[#707070]  leading-[18.2px] tracking-[-0.07px] text-justify pt-[20px]">
+                Date published: 01/10/2023
+              </p>
+              <h1 className="text-black font-inter font-semibold text-[26px] mt-[-5px]">
                 {postTitle}
               </h1>
               <p className="text-[14px] font-light font-inter text-[#707070]  leading-[18.2px] tracking-[-0.07px] text-justify">
