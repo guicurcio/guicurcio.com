@@ -8,21 +8,15 @@ import Essay from "components/Essay/Essay";
 import Project from "components/Project/Project";
 import RecommendedBooks from "components/RecommendedBooks/RecommendedBooks";
 import Image from "next/image";
-import mergeClasses from "utils/mergeClasses";
 
 export default function Page() {
   return (
-    <div className="w-full h-full px-[50px] lg:pt-[30px] pb-[20px] grid grid-flow-row gap-y-4">
-      <div className="grid grid-flow-row grid-rows-4 gap-y-4 w-full h-full ">
-        <div className="grid lg:grid-flow-col grid-flow-row grid-rows-2 lg:grid-rows-1 row-span-3 lg:grid-cols-12 lg:row-span-2 gap-2 w-full h-full">
-          <div
-            className={mergeClasses(
-              "lg:col-span-8 lg:grid grid-flow-col hidden"
-            )}
-          ></div>
+    <div className="w-full h-full px-[50px] lg:pt-[30px]  grid grid-flow-row gap-y-4">
+      <div className="grid grid-flow-row grid-rows-3 gap-y-4 w-full h-full ">
+        <div className="grid lg:grid-flow-col grid-flow-row grid-rows-1 grid-cols-12 row-span-1 lg:row-span-1 w-full h-full">
           <AboutMe></AboutMe>
         </div>
-        <div className="grid lg:grid-flow-col grid-flow-row grid-rows-1 lg:grid-cols-12 row-span-1 lg:row-span-2 gap-2 w-full h-full">
+        <div className="grid lg:grid-flow-col grid-flow-row grid-rows-1 lg:grid-cols-12 row-span-2 lg:row-span-2 gap-2 w-full h-full">
           <Project
             name="podsfy.com"
             imageURL="/assets/websites/podsfy2.jpg"
@@ -129,11 +123,35 @@ export default function Page() {
           <Essay
             name="The Epistemic Trinity"
             postTitle="The Epistemic Trinity"
+            slug="the-epistemic-trinity"
+            children={
+              <>
+                <p className="text-[14px] font-light font-inter text-[#707070] pt-[10px]  leading-[18.2px] tracking-[-0.07px] text-justify">
+                  Some knowledge-getting can be akin to hiking the Everest. You
+                  cannot reach to the top unless you do the work of hiking the
+                  trail that leads to the top. Now, we could get to the top by
+                  flying on a helicopter, but we could not say that we hiked the
+                  Everest, not in any meaningful way. It's in this sense that
+                  knowing mathematics, playing chess or knowing how to code
+                  -from one day to another- it's equivalent to appearing in
+                  Mount Everest without having hiked the trail (i.e. it's
+                  impossible.)
+                </p>
+
+                <p className="text-[14px] font-light font-inter mb-[5px] text-[#707070] pt-[10px]  leading-[18.2px] tracking-[-0.07px] text-justify">
+                  There's a binary aspect in a lot of knowledge: you either know
+                  mathematics or you don't. You either know how to code or you
+                  don't. But as you learn mathematics you don't get to _know_
+                  mathematics. If anything, you get to know how _little_ you
+                  know mathematics...
+                </p>
+              </>
+            }
           ></Essay>
         </div>
       </div>
       <div className="grid grid-flow-row grid-rows-6 gap-4 w-full h-full">
-        <div className="grid grid-flow-col grid-cols-12 row-span-3 gap-2 w-full h-full">
+        <div className="grid grid-flow-col grid-cols-12 row-span-5 gap-2 w-full h-full">
           <Bare interest="Chess" imageURL="/assets/interests/chess.png"></Bare>
           <Project
             name="guicurcio.com"

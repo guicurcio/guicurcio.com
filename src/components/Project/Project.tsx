@@ -39,7 +39,7 @@ export default function Project({
     <div
       className={mergeClasses(
         ...BORDER_POSTS_CLASSNAMES,
-        "col-span-5",
+        "lg:col-span-5 col-span-6",
         className
       )}
     >

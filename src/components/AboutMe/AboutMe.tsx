@@ -20,7 +20,7 @@ export default function AboutMe({ className }: AboutMeProps): JSX.Element {
     <div
       className={mergeClasses(
         ...BORDER_POSTS_CLASSNAMES,
-        "relative overflow-y-hidden lg:col-span-4 grid col-span-12 row-span-2"
+        "relative overflow-y-hidden lg:col-span-12 grid col-span-12 row-span-1 lg:row-span-1"
       )}
     >
       <img

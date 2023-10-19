@@ -12,10 +12,7 @@ export default function RootLayout({
       <body className=" bg-[#161515] bg-opacity-[100%] relative">
         <img
           src="waves.svg"
-          className={mergeClasses(
-            "bottom-[550px]  left-[-250px] rotate-[160deg] absolute scale-y-[1]",
-            "animate-pulse2 transform scale-y-[480%] scale-x-[250%] brightness-[150%]  contrast-[150%]"
-          )}
+          className={mergeClasses("absolute", "h-screen w-screen")}
           draggable="false"
         ></img>
         <div className="w-full h-full">
