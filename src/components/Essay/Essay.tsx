@@ -31,13 +31,7 @@ export default function Essay({
   children,
 }: EssayProps): JSX.Element {
   return (
-    <div
-      className={mergeClasses(
-        ...BORDER_POSTS_CLASSNAMES,
-        "col-span-4",
-        className
-      )}
-    >
+    <div className={mergeClasses(...BORDER_POSTS_CLASSNAMES, className)}>
       <div className="grid grid-flow-row place-content-around grid-rows-6 grid-cols-1 w-full">
         <div className="grid grid-flow-col place-content-between pt-[18px] px-[18px]   row-span-1  col-span-1 ">
           <div>

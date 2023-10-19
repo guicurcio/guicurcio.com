@@ -24,7 +24,7 @@ export default function RecommendedBooks({
   className,
 }: RecommendedBooksProps): JSX.Element {
   return (
-    <div className={mergeClasses(...BORDER_POSTS_CLASSNAMES, "col-span-3")}>
+    <div className={mergeClasses(...BORDER_POSTS_CLASSNAMES, className)}>
       <div className="grid grid-flow-row  place-content-around grid-rows-6 grid-cols-1 w-full">
         <div className="grid grid-flow-row  row-span-1 min-w-full col-span-1  place-content-end content-baseline">
           <h1 className="font-visuelt justify-end w-fit pt-[20px] pr-[18px] text-[#F2F2F2] text-[18px] font-normal leading-[24px]">

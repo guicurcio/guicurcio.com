@@ -29,7 +29,7 @@ export default function Bare({
   imageURL = "/assets/interests/coffee.png",
 }: BareProps): JSX.Element {
   return (
-    <div className={mergeClasses(BORDER_POSTS_CLASSNAMES, "col-span-3 h-full")}>
+    <div className={mergeClasses(...BORDER_POSTS_CLASSNAMES, className)}>
       <div className="grid grid-flow-row place-content-around grid-rows-6 h-full grid-cols-1 w-full">
         <div className="grid grid-flow-row  row-span-6 w-full h-full relative overflow-y-hidden">
           <Image

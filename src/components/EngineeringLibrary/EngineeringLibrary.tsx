@@ -23,7 +23,8 @@ export default function EngineeringLibrary({
     <div
       className={mergeClasses(
         ...BORDER_POSTS_CLASSNAMES,
-        "col-span-4 hover:border border-collapse hover:border-1 transition-colors duration-700 ease-in-out"
+        "hover:border border-collapse hover:border-1 transition-colors duration-700 ease-in-out",
+        className
       )}
     >
       <div className="grid grid-flow-row   grid-rows-6">
