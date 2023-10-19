@@ -10,11 +10,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className=" bg-[#161515] bg-opacity-[100%] relative">
-        <img
-          src="waves.svg"
-          className={mergeClasses("absolute", "h-screen w-screen")}
-          draggable="false"
-        ></img>
         <div className="w-full h-full">
           {/* <Projects></Projects> */}
           {children}

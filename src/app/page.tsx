@@ -2,6 +2,7 @@ export const dynamic = "force-static";
 
 import AboutMe from "components/AboutMe/AboutMe";
 import Bare from "components/Bare/Bare";
+import CompaniesWorked from "components/CompaniesWorked/CompaniesWorked";
 import EngineeringLibrary from "components/EngineeringLibrary/EngineeringLibrary";
 import Essay from "components/Essay/Essay";
 import Project from "components/Project/Project";
@@ -154,6 +155,7 @@ export default function Page() {
         URL="/subidos"
         className="lg:col-span-5 col-span-12"
       ></Project>
+      {/* <CompaniesWorked className="lg:col-span-5 col-span-12"></CompaniesWorked> */}
     </div>
   );
 }

@@ -1,12 +1,11 @@
 import { BORDER_POSTS_CLASSNAMES } from "constants/classnames";
-import Image from "next/image";
 import Link from "next/link";
 import mergeClasses from "utils/mergeClasses";
 
 /**
- * Props for the Project component.
+ * Props for the CompaniesWorked component.
  */
-export interface ProjectProps {
+export interface CompaniesWorkedProps {
   /**
    * Custom class names passed to the root element.
    */
@@ -20,35 +19,29 @@ export interface ProjectProps {
   /**
    * The path or URL to navigate to.
    * @example
-   * https://example.com/Project
+   * https://example.com/CompaniesWorked
    */
   URL?: string;
   imageClassname?: string;
 }
 
 /**
- * Project Component
+ * CompaniesWorked Component
  */
-export default function Project({
+export default function CompaniesWorked({
   className,
   name = "",
   imageURL = "",
   URL = "",
   imageClassname = "",
-}: ProjectProps): JSX.Element {
+}: CompaniesWorkedProps): JSX.Element {
   return (
-    <div
-      className={mergeClasses(
-        ...BORDER_POSTS_CLASSNAMES,
-        "col-span-3",
-        className
-      )}
-    >
+    <div className={mergeClasses(...BORDER_POSTS_CLASSNAMES, className)}>
       <div className="grid grid-flow-row place-content-around grid-rows-6 grid-cols-1 w-full">
         <div className="grid grid-flow-col place-content-between pt-[18px] px-[18px]   row-span-1  col-span-1 ">
           <div>
             <h1 className="font-visuelt  w-fit align-middle  text-[#F2F2F270] text-[18px] font-normal leading-[24px]">
-              Projects - {name}
+              Companies Workeds - {name}
             </h1>
           </div>
           <div>
@@ -67,4 +60,4 @@ export default function Project({
   );
 }
 
-Project.displayName = "Project";
+CompaniesWorked.displayName = "CompaniesWorked";
