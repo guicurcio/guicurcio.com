@@ -12,8 +12,15 @@ import Image from "next/image";
 export default function Page() {
   return (
     <div className="grid grid-cols-12 gap-6 mx-20 my-10 pb-10">
-      <AboutMe className="col-span-12"></AboutMe>
+      <AboutMe className="col-span-4"></AboutMe>
       <RecommendedBooks className="col-span-12 lg:col-span-8"></RecommendedBooks>
+      <EngineeringLibrary className="lg:col-span-6 col-span-12"></EngineeringLibrary>
+      <Project
+        name="podsfy.com"
+        imageURL="/assets/websites/podsfy2.jpg"
+        URL="/podsfy"
+        className="lg:col-span-6 col-span-12"
+      ></Project>
       <Essay
         name="AI Assisted Product Design"
         postTitle="AI Assisted Product Design"
@@ -46,28 +53,7 @@ export default function Page() {
           </>
         }
       ></Essay>
-      <Project
-        name="podsfy.com"
-        imageURL="/assets/websites/podsfy2.jpg"
-        URL="/podsfy"
-        className="lg:col-span-6 col-span-12"
-      ></Project>
-      <Project
-        name="sumias.com"
-        imageURL="/assets/websites/sumias.png"
-        className="lg:col-span-6 col-span-12"
-      ></Project>
-      <EngineeringLibrary className="lg:col-span-6 col-span-12"></EngineeringLibrary>
-      <Bare
-        interest="Coffee"
-        imageURL="/assets/interests/coffee2.png"
-        className="lg:col-span-3 col-span-12 hidden lg:block"
-      ></Bare>
-      <Bare
-        interest="Podcasts"
-        imageURL="/assets/interests/podcasts.png"
-        className="lg:col-span-3 col-span-12 hidden lg:block"
-      ></Bare>
+
       <Essay
         name="Principles in Pixels"
         postTitle="Principles in Pixels"
@@ -98,18 +84,6 @@ export default function Page() {
           </>
         }
       ></Essay>
-      <Project
-        name="obtuso.com"
-        imageURL="/assets/websites/obtuso.png"
-        URL="/obtuso"
-        imageClassname="object-cover"
-        className="col-span-12 lg:col-span-5"
-      ></Project>
-      <Bare
-        interest="Gardening"
-        imageURL="/assets/interests/greenhouse2.png"
-        className="lg:col-span-3 col-span-12 hidden lg:block"
-      ></Bare>
       <Essay
         name="The Epistemic Trinity"
         className="lg:col-span-4 col-span-12"
@@ -138,6 +112,35 @@ export default function Page() {
           </>
         }
       ></Essay>
+      <Project
+        name="sumias.com"
+        imageURL="/assets/websites/sumias.png"
+        className="lg:col-span-6 col-span-12"
+      ></Project>
+      <Bare
+        interest="Coffee"
+        imageURL="/assets/interests/coffee2.png"
+        className="lg:col-span-3 col-span-12 hidden lg:block"
+      ></Bare>
+      <Bare
+        interest="Podcasts"
+        imageURL="/assets/interests/podcasts.png"
+        className="lg:col-span-3 col-span-12 hidden lg:block"
+      ></Bare>
+
+      <Project
+        name="obtuso.com"
+        imageURL="/assets/websites/obtuso.png"
+        URL="/obtuso"
+        imageClassname="object-cover"
+        className="col-span-12 lg:col-span-5"
+      ></Project>
+      <Bare
+        interest="Gardening"
+        imageURL="/assets/interests/greenhouse2.png"
+        className="lg:col-span-3 col-span-12 hidden lg:block"
+      ></Bare>
+
       <Bare
         interest="Chess"
         imageURL="/assets/interests/chess.png"
