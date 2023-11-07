@@ -14,7 +14,7 @@ export interface RecommendedBooksProps {
 }
 
 const BOOK_CLASSES = [
-  "rounded-[1px] brightness-[80%] transition-all duration-500 ease-in-out hover:brightness-105 border-2 border-white/30 w-[150px] h-[180px]",
+  "rounded-[1px] brightness-[80%] transition-all duration-500 ease-in-out hover:brightness-105 border-2 border-white/30 w-[550px] h-[180px]",
 ];
 
 /**
@@ -32,12 +32,12 @@ export default function RecommendedBooks({
           </h1>
         </div>
         <div className="grid-flow-row overflow-hidden relative gap-x-12  items-start place-content-baseline grid row-span-5 overflow-x-hidden">
-          <div className="h-full w-[800px] ml-[0px]  overflow-hidden grid grid-flow-col grid-rows-2 gap-4 whitespace-nowrap animate-marquee">
+          <div className="h-full py-[10px] ml-[0px]  overflow-hidden grid grid-flow-col grid-rows-1 gap-4 whitespace-nowrap animate-marquee">
             <Image
               className={mergeClasses(...BOOK_CLASSES)}
               src="/assets/achop.jpg"
               alt="asd"
-              width={150}
+              width={550}
               height={180}
               quality={100}
             ></Image>
@@ -45,7 +45,7 @@ export default function RecommendedBooks({
               className={mergeClasses(...BOOK_CLASSES)}
               src="/assets/cst.jpg"
               alt="asd"
-              width={150}
+              width={550}
               height={180}
               quality={100}
             ></Image>
@@ -53,7 +53,7 @@ export default function RecommendedBooks({
               className={mergeClasses(...BOOK_CLASSES)}
               src="/assets/geb.jpg"
               alt="asd"
-              width={150}
+              width={550}
               height={180}
               quality={100}
             ></Image>
@@ -61,7 +61,7 @@ export default function RecommendedBooks({
               className={mergeClasses(...BOOK_CLASSES)}
               src="/assets/fbr.jpg"
               alt="asd"
-              width={150}
+              width={550}
               height={180}
               quality={100}
             ></Image>
@@ -69,7 +69,7 @@ export default function RecommendedBooks({
               className={mergeClasses(...BOOK_CLASSES)}
               src="/assets/l.jpg"
               alt="asd"
-              width={150}
+              width={550}
               height={180}
               quality={100}
             ></Image>
@@ -77,7 +77,7 @@ export default function RecommendedBooks({
               className={mergeClasses(...BOOK_CLASSES)}
               src="/assets/ia.jpg"
               alt="asd"
-              width={150}
+              width={550}
               height={180}
               quality={100}
             ></Image>
@@ -85,7 +85,7 @@ export default function RecommendedBooks({
               className={mergeClasses(...BOOK_CLASSES)}
               src="/assets/tboi.jpg"
               alt="asd"
-              width={150}
+              width={550}
               height={180}
               quality={100}
             ></Image>
@@ -93,7 +93,7 @@ export default function RecommendedBooks({
               className={mergeClasses(...BOOK_CLASSES)}
               src="/assets/tbp.jpg"
               alt="asd"
-              width={150}
+              width={550}
               height={180}
               quality={100}
             ></Image>
@@ -101,7 +101,7 @@ export default function RecommendedBooks({
               className={mergeClasses(...BOOK_CLASSES)}
               src="/assets/tis.jpg"
               alt="asd"
-              width={150}
+              width={550}
               height={180}
               quality={100}
             ></Image>
@@ -109,89 +109,7 @@ export default function RecommendedBooks({
               className={mergeClasses(...BOOK_CLASSES)}
               src="/assets/u.jpg"
               alt="asd"
-              width={150}
-              height={180}
-              quality={100}
-            ></Image>
-          </div>
-          <div className="w-[800px] ml-[16px] absolute gap-4 overflow-hidden  animate-marquee2 whitespace-nowrap grid grid-flow-col grid-rows-2">
-            <Image
-              className={mergeClasses(...BOOK_CLASSES)}
-              src="/assets/achop.jpg"
-              alt="asd"
-              width={150}
-              height={180}
-              quality={100}
-            ></Image>
-            <Image
-              className={mergeClasses(...BOOK_CLASSES)}
-              src="/assets/cst.jpg"
-              alt="asd"
-              width={150}
-              height={180}
-              quality={100}
-            ></Image>
-            <Image
-              className={mergeClasses(...BOOK_CLASSES)}
-              src="/assets/geb.jpg"
-              alt="asd"
-              width={150}
-              height={180}
-              quality={100}
-            ></Image>
-            <Image
-              className={mergeClasses(...BOOK_CLASSES)}
-              src="/assets/fbr.jpg"
-              alt="asd"
-              width={150}
-              height={180}
-              quality={100}
-            ></Image>
-            <Image
-              className={mergeClasses(...BOOK_CLASSES)}
-              src="/assets/l.jpg"
-              alt="asd"
-              width={150}
-              height={180}
-              quality={100}
-            ></Image>
-            <Image
-              className={mergeClasses(...BOOK_CLASSES)}
-              src="/assets/ia.jpg"
-              alt="asd"
-              width={150}
-              height={180}
-              quality={100}
-            ></Image>
-            <Image
-              className={mergeClasses(...BOOK_CLASSES)}
-              src="/assets/tboi.jpg"
-              alt="asd"
-              width={150}
-              height={180}
-              quality={100}
-            ></Image>
-            <Image
-              className={mergeClasses(...BOOK_CLASSES)}
-              src="/assets/tbp.jpg"
-              alt="asd"
-              width={150}
-              height={180}
-              quality={100}
-            ></Image>
-            <Image
-              className={mergeClasses(...BOOK_CLASSES)}
-              src="/assets/tis.jpg"
-              alt="asd"
-              width={150}
-              height={180}
-              quality={100}
-            ></Image>
-            <Image
-              className={mergeClasses(...BOOK_CLASSES)}
-              src="/assets/u.jpg"
-              alt="asd"
-              width={150}
+              width={550}
               height={180}
               quality={100}
             ></Image>
