@@ -11,8 +11,8 @@ import Image from "next/image";
 export default function Page() {
   return (
     <div className="grid grid-cols-12 gap-6 mx-20 my-10 pb-10">
-      <AboutMe className="col-span-4"></AboutMe>
-      <RecommendedBooks className="col-span-12 lg:col-span-8"></RecommendedBooks>
+      <AboutMe className="col-span-5"></AboutMe>
+      <RecommendedBooks className="col-span-12 lg:col-span-7"></RecommendedBooks>
       <EngineeringLibrary className="lg:col-span-6 col-span-12"></EngineeringLibrary>
       <Project
         name="podsfy.com"

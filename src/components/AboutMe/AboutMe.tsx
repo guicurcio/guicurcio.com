@@ -42,7 +42,7 @@ export default function AboutMe({ className }: AboutMeProps): JSX.Element {
             <h1 className="font-visuelt text-[#F2F2F2] text-[26px] font-normal leading-[24px] h-fit">
               Guido Curcio
             </h1>
-            <h1 className="text-[#F2F2F290] text-[16px] font-moderat leading-[22px] lg:w-[320px] h-fit">
+            <h1 className="text-[#F2F2F290] text-[16px] font-moderat leading-[22px] xl:w-[320px] h-fit">
               I’m an engineer. <br></br> Rarely a writer, but always a reader --
               more of a listener than a talker.
             </h1>
