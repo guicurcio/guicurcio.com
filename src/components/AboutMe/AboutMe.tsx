@@ -30,7 +30,7 @@ export default function AboutMe({ className }: AboutMeProps): JSX.Element {
         draggable="false"
       ></img>
       <div className="grid grid-flow-row content-between">
-        <div className="grid grid-flow-col px-[20px] pt-[20px] items-center">
+        <div className="grid grid-flow-col px-[20px] pt-[20px] items-center content-start place-content-start gap-4">
           <div className="w-[150px] h-[150px]">
             <img
               src="about/pers3.jpg"
@@ -38,14 +38,14 @@ export default function AboutMe({ className }: AboutMeProps): JSX.Element {
               draggable="false"
             ></img>
           </div>
-          <div className="">
+          <div className="grid grid-flow-row gap-0">
             <h1 className="font-visuelt text-[#F2F2F2] text-[26px] font-normal leading-[24px] h-fit">
               Guido Curcio
             </h1>
-            <h1 className="text-[#F2F2F290] text-[16px] font-moderat leading-[22px] xl:w-[320px] h-fit">
+            <h2 className="text-[#F2F2F290] text-[16px] font-moderat leading-[22px] xl:w-[320px] h-fit">
               I’m an engineer. <br></br> Rarely a writer, but always a reader --
               more of a listener than a talker.
-            </h1>
+            </h2>
           </div>
         </div>
         <div className="px-[25px] py-[20px] grid grid-flow-row gap-[1px] content-start">
