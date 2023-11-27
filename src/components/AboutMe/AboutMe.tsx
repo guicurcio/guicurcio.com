@@ -49,22 +49,34 @@ export default function AboutMe({ className }: AboutMeProps): JSX.Element {
           </div>
         </div>
         <div className="px-[25px] py-[20px] grid grid-flow-row gap-[1px] content-start">
-          <div className="grid grid-flow-col gap-[15px] content-start items-start pb-[10px] place-content-start pl-[3px]">
-            <a href="https://linkedin.com/guicurcio" target="_blank">
+          <div className="grid grid-flow-col gap-[15px] content-start items-baseline pb-[10px] place-content-start pl-[3px]">
+            <a
+              href="https://linkedin.com/guicurcio"
+              target="_blank"
+              className="cursor-pointer z-50"
+            >
               <img
                 src="assets/socials/linkedin.svg"
                 className="align-middle self-center"
                 draggable="false"
               ></img>
             </a>
-            <a href="https://github.com/guicurcio" target="_blank">
+            <a
+              href="https://github.com/guicurcio"
+              className="cursor-pointer z-50"
+              target="_blank"
+            >
               <img
                 src="assets/socials/github.svg"
                 className="align-middle self-center"
                 draggable="false"
               ></img>
             </a>
-            <a href="https://twitter.com/guicurcio" target="_blank">
+            <a
+              href="https://twitter.com/guicurcio"
+              target="_blank"
+              className="cursor-pointer z-50"
+            >
               <img
                 src="assets/socials/twitter.svg"
                 className="align-middle self-center"
