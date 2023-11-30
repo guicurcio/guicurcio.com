@@ -55,10 +55,12 @@ export default function PodsfyPage() {
         </div>
         <div className=" grid grid-flow-row gap-5 items-start place-content-start">
           <Text>
-            In today's rapidly growing podcast ecosystem, it's clear we need
-            more than just a traditional platform. We need something that truly
-            understands podcast lovers and creators. Let me introduce Podsfy,
-            our answer to a multitude of podcasting challenges.
+            For a long time, I have been listening to podcasts while I develop
+            websites. I always felt that music was a bit repetitive, and it's
+            always very hard to find new music. On the other hand, there's a
+            constant stream of podcasts available. And I can pinpoint podcast
+            episodes which have changed my worldview as much as any of my
+            favorite books.
           </Text>
           <PostTitle>A Podcast Database Powerhouse</PostTitle>
           <Text>

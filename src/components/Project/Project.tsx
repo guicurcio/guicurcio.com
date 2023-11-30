@@ -64,14 +64,18 @@ export default function Project({
                   <div className="rounded-full w-3 h-3 bg-[#F5BD4F] "></div>
                   <div className="rounded-full w-3 h-3  bg-[#61C454]"></div>
                 </div>
-                <div className="grid grid-flow-col items-start content-start gap-1 bg-[#0C0F12] px-20 border border-white border-opacity-10 rounded-[6px] justify-start self-baseline mt-[-5px]">
+                <a
+                  href={`https://${name}`}
+                  target="_blank"
+                  className="cursor-pointer grid grid-flow-col items-start content-start gap-1 bg-[#0C0F12] px-20 border border-white border-opacity-10 rounded-[6px] justify-start self-baseline mt-[-5px]"
+                >
                   <img
                     src="assets/lock.svg"
                     className="z-0 brightness-75 self-center align-middle w-3 h-3"
                     draggable="false"
                   ></img>
                   <h1 className="text-white font-mono text-[14px]">{name}</h1>
-                </div>
+                </a>
               </div>
               <Image
                 className={mergeClasses(
