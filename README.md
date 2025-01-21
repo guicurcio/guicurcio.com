@@ -1,5 +1,1 @@
-
-
-## Packages
-
-- `server-only`
+My old blog https://blog-guicurcio.vercel.app/
